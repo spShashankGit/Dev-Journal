@@ -1,2 +1,7 @@
 # Dev-Journal
 This repository is essentially a conversation with myself where I am listing the topics that I want to lean and understand. Over the period of time I want to write my notes in comments and increase the knowledge bank.
+
+## Topics Covered
+
+### Network & Infrastructure
+- [Proxy Servers](./proxy-servers.md) - What are proxy servers and why are they used?
