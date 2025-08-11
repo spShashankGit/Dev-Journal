@@ -5,7 +5,7 @@ AWS Identity and Access Management (IAM) uses two key concepts to control access
 
 ## What are IAM Policies?
 
-**IAM Policies** are JSON documents that define permissions. They specify:
+**IAM Policies** are JSON documents that define permissions [1]. They specify:
 - **What** actions are allowed or denied
 - **Which** resources can be accessed
 - **Under what conditions** access is granted
@@ -35,16 +35,16 @@ AWS Identity and Access Management (IAM) uses two key concepts to control access
 
 ## What are IAM Roles?
 
-**IAM Roles** are identities that can be assumed by entities (users, services, applications). They:
+**IAM Roles** are identities that can be assumed by entities (users, services, applications) [1]. They:
 - Don't have permanent credentials
-- Provide temporary security credentials when assumed
+- Provide temporary security credentials when assumed [3]
 - Define **who** can assume them and **what** they can do
 
 ### Key Characteristics of Roles:
-- Can be assumed by AWS services, users, or external identities
-- Have trust policies that define who can assume them
-- Have permission policies attached that define what they can do
-- Provide temporary credentials (STS tokens)
+- Can be assumed by AWS services, users, or external identities [1]
+- Have trust policies that define who can assume them [2]
+- Have permission policies attached that define what they can do [2]
+- Provide temporary credentials (STS tokens) [3]
 
 ### Example Role Trust Policy:
 ```json
@@ -106,7 +106,17 @@ AWS Identity and Access Management (IAM) uses two key concepts to control access
 2. Create a **Role** with:
    - Trust policy allowing EC2 to assume it
    - The S3 read policy attached
-3. Attach the role to the EC2 instance
-4. EC2 assumes the role and gets temporary credentials with S3 read permissions
+3. Attach the role to the EC2 instance [4]
+4. EC2 assumes the role and gets temporary credentials with S3 read permissions [4]
 
 This demonstrates how policies define the permissions while roles provide the mechanism for entities to assume those permissions securely.
+
+## References
+
+[1] AWS IAM User Guide - IAM Roles: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html
+
+[2] AWS IAM User Guide - Role Terms and Concepts: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html
+
+[3] AWS Security Token Service (STS) Documentation: https://docs.aws.amazon.com/STS/latest/APIReference/Welcome.html
+
+[4] AWS IAM User Guide - Using IAM Roles for Amazon EC2: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html
