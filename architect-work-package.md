@@ -4,7 +4,7 @@ This document explores the essential aspects of working as a software architect,
 
 ## 1. What shall an ideal activity of the day look like?
 
-### Morning (9:00 AM - 12:00 PM)
+
 - **Review and Planning (30 mins)**
   - Check overnight deployments, system health metrics
   - Review urgent issues from support teams
@@ -21,7 +21,6 @@ This document explores the essential aspects of working as a software architect,
   - Quick sync with other architects
   - Review pull requests requiring architectural input
 
-### Afternoon (1:00 PM - 5:00 PM)
 - **Cross-team Communication (1 hour)**
   - Meet with product managers and stakeholders
   - Align technical decisions with business requirements
@@ -42,7 +41,6 @@ This document explores the essential aspects of working as a software architect,
   - Write technical blog posts or internal wikis
   - Prepare for upcoming presentations
 
-### Evening Wrap-up
 - **Planning for Next Day (15 mins)**
   - Review accomplishments
   - Set priorities for tomorrow
