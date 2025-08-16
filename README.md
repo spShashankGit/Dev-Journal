@@ -10,3 +10,5 @@ This repository is essentially a conversation with myself where I am listing the
 
 ### Coding best practices
 - [DRY Principle in Coding](DRY-Principle.md) - Understanding the "Don't Repeat Yourself" principle with practical examples
+- [Guard Conditions](guard-conditions.md) - Implementing defensive programming with guard conditions
+- [AI/ML Conferences Guide](AI-ML-Conferences.md) - Comprehensive guide to artificial intelligence and machine learning conferences worldwide
