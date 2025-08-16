@@ -466,69 +466,728 @@ An ontology is a formal specification of concepts, properties, and relationships
 - Emphasis on transparent dataset documentation
 - Movement toward unified metadata standards
 
-## How to Use Croissant in Real-World Scenarios
+## How to Use Croissant in Real-World ML Workflows
 
-### **Scenario 1: Academic Research**
+### **Complete ML Pipeline Integration**
+
+Here's how Croissant metadata integrates at each stage of ML development:
+
+#### **Stage 1: Dataset Discovery and Loading**
 ```python
-# Example: Creating basic dataset metadata structure
-# Note: This is a simplified illustration - actual implementation
-# would require the official Croissant libraries and complete specification
-
 import json
+import pandas as pd
+import torch
+from torch.utils.data import Dataset, DataLoader
+from typing import Dict, Any, List
 
-dataset_metadata = {
-    "@context": ["https://schema.org", "https://croissant.ml/"],
-    "@type": "Dataset",
-    "name": "My Research Dataset",
-    "description": "Novel dataset for X research",
-    "license": "CC-BY-4.0",
-    "creator": {
-        "@type": "Organization", 
-        "name": "University Research Lab"
-    }
-}
-
-# Export metadata
-with open("dataset_metadata.json", "w") as f:
-    json.dump(dataset_metadata, f, indent=2)
-```
-
-### **Scenario 2: Industry Dataset Documentation**
-```python
-# Example: Corporate dataset with compliance considerations
-corporate_metadata = {
-    "@context": ["https://schema.org", "https://croissant.ml/"],
-    "@type": "Dataset",
-    "name": "Customer Behavior Dataset",
-    "license": "Commercial License",
-    "distribution": {
-        "@type": "DataDownload",
-        "encodingFormat": "application/json"
-    },
-    "ethics": {
-        "privacyConsiderations": "high",
-        "complianceFrameworks": ["GDPR", "CCPA"]
-    }
-}
-```
-
-### **Scenario 3: Multi-platform Dataset**
-```python
-# Example: Dataset designed for multiple ML platforms
-multi_platform_metadata = {
-    "@context": ["https://schema.org", "https://croissant.ml/"],
-    "@type": "Dataset", 
-    "name": "Universal Vision Dataset",
-    "encodingFormat": ["application/json", "text/csv"],
-    "distribution": [
-        {
-            "@type": "DataDownload",
-            "contentUrl": "https://example.com/data.json",
-            "encodingFormat": "application/json"
+class CroissantDatasetLoader:
+    """
+    Utility class for loading datasets with Croissant metadata
+    """
+    
+    def __init__(self, metadata_path: str):
+        """Load and parse Croissant metadata"""
+        with open(metadata_path, 'r') as f:
+            self.metadata = json.load(f)
+        
+        # Parse key information from metadata
+        self.name = self.metadata.get('name', 'Unknown Dataset')
+        self.description = self.metadata.get('description', '')
+        self.license = self.metadata.get('license', 'Unknown')
+        self.distribution = self.metadata.get('distribution', {})
+        
+        # Extract data source URLs and formats
+        self.data_sources = self._parse_data_sources()
+        
+        # Parse ML-specific metadata
+        self.ml_metadata = self._parse_ml_metadata()
+        
+    def _parse_data_sources(self) -> List[Dict]:
+        """Extract data source information"""
+        if isinstance(self.distribution, list):
+            return self.distribution
+        elif isinstance(self.distribution, dict):
+            return [self.distribution]
+        return []
+    
+    def _parse_ml_metadata(self) -> Dict:
+        """Extract ML-specific information"""
+        return {
+            'task_type': self.metadata.get('ml_task', 'unknown'),
+            'input_format': self.metadata.get('inputFormat', 'unknown'),
+            'target_format': self.metadata.get('targetFormat', 'unknown'),
+            'preprocessing_steps': self.metadata.get('preprocessingSteps', []),
+            'splits': self.metadata.get('splits', {}),
+            'feature_schema': self.metadata.get('featureSchema', {})
         }
-    ]
-}
+    
+    def get_data_info(self) -> Dict[str, Any]:
+        """Get comprehensive dataset information"""
+        return {
+            'metadata': self.metadata,
+            'name': self.name,
+            'description': self.description,
+            'license': self.license,
+            'ml_info': self.ml_metadata,
+            'data_sources': self.data_sources
+        }
+
+# Usage example
+loader = CroissantDatasetLoader('dataset_metadata.json')
+dataset_info = loader.get_data_info()
+
+print(f"Dataset: {dataset_info['name']}")
+print(f"Task Type: {dataset_info['ml_info']['task_type']}")
+print(f"License: {dataset_info['license']}")
 ```
+
+#### **Stage 2: Data Validation and Preprocessing**
+```python
+class CroissantDataValidator:
+    """
+    Validate data against Croissant metadata specifications
+    """
+    
+    def __init__(self, metadata: Dict):
+        self.metadata = metadata
+        self.validation_errors = []
+    
+    def validate_data_format(self, data_path: str) -> bool:
+        """Validate data format against metadata specification"""
+        expected_format = self.metadata.get('encodingFormat', '')
+        
+        if expected_format == 'text/csv' and not data_path.endswith('.csv'):
+            self.validation_errors.append(f"Expected CSV format, got: {data_path}")
+            return False
+        
+        return True
+    
+    def validate_feature_schema(self, df: pd.DataFrame) -> bool:
+        """Validate DataFrame columns against feature schema"""
+        feature_schema = self.metadata.get('featureSchema', {})
+        
+        if not feature_schema:
+            print("Warning: No feature schema defined in metadata")
+            return True
+        
+        expected_columns = set(feature_schema.keys())
+        actual_columns = set(df.columns)
+        
+        missing_columns = expected_columns - actual_columns
+        extra_columns = actual_columns - expected_columns
+        
+        if missing_columns:
+            self.validation_errors.append(f"Missing columns: {missing_columns}")
+        
+        if extra_columns:
+            print(f"Warning: Extra columns found: {extra_columns}")
+        
+        return len(missing_columns) == 0
+    
+    def validate_ethical_constraints(self, data_usage: str) -> bool:
+        """Validate usage against ethical constraints"""
+        ethics = self.metadata.get('ethics', {})
+        
+        if ethics.get('privacyConsiderations') == 'high':
+            if 'production' in data_usage.lower():
+                print("Warning: High privacy dataset used in production context")
+        
+        compliance = ethics.get('complianceFrameworks', [])
+        if 'GDPR' in compliance:
+            print("Note: GDPR compliance required for this dataset")
+        
+        return True
+
+# Usage in preprocessing pipeline
+def preprocess_with_metadata(data_path: str, metadata_path: str):
+    """
+    Preprocess data using Croissant metadata guidance
+    """
+    # Load metadata
+    loader = CroissantDatasetLoader(metadata_path)
+    dataset_info = loader.get_data_info()
+    
+    # Validate data
+    validator = CroissantDataValidator(dataset_info['metadata'])
+    
+    if not validator.validate_data_format(data_path):
+        raise ValueError(f"Data format validation failed: {validator.validation_errors}")
+    
+    # Load data
+    df = pd.read_csv(data_path)
+    
+    # Validate schema
+    if not validator.validate_feature_schema(df):
+        raise ValueError(f"Schema validation failed: {validator.validation_errors}")
+    
+    # Apply preprocessing steps from metadata
+    preprocessing_steps = dataset_info['ml_info']['preprocessing_steps']
+    
+    for step in preprocessing_steps:
+        if step['type'] == 'normalization':
+            columns = step.get('columns', [])
+            for col in columns:
+                if col in df.columns:
+                    df[col] = (df[col] - df[col].mean()) / df[col].std()
+        
+        elif step['type'] == 'categorical_encoding':
+            columns = step.get('columns', [])
+            for col in columns:
+                if col in df.columns:
+                    df[col] = pd.Categorical(df[col]).codes
+    
+    # Validate ethical constraints
+    validator.validate_ethical_constraints('training')
+    
+    return df, dataset_info
+```
+
+#### **Stage 3: PyTorch Model Training with Metadata**
+```python
+class CroissantPyTorchDataset(Dataset):
+    """
+    PyTorch Dataset that incorporates Croissant metadata
+    """
+    
+    def __init__(self, data_path: str, metadata_path: str, split: str = 'train'):
+        self.loader = CroissantDatasetLoader(metadata_path)
+        self.dataset_info = self.loader.get_data_info()
+        
+        # Load and preprocess data
+        self.data, _ = preprocess_with_metadata(data_path, metadata_path)
+        
+        # Apply split if specified in metadata
+        splits = self.dataset_info['ml_info']['splits']
+        if split in splits:
+            split_info = splits[split]
+            start_idx = int(split_info.get('start', 0) * len(self.data))
+            end_idx = int(split_info.get('end', 1) * len(self.data))
+            self.data = self.data.iloc[start_idx:end_idx]
+        
+        # Extract features and targets based on metadata
+        feature_schema = self.dataset_info['ml_info']['feature_schema']
+        self.feature_columns = [col for col, info in feature_schema.items() 
+                              if info.get('role') == 'feature']
+        self.target_columns = [col for col, info in feature_schema.items() 
+                             if info.get('role') == 'target']
+    
+    def __len__(self):
+        return len(self.data)
+    
+    def __getitem__(self, idx):
+        row = self.data.iloc[idx]
+        
+        features = torch.tensor(row[self.feature_columns].values, dtype=torch.float32)
+        targets = torch.tensor(row[self.target_columns].values, dtype=torch.float32)
+        
+        return features, targets
+    
+    def get_metadata_info(self):
+        """Return metadata information for model documentation"""
+        return {
+            'dataset_name': self.dataset_info['name'],
+            'task_type': self.dataset_info['ml_info']['task_type'],
+            'license': self.dataset_info['license'],
+            'feature_count': len(self.feature_columns),
+            'sample_count': len(self.data)
+        }
+
+# Training with metadata-aware dataset
+def train_model_with_metadata(data_path: str, metadata_path: str):
+    """
+    Train a model using Croissant metadata for configuration
+    """
+    # Create dataset
+    train_dataset = CroissantPyTorchDataset(data_path, metadata_path, 'train')
+    val_dataset = CroissantPyTorchDataset(data_path, metadata_path, 'validation')
+    
+    # Get metadata info for model architecture
+    metadata_info = train_dataset.get_metadata_info()
+    
+    # Create data loaders
+    train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
+    val_loader = DataLoader(val_dataset, batch_size=32, shuffle=False)
+    
+    # Configure model based on metadata
+    input_size = metadata_info['feature_count']
+    
+    if metadata_info['task_type'] == 'classification':
+        # Determine number of classes from metadata or data
+        num_classes = len(train_dataset.target_columns)
+        model = torch.nn.Sequential(
+            torch.nn.Linear(input_size, 128),
+            torch.nn.ReLU(),
+            torch.nn.Linear(128, num_classes),
+            torch.nn.Softmax(dim=1)
+        )
+        criterion = torch.nn.CrossEntropyLoss()
+    else:  # regression
+        model = torch.nn.Sequential(
+            torch.nn.Linear(input_size, 128),
+            torch.nn.ReLU(),
+            torch.nn.Linear(128, 1)
+        )
+        criterion = torch.nn.MSELoss()
+    
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+    
+    # Training loop with metadata logging
+    for epoch in range(10):
+        model.train()
+        total_loss = 0
+        
+        for batch_idx, (features, targets) in enumerate(train_loader):
+            optimizer.zero_grad()
+            outputs = model(features)
+            loss = criterion(outputs, targets)
+            loss.backward()
+            optimizer.step()
+            total_loss += loss.item()
+        
+        print(f"Epoch {epoch}: Loss = {total_loss/len(train_loader):.4f}")
+    
+    # Save model with metadata
+    model_metadata = {
+        'model_state': model.state_dict(),
+        'dataset_metadata': metadata_info,
+        'training_config': {
+            'epochs': 10,
+            'learning_rate': 0.001,
+            'batch_size': 32
+        }
+    }
+    
+    torch.save(model_metadata, 'model_with_metadata.pth')
+    
+    return model, metadata_info
+```
+
+#### **Stage 4: Multi-Agent System Integration**
+```python
+from abc import ABC, abstractmethod
+from typing import Dict, List, Any
+
+class MetadataAwareAgent(ABC):
+    """
+    Base class for agents that use Croissant metadata
+    """
+    
+    def __init__(self, agent_id: str, metadata_path: str):
+        self.agent_id = agent_id
+        self.loader = CroissantDatasetLoader(metadata_path)
+        self.dataset_info = self.loader.get_data_info()
+        
+        # Agent-specific metadata constraints
+        self.ethical_constraints = self._parse_ethical_constraints()
+        self.data_usage_permissions = self._parse_usage_permissions()
+    
+    def _parse_ethical_constraints(self) -> Dict:
+        """Parse ethical constraints relevant to this agent"""
+        ethics = self.dataset_info['metadata'].get('ethics', {})
+        return {
+            'privacy_level': ethics.get('privacyConsiderations', 'low'),
+            'compliance_frameworks': ethics.get('complianceFrameworks', []),
+            'allowed_usage': ethics.get('allowedUsage', ['research', 'commercial'])
+        }
+    
+    def _parse_usage_permissions(self) -> Dict:
+        """Parse data usage permissions"""
+        license_info = self.dataset_info['license']
+        
+        permissions = {
+            'can_redistribute': 'CC' in license_info or 'MIT' in license_info,
+            'commercial_use': 'Commercial' in license_info or 'CC-BY' in license_info,
+            'attribution_required': 'CC-BY' in license_info or 'attribution' in license_info.lower()
+        }
+        
+        return permissions
+    
+    def validate_usage(self, intended_use: str) -> bool:
+        """Validate if intended use is allowed by metadata"""
+        if intended_use == 'commercial' and not self.data_usage_permissions['commercial_use']:
+            print(f"Agent {self.agent_id}: Commercial use not permitted")
+            return False
+        
+        if self.ethical_constraints['privacy_level'] == 'high':
+            print(f"Agent {self.agent_id}: High privacy data - extra precautions required")
+        
+        return True
+    
+    @abstractmethod
+    def process_data(self, data: Any) -> Any:
+        """Process data according to agent's role"""
+        pass
+
+class DataPreprocessingAgent(MetadataAwareAgent):
+    """
+    Agent responsible for data preprocessing based on metadata
+    """
+    
+    def process_data(self, data_path: str) -> pd.DataFrame:
+        """Preprocess data according to metadata specifications"""
+        if not self.validate_usage('preprocessing'):
+            raise PermissionError("Data usage not permitted for preprocessing")
+        
+        # Load and validate data
+        df, _ = preprocess_with_metadata(data_path, f"{self.agent_id}_metadata.json")
+        
+        # Apply agent-specific preprocessing
+        preprocessing_steps = self.dataset_info['ml_info']['preprocessing_steps']
+        
+        print(f"Agent {self.agent_id}: Applying {len(preprocessing_steps)} preprocessing steps")
+        
+        return df
+
+class ModelTrainingAgent(MetadataAwareAgent):
+    """
+    Agent responsible for model training with metadata awareness
+    """
+    
+    def process_data(self, preprocessed_data: pd.DataFrame) -> torch.nn.Module:
+        """Train model based on metadata specifications"""
+        if not self.validate_usage('training'):
+            raise PermissionError("Data usage not permitted for training")
+        
+        # Configure model based on metadata
+        task_type = self.dataset_info['ml_info']['task_type']
+        
+        if task_type == 'classification':
+            model = self._create_classification_model(preprocessed_data)
+        else:
+            model = self._create_regression_model(preprocessed_data)
+        
+        print(f"Agent {self.agent_id}: Training {task_type} model")
+        
+        return model
+    
+    def _create_classification_model(self, data: pd.DataFrame) -> torch.nn.Module:
+        """Create classification model based on metadata"""
+        input_size = data.shape[1] - 1  # Assuming last column is target
+        
+        model = torch.nn.Sequential(
+            torch.nn.Linear(input_size, 64),
+            torch.nn.ReLU(),
+            torch.nn.Linear(64, 32),
+            torch.nn.ReLU(),
+            torch.nn.Linear(32, 2)  # Binary classification
+        )
+        
+        return model
+    
+    def _create_regression_model(self, data: pd.DataFrame) -> torch.nn.Module:
+        """Create regression model based on metadata"""
+        input_size = data.shape[1] - 1
+        
+        model = torch.nn.Sequential(
+            torch.nn.Linear(input_size, 64),
+            torch.nn.ReLU(),
+            torch.nn.Linear(64, 1)
+        )
+        
+        return model
+
+class EvaluationAgent(MetadataAwareAgent):
+    """
+    Agent responsible for model evaluation with metadata compliance
+    """
+    
+    def process_data(self, model: torch.nn.Module, test_data: pd.DataFrame) -> Dict:
+        """Evaluate model with metadata-aware metrics"""
+        if not self.validate_usage('evaluation'):
+            raise PermissionError("Data usage not permitted for evaluation")
+        
+        # Check for bias evaluation requirements
+        ethics = self.dataset_info['metadata'].get('ethics', {})
+        fairness_metrics = ethics.get('fairnessMetrics', [])
+        
+        results = {
+            'basic_metrics': self._compute_basic_metrics(model, test_data),
+            'fairness_metrics': self._compute_fairness_metrics(model, test_data, fairness_metrics),
+            'compliance_check': self._check_compliance()
+        }
+        
+        print(f"Agent {self.agent_id}: Evaluation complete with {len(fairness_metrics)} fairness checks")
+        
+        return results
+    
+    def _compute_basic_metrics(self, model: torch.nn.Module, data: pd.DataFrame) -> Dict:
+        """Compute basic performance metrics"""
+        # Simplified metric computation
+        return {
+            'accuracy': 0.85,  # Placeholder
+            'precision': 0.82,
+            'recall': 0.88
+        }
+    
+    def _compute_fairness_metrics(self, model: torch.nn.Module, data: pd.DataFrame, 
+                                 fairness_metrics: List) -> Dict:
+        """Compute fairness metrics if required by metadata"""
+        if not fairness_metrics:
+            return {}
+        
+        # Placeholder fairness computation
+        return {
+            metric: 0.9 for metric in fairness_metrics
+        }
+    
+    def _check_compliance(self) -> Dict:
+        """Check compliance with metadata requirements"""
+        compliance = {}
+        
+        frameworks = self.ethical_constraints['compliance_frameworks']
+        for framework in frameworks:
+            if framework == 'GDPR':
+                compliance['GDPR'] = True  # Simplified check
+            elif framework == 'CCPA':
+                compliance['CCPA'] = True
+        
+        return compliance
+
+# Multi-agent system orchestration
+class MetadataAwareMLPipeline:
+    """
+    Orchestrate multi-agent ML pipeline using Croissant metadata
+    """
+    
+    def __init__(self, metadata_path: str):
+        self.metadata_path = metadata_path
+        
+        # Initialize agents
+        self.preprocessing_agent = DataPreprocessingAgent("preprocessor", metadata_path)
+        self.training_agent = ModelTrainingAgent("trainer", metadata_path)
+        self.evaluation_agent = EvaluationAgent("evaluator", metadata_path)
+    
+    def run_pipeline(self, data_path: str) -> Dict:
+        """Run complete ML pipeline with metadata awareness"""
+        results = {}
+        
+        try:
+            # Stage 1: Preprocessing
+            print("=== Stage 1: Data Preprocessing ===")
+            preprocessed_data = self.preprocessing_agent.process_data(data_path)
+            results['preprocessing'] = "Success"
+            
+            # Stage 2: Training
+            print("=== Stage 2: Model Training ===")
+            model = self.training_agent.process_data(preprocessed_data)
+            results['training'] = "Success"
+            
+            # Stage 3: Evaluation
+            print("=== Stage 3: Model Evaluation ===")
+            evaluation_results = self.evaluation_agent.process_data(model, preprocessed_data)
+            results['evaluation'] = evaluation_results
+            
+            # Generate final report with metadata provenance
+            results['metadata_provenance'] = {
+                'dataset_name': self.preprocessing_agent.dataset_info['name'],
+                'license': self.preprocessing_agent.dataset_info['license'],
+                'compliance_frameworks': self.preprocessing_agent.ethical_constraints['compliance_frameworks'],
+                'privacy_level': self.preprocessing_agent.ethical_constraints['privacy_level']
+            }
+            
+        except PermissionError as e:
+            results['error'] = str(e)
+            print(f"Pipeline failed due to metadata constraints: {e}")
+        
+        return results
+
+# Usage example
+pipeline = MetadataAwareMLPipeline('dataset_metadata.json')
+results = pipeline.run_pipeline('dataset.csv')
+print("Pipeline Results:", results)
+```
+
+### **Key Integration Points and Gotchas**
+
+#### **📍 Critical Integration Points:**
+
+1. **Data Loading Stage**: Validate format and schema compliance
+2. **Preprocessing Stage**: Apply metadata-specified transformations
+3. **Model Configuration**: Use metadata to inform architecture choices
+4. **Training Stage**: Respect ethical constraints and usage permissions
+5. **Evaluation Stage**: Include required fairness and compliance metrics
+6. **Deployment Stage**: Ensure license compliance and attribution
+
+#### **⚠️ Common Gotchas and Best Practices:**
+
+```python
+# GOTCHA 1: License Compliance
+def check_license_compliance(metadata: Dict, intended_use: str):
+    """
+    Critical: Always check license before using data
+    """
+    license_info = metadata.get('license', '')
+    
+    if intended_use == 'commercial' and 'Non-Commercial' in license_info:
+        raise ValueError("Commercial use not permitted by license")
+    
+    if 'attribution' in license_info.lower():
+        print("WARNING: Attribution required - ensure proper citation")
+
+# GOTCHA 2: Privacy and Ethical Constraints
+def validate_privacy_compliance(metadata: Dict, deployment_context: str):
+    """
+    Critical: Check privacy constraints before deployment
+    """
+    ethics = metadata.get('ethics', {})
+    privacy_level = ethics.get('privacyConsiderations', 'low')
+    
+    if privacy_level == 'high' and deployment_context == 'production':
+        print("ERROR: High privacy data should not be used in production without anonymization")
+        return False
+    
+    return True
+
+# GOTCHA 3: Feature Schema Drift
+def monitor_schema_drift(metadata: Dict, current_data: pd.DataFrame):
+    """
+    Monitor for changes in data schema that violate metadata expectations
+    """
+    expected_schema = metadata.get('featureSchema', {})
+    
+    for column, schema_info in expected_schema.items():
+        if column not in current_data.columns:
+            print(f"SCHEMA DRIFT: Missing expected column: {column}")
+        
+        expected_type = schema_info.get('dataType', '')
+        actual_type = str(current_data[column].dtype)
+        
+        if expected_type and expected_type not in actual_type:
+            print(f"SCHEMA DRIFT: Type mismatch for {column}: expected {expected_type}, got {actual_type}")
+
+# GOTCHA 4: Metadata Version Compatibility
+def check_metadata_version(metadata: Dict):
+    """
+    Ensure metadata version compatibility
+    """
+    version = metadata.get('version', '1.0')
+    supported_versions = ['1.0', '1.1', '1.2']
+    
+    if version not in supported_versions:
+        print(f"WARNING: Metadata version {version} may not be fully supported")
+
+# GOTCHA 5: Missing Required Fields
+def validate_required_metadata(metadata: Dict):
+    """
+    Validate that all required metadata fields are present
+    """
+    required_fields = ['name', 'description', 'license', 'distribution']
+    missing_fields = [field for field in required_fields if field not in metadata]
+    
+    if missing_fields:
+        raise ValueError(f"Required metadata fields missing: {missing_fields}")
+
+# Complete validation pipeline
+def comprehensive_metadata_validation(metadata_path: str, data_path: str, intended_use: str):
+    """
+    Comprehensive validation before using dataset
+    """
+    with open(metadata_path, 'r') as f:
+        metadata = json.load(f)
+    
+    # Run all validation checks
+    validate_required_metadata(metadata)
+    check_metadata_version(metadata)
+    check_license_compliance(metadata, intended_use)
+    
+    if not validate_privacy_compliance(metadata, intended_use):
+        raise PermissionError("Privacy compliance validation failed")
+    
+    # Load data for schema validation
+    data = pd.read_csv(data_path)
+    monitor_schema_drift(metadata, data)
+    
+    print("✅ All metadata validations passed")
+    return True
+
+# Usage in production
+try:
+    comprehensive_metadata_validation('metadata.json', 'data.csv', 'commercial')
+    # Proceed with ML pipeline
+except Exception as e:
+    print(f"❌ Validation failed: {e}")
+    # Do not proceed with data usage
+```
+
+### **Framework-Specific Integrations**
+
+#### **TensorFlow Integration:**
+```python
+import tensorflow as tf
+
+class CroissantTensorFlowDataset:
+    """TensorFlow dataset with Croissant metadata integration"""
+    
+    def __init__(self, metadata_path: str, data_path: str):
+        self.loader = CroissantDatasetLoader(metadata_path)
+        self.dataset_info = self.loader.get_data_info()
+        
+        # Create TensorFlow dataset
+        self.tf_dataset = self._create_tf_dataset(data_path)
+    
+    def _create_tf_dataset(self, data_path: str):
+        """Create TensorFlow dataset with metadata configuration"""
+        # Load data according to metadata
+        data, _ = preprocess_with_metadata(data_path, self.loader.metadata)
+        
+        # Convert to TensorFlow dataset
+        dataset = tf.data.Dataset.from_tensor_slices({
+            'features': data.drop('target', axis=1).values,
+            'targets': data['target'].values
+        })
+        
+        # Apply metadata-specified batching and preprocessing
+        batch_size = self.dataset_info['metadata'].get('recommendedBatchSize', 32)
+        dataset = dataset.batch(batch_size)
+        
+        return dataset
+```
+
+#### **Scikit-learn Integration:**
+```python
+from sklearn.base import BaseEstimator, TransformerMixin
+
+class CroissantTransformer(BaseEstimator, TransformerMixin):
+    """Scikit-learn transformer that applies Croissant metadata preprocessing"""
+    
+    def __init__(self, metadata_path: str):
+        self.metadata_path = metadata_path
+        self.loader = CroissantDatasetLoader(metadata_path)
+        self.fitted_ = False
+    
+    def fit(self, X, y=None):
+        """Fit transformer based on metadata specifications"""
+        self.preprocessing_steps_ = self.loader.get_data_info()['ml_info']['preprocessing_steps']
+        self.fitted_ = True
+        return self
+    
+    def transform(self, X):
+        """Apply metadata-specified transformations"""
+        if not self.fitted_:
+            raise ValueError("Transformer must be fitted before transform")
+        
+        X_transformed = X.copy()
+        
+        for step in self.preprocessing_steps_:
+            if step['type'] == 'normalization':
+                columns = step.get('columns', [])
+                for col in columns:
+                    if col in X_transformed.columns:
+                        X_transformed[col] = (X_transformed[col] - X_transformed[col].mean()) / X_transformed[col].std()
+        
+        return X_transformed
+
+# Usage in scikit-learn pipeline
+from sklearn.pipeline import Pipeline
+from sklearn.ensemble import RandomForestClassifier
+
+pipeline = Pipeline([
+    ('croissant_preprocess', CroissantTransformer('metadata.json')),
+    ('classifier', RandomForestClassifier())
+])
+```
+
+This comprehensive guide shows exactly how to integrate Croissant metadata throughout your entire ML workflow, from data loading to model deployment, with specific attention to compliance, validation, and multi-agent scenarios.
 
 ## Future Potential and Vision
 
