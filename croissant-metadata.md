@@ -536,3 +536,6 @@ Croissant metadata represents a significant step toward:
 - Better meta-analysis capabilities
 
 As the format continues to evolve, it's likely to become a foundational standard for dataset description in the machine learning ecosystem, enabling a more mature and responsible approach to AI development.
+
+### Original research paper
+arXiv - https://arxiv.org/pdf/2403.19546
