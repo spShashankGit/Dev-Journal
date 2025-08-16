@@ -1,0 +1,119 @@
+<!-- Task List Component Template -->
+<!-- SRP: Template only handles presentation logic -->
+
+<div class="task-list-container">
+  <h1>Task Management - SOLID Principles Demo</h1>
+  
+  <!-- Add Task Form -->
+  <div class="add-task-form">
+    <h2>Add New Task</h2>
+    <div class="form-group">
+      <label for="taskTitle">Title:</label>
+      <input 
+        id="taskTitle"
+        type="text" 
+        [(ngModel)]="newTaskTitle" 
+        placeholder="Enter task title"
+        class="form-control">
+    </div>
+    
+    <div class="form-group">
+      <label for="taskDescription">Description:</label>
+      <textarea 
+        id="taskDescription"
+        [(ngModel)]="newTaskDescription" 
+        placeholder="Enter task description"
+        class="form-control"
+        rows="3"></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label for="taskPriority">Priority:</label>
+      <select 
+        id="taskPriority"
+        [(ngModel)]="selectedPriority" 
+        class="form-control">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+    </div>
+    
+    <button 
+      (click)="addTask()" 
+      [disabled]="!newTaskTitle.trim()"
+      class="btn btn-primary">
+      Add Task
+    </button>
+  </div>
+  
+  <!-- Tasks Display by Priority (OCP: Easy to extend with new priorities) -->
+  <div class="tasks-display">
+    <div class="priority-section" *ngFor="let priority of ['high', 'medium', 'low']">
+      <h3>{{ priority | titlecase }} Priority Tasks</h3>
+      
+      <div class="tasks-grid">
+        <div 
+          *ngFor="let task of filterTasksByPriority(priority)"
+          class="task-card"
+          [class.completed]="task.completed">
+          
+          <div class="task-header">
+            <h4>{{ task.title }}</h4>
+            <span class="priority-badge" [class]="'priority-' + task.priority">
+              {{ task.priority }}
+            </span>
+          </div>
+          
+          <p class="task-description">{{ task.description }}</p>
+          
+          <div class="task-meta">
+            <small>Created: {{ task.createdAt | date:'short' }}</small>
+            <div *ngIf="task.dueDate">
+              <small>Due: {{ task.dueDate | date:'short' }}</small>
+            </div>
+          </div>
+          
+          <div class="task-actions">
+            <button 
+              (click)="onTaskUpdate({...task, completed: !task.completed})"
+              class="btn btn-sm"
+              [class.btn-success]="!task.completed"
+              [class.btn-warning]="task.completed">
+              {{ task.completed ? 'Mark Incomplete' : 'Mark Complete' }}
+            </button>
+            
+            <button 
+              (click)="onTaskDelete(task.id)"
+              class="btn btn-sm btn-danger">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div *ngIf="filterTasksByPriority(priority).length === 0" class="no-tasks">
+        No {{ priority }} priority tasks
+      </div>
+    </div>
+  </div>
+  
+  <!-- Statistics (could be extracted to separate component following SRP) -->
+  <div class="task-stats">
+    <h3>Task Statistics</h3>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-number">{{ tasks.length }}</span>
+        <span class="stat-label">Total Tasks</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">{{ tasks.filter(t => t.completed).length }}</span>
+        <span class="stat-label">Completed</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">{{ tasks.filter(t => !t.completed).length }}</span>
+        <span class="stat-label">Pending</span>
+      </div>
+    </div>
+  </div>
+</div>
