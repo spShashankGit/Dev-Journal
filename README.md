@@ -3,5 +3,10 @@ This repository is essentially a conversation with myself where I am listing the
 
 ## Topics Covered
 
+
 ### Machine Learning & Data Science
 - [Croissant Metadata](./croissant-metadata.md) - Understanding the standardized metadata format for ML datasets, its components, advantages, and why it was created.
+
+
+### Coding best practices
+- [DRY Principle in Coding](DRY-Principle.md) - Understanding the "Don't Repeat Yourself" principle with practical examples
