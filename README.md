@@ -4,4 +4,4 @@ This repository is essentially a conversation with myself where I am listing the
 ## Topics Covered
 
 ### Security & Architecture
-- [Zero Trust Architecture](./zero-trust-architecture.md) - Comprehensive guide to Zero Trust security principles, implementation, and best practices
+- [Zero Trust Architecture](./zero-trust-architecture.md) - Comprehensive guide based on NIST SP 800-207, covering Zero Trust security principles, logical components, deployment models, and implementation strategies
