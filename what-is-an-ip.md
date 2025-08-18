@@ -84,6 +84,7 @@ IP addresses work with ports to identify specific services:
 - `127.0.0.1:3000` (Development server)
 
 ### CIDR Notation
+CIDR is Classless Inter-Domain Routing
 Used to specify IP address ranges:
 - `192.168.1.0/24` = `192.168.1.0` to `192.168.1.255`
 - `/24` means first 24 bits are network, last 8 bits are host
