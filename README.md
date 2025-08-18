@@ -10,7 +10,7 @@ Each topic is documented in its own markdown file with:
 - Best practices and implementation guidelines
 - References for further learning
 
-Feel free to explore the topics and use this as a reference for software engineering concepts and patterns.
+Feel free to explore the topics and use this as a reference for engineering concepts, patterns, and various technical subjects.
 
 ## Topics Covered
 
@@ -25,3 +25,6 @@ Feel free to explore the topics and use this as a reference for software enginee
 - [DRY Principle in Coding](DRY-Principle.md) - Understanding the "Don't Repeat Yourself" principle with practical examples
 - [Guard Conditions](guard-conditions.md) - Implementing defensive programming with guard conditions
 - [AI/ML Conferences Guide](AI-ML-Conferences.md) - Comprehensive guide to artificial intelligence and machine learning conferences worldwide
+
+### Mechanical Engineering & Horology
+- [Watch Movement Bridges](watch-movement-bridges.md) - Understanding bridges in mechanical watch movements, key components, and Omega's Co-Axial innovations
