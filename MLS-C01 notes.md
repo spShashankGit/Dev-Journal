@@ -21,3 +21,7 @@ Souece: [Udemy Course]([url](https://www.udemy.com/course/aws-certified-machine-
 
 ## Exam notes
 1. Very theorotical exam
+
+
+## Notes
+1. AWS IAM -> Users, Groups, Roles, Policies
