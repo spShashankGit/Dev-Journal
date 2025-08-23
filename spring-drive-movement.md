@@ -97,9 +97,9 @@ The Spring Drive serves multiple purposes across different market segments:
 - **Verdict**: **Spring Drive is more accurate** (±1 vs ±2 seconds daily)
 
 #### **Patek Philippe Movements:**
-- **Standard PP**: ±3 to +2 seconds per day (Patek Philippe Seal)
+- **Standard PP**: -3 to +2 seconds per day (Patek Philippe Seal)
 - **Annual Calendar/Perpetual**: Similar accuracy standards
-- **Verdict**: **Spring Drive is more accurate** (±1 vs +2/-3 seconds daily)
+- **Verdict**: **Spring Drive is more accurate** (±1 vs -3/+2 seconds daily)
 
 #### **Standard Quartz Movements:**
 - **Basic Quartz**: ±15 seconds per month
@@ -117,7 +117,7 @@ The Spring Drive serves multiple purposes across different market segments:
 |---------------|----------------|------------------|--------------|---------------|
 | **Spring Drive** | ±1 second | ±15 seconds | Mainspring | Yes |
 | **Rolex** | ±2 seconds | ±1 minute | Mainspring | No |
-| **Patek Philippe** | +2/-3 seconds | ±1.5 minutes | Mainspring | No |
+| **Patek Philippe** | -3/+2 seconds | ±1.5 minutes | Mainspring | No |
 | **Standard Quartz** | ±0.5 seconds | ±15 seconds | Battery | No |
 | **Thermocomp. Quartz** | ±0.002 seconds | ±0.07 seconds | Battery | No |
 
