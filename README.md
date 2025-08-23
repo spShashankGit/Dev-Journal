@@ -25,3 +25,7 @@ Feel free to explore the topics and use this as a reference for software enginee
 - [DRY Principle in Coding](DRY-Principle.md) - Understanding the "Don't Repeat Yourself" principle with practical examples
 - [Guard Conditions](guard-conditions.md) - Implementing defensive programming with guard conditions
 - [AI/ML Conferences Guide](AI-ML-Conferences.md) - Comprehensive guide to artificial intelligence and machine learning conferences worldwide
+
+
+### Solutions Architect 
+- [Who needs an Architect?](who_needs_an_architect.md) - by Martin Fowler
