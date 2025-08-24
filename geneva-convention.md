@@ -1,7 +1,15 @@
 # Geneva Convention: A Comprehensive Guide
 
-## What is the Geneva Convention?
+## Staring point: ICRC
+Founding of ICRC(International Committee of the Red Cross) in 1863 put Geneva on world map.
+Upon initiation of ICRC, Swiss goverment invited 15 european nations and US to discuss adoption of a convention to inmprove conditions for wounded soldiers in battlefields. This happened in August 1864. [1]
 
+## First convetion
+ICRC drafted the treaty which state the obligation to provide the medical aid to wounded soldiers regardless of nationality and the use of distinctive emblem - a red cross on a white background - to specfically identify medical services. [1]
+The text was adopted on 22 August 1864 and immediately signed by 12 presetnt state at the conference.
+The 1864 convention became the first universal and lasting treaty of international humanataria law.
+
+## What is the Geneva Convention?
 The Geneva Convention refers to a series of international treaties and protocols that establish humanitarian protections for people affected by armed conflicts. These agreements form the cornerstone of international humanitarian law (IHL), also known as the "laws of war."
 
 ## Definition
@@ -350,3 +358,13 @@ Understanding the Geneva Convention is crucial for:
 As warfare evolves with new technologies and forms of conflict, the core humanitarian principles established by the Geneva Convention remain as relevant today as they were in 1949. The challenge lies in adapting these timeless principles to contemporary realities while maintaining their protective purpose.
 
 *This documentation provides an educational overview of the Geneva Convention. For authoritative legal interpretation and current developments, please refer to official ICRC sources and international legal commentary.*
+
+## Why is Switzerland called 'CH'?
+Latin name Confoederatio Helvetica, meaning Swiss Confederation.
+Latin was chosen as a neutral language, since Switzerland has four official languages (German, French, Italian, and Romansh), and Latin avoids favoring any one group.
+
+## Is CH still used in current day?
+The name Helvetia refers to the Helvetii, a Celtic tribe that lived in the region during the Roman era. Today, the Latin name still appears on Swiss coins, stamps, and even on international car license plates. 
+## Reference 
+[1] [Geneva convention 160 years of history](https://www.geneve-int.ch/geneva-conventions-160-years-history)
+[2] [Facts about Switzerland](https://www.swissinfo.ch/eng/demographics/facts-about-switzerland/29050470))
