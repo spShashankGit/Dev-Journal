@@ -49,9 +49,18 @@ The updated Commentary on this Convention was published online on 20 June 2020 a
 [8]
 
 
-## Fourth Geneva Convention - 1949
+## Fourth Geneva Convention & Tokyo Draft - 1949
+The Geneva Conventions which were adopted before 1949 were concerned with combatants only, not with civilians. 
+Some provisions concerning the protection of populations against the consequences of war and their protection in occupied territories are contained in the Regulations concerning the laws and customs of war on land, annexed to the Hague Conventions of 1899 and 1907. 
 
+The 1929 Diplomatic Conference, which revised the Geneva Convention on wounded and sick and drew up the Convention on the treatment of prisoners of war, limited itself to recommending that "studies should be made with a view to concluding a convention on the protection of civilians in enemy territory and in enemy occupied territory."
 
+A draft convention containing 33 articles prepared by the International Committee of the Red Cross was approved by the International Conference of the Red Cross in Tokyo in 1934 and is generally referred to as the "Tokyo Draft".
+
+It was to be submitted to a diplomatic conference planned for 1940, but this was postponed on account of the war. The events of World War II showed the disastrous consequences of the absence of a convention for the protection of civilians in wartime.
+The Convention does not invalidate the provisions of the Hague Regulations of 1907 on the same subjects but is supplementary to them (see Article 154 of the Convention).
+
+[9]
 
 
 ## Why is Switzerland called 'CH'?
