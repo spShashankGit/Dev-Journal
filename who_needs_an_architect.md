@@ -1,7 +1,5 @@
 ### Who Needs an Architect?
-Author: Martin Folwer
-
-
+Author: Martin Folwer\
 Source: Article titled "Who needs an Architect?" [1]
 
 > I think that one of an architect’s most important tasks is to remove architecture by finding ways to eliminate irreversibility in software designs. - Pg 3
@@ -37,8 +35,5 @@ running the risk of being an architectural bottleneck.
 
 
 ## Reference
-[1] [Who needs an architect?](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf) by Martin Fowler.
-
-
-
+[1] [Who needs an architect?](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf) by Martin Fowler \
 [2] Evodb(http://martinfowler.com/articles/evodb.html)  - Allow us to change the schema of the database and migrate the data to the new schema. 
