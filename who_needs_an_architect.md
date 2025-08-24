@@ -44,6 +44,16 @@ running the risk of being an architectural bottleneck.
 > He saw agile methods, in manufacturing and software development, as a shift that seeks to contain complexity by reducing irreversibility as opposed to tackling other complexity drivers.
 > I think that one of an architect’s most important tasks is to remove architecture by finding ways to eliminate irreversibility in software designs.
 
+
+### Difference between building architecture and software architecture
+> One of the differences between building architecture and software architecture is that a lot of decisions about a building are hard to change. It is hard to go back and change your basement, though it is possible.
+> There is no theoretical reason that anything is hard to change about software. If you pick any one aspect of software then you can make it easy to change, but we don’t know how to make everything easy to change. Making something easy to change makes the overall system a little more complex, and making everything easy to change makes the entire system very complex. Complexity is what makes software hard to change. That, and duplication.
+> My reservation of Aspect-Oriented Programming is that we already have fairly good techniques for separating aspects of programs, and we don’t use them. I don’t think the real problem will be solved by making better techniques for separating aspects. We don’t know what should be the aspects that need separating, and we don’t know when it is worth separating them and when it is not. Software is not limited by physics, like buildings are. It is limited by imagination, by design, by organization. In short, it is limited by properties of people, not by properties of the world. “We have met the enemy, and he is us.”
+
+
 ## Reference
 [1] [Who needs an architect?](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf) by Martin Fowler \
 [2] Evodb(http://martinfowler.com/articles/evodb.html)  - Allow us to change the schema of the database and migrate the data to the new schema. 
+
+## Next topic to explore
+1. Aspect-Oriented Programming
