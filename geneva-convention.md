@@ -1,87 +1,35 @@
 # Geneva Convention: A Comprehensive Guide
 
+## What is a convention?
+An agreement between states for regulation of matters affecting all of them [5]
+
 ## Staring point: ICRC
 Founding of ICRC(International Committee of the Red Cross) in 1863 put Geneva on world map.
 Upon initiation of ICRC, Swiss goverment invited 15 european nations and US to discuss adoption of a convention to inmprove conditions for wounded soldiers in battlefields. This happened in August 1864. [1]
 
-## First convetion
-ICRC drafted the treaty which state the obligation to provide the medical aid to wounded soldiers regardless of nationality and the use of distinctive emblem - a red cross on a white background - to specfically identify medical services. [1]
+## First convention - 1864
+ICRC drafted the treaty which state the obligation to provide the medical aid to wounded soldiers regardless of nationality and the use of distinctive emblem - a red cross on a white background - to specfically identify medical services.
 The text was adopted on 22 August 1864 and immediately signed by 12 presetnt state at the conference.
 The 1864 convention became the first universal and lasting treaty of international humanataria law.
+After this convention Geneva was seen as neutral location for the diplimatic negotiations. [1]
+This convention contains 64 articles [6]
+
+## Second Geneva Convention - 1906
+The convention continued to have the 
+
+## Third Geneva Convention - 1929
+
+## Fourth Geneva Convention - 1949
 
 ## What is the Geneva Convention?
-The Geneva Convention refers to a series of international treaties and protocols that establish humanitarian protections for people affected by armed conflicts. These agreements form the cornerstone of international humanitarian law (IHL), also known as the "laws of war."
+The Geneva Conventions and their Additional Protocols are international treaties that contain the most important rules limiting the barbarity of war. They protect people who do not take part in the fighting (civilians, medics, aid workers) and those who can no longer fight (wounded, sick and shipwrecked troops, prisoners of war) [4]
 
-## Definition
+The conference developed and approved four conventions
+1. The Convention for the Amelioration of the Condition of the Wounded and Sick in Armed Forces in the Field
+2. The Convention for the Amelioration of the Condition of the Wounded, Sick, and Shipwrecked Members of Armed Forces at Sea
+3. The Convention Relative to the Treatment of Prisoners of War, and
+4. The Convention Relative to the Protection of Civilian Persons in Time of War. [3]
 
-The Geneva Convention consists of four main treaties adopted in 1949, along with three additional protocols adopted in 1977 and 2005. These agreements establish legal standards for humanitarian treatment during times of war and armed conflict.
-
-## Core Concept
-
-The fundamental principle underlying the Geneva Convention is the protection of those who are not, or are no longer, taking part in hostilities. This includes:
-
-- **Wounded and sick soldiers** on land and at sea
-- **Prisoners of war (POWs)**
-- **Civilian populations** in occupied territories and conflict zones
-- **Medical and religious personnel**
-
-## Historical Context
-
-### Origins and Development
-
-#### Pre-1949 Background
-- **1864**: First Geneva Convention signed following Henry Dunant's witness of the Battle of Solferino
-- **1899 & 1907**: Hague Conventions established additional rules of warfare
-- **1929**: Geneva Convention revised to include prisoners of war
-
-#### Post-WWII Reform (1949)
-The modern Geneva Convention was established in response to the unprecedented scale of civilian suffering during World War II:
-
-- **Systematic violations** of existing humanitarian law
-- **Holocaust and war crimes** highlighting need for stronger protections
-- **Technological warfare** requiring updated rules
-- **Global consensus** on need for comprehensive humanitarian law
-
-## The Four Geneva Conventions (1949)
-
-### First Geneva Convention
-**For the Amelioration of the Condition of the Wounded and Sick in Armed Forces in the Field**
-
-- **Protection for**: Wounded and sick soldiers, medical personnel, medical facilities
-- **Key provisions**: 
-  - Medical neutrality principle
-  - Protection of ambulances and hospitals
-  - Treatment of wounded combatants
-  - Red Cross/Red Crescent emblems
-
-### Second Geneva Convention
-**For the Amelioration of the Condition of Wounded, Sick and Shipwrecked Members of Armed Forces at Sea**
-
-- **Protection for**: Naval forces, hospital ships, medical aircraft
-- **Key provisions**:
-  - Maritime medical transport protection
-  - Shipwrecked personnel treatment
-  - Hospital ship identification and protection
-
-### Third Geneva Convention
-**Relative to the Treatment of Prisoners of War**
-
-- **Protection for**: Captured combatants, detained military personnel
-- **Key provisions**:
-  - Humane treatment standards
-  - Interrogation limitations
-  - Living conditions requirements
-  - Repatriation procedures
-
-### Fourth Geneva Convention
-**Relative to the Protection of Civilian Persons in Time of War**
-
-- **Protection for**: Civilians in occupied territories, conflict zones
-- **Key provisions**:
-  - Civilian immunity from attack
-  - Occupation law
-  - Protection of women, children, elderly
-  - Prohibited deportations and transfers
 
 ## Additional Protocols
 
@@ -367,4 +315,17 @@ Latin was chosen as a neutral language, since Switzerland has four official lang
 The name Helvetia refers to the Helvetii, a Celtic tribe that lived in the region during the Roman era. Today, the Latin name still appears on Swiss coins, stamps, and even on international car license plates. 
 ## Reference 
 [1] [Geneva convention 160 years of history](https://www.geneve-int.ch/geneva-conventions-160-years-history)
+
+
 [2] [Facts about Switzerland](https://www.swissinfo.ch/eng/demographics/facts-about-switzerland/29050470))
+
+
+[3] [Geneva Conventions](https://www.britannica.com/event/Geneva-Conventions)
+
+[4] [International Committee of the red corss](https://www.icrc.org/en/law-and-policy/geneva-conventions-and-their-commentaries)
+
+
+[5] [Miriam Webster - Convention](https://www.merriam-webster.com/dictionary/convention)
+
+
+[6] [Convention (I) for the Amelioration of the Condition of the Wounded and Sick in Armed Forces in the Field. Geneva, 12 August 1949.](https://ihl-databases.icrc.org/en/ihl-treaties/gci-1949)
