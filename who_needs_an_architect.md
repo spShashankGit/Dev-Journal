@@ -1,4 +1,4 @@
-### Who Needs an Architect?
+# Who Needs an Architect?
 Author: Martin Folwer\
 Source: Article titled "Who needs an Architect?" [1]
 
@@ -16,6 +16,13 @@ components and how the components interact through interfaces. These components 
 components, but the architecture only includes the components and interfaces that
 are understood by all the developers.”
 
+
+### IEEE definition of an architect
+>  “the highest level concept of a system in its environment. The architecture of a software system (at a given point in time) is its organization or structure of significant components
+interacting through interfaces, those components
+being composed of successively smaller components and interfaces"
+
+### Martin Folwer's definition of the Architect
 > Architectus Reloadus is the person who makes all the important decisions. The architect does this because a single mind is needed to ensure a system’s conceptual integrity, and perhaps because the architect doesn’t think that the team members are sufficiently skilled to make those decisions. Often, such decisions must be made early on so that everyone else has a plan to follow.
 
 ### Day to Day Architect Job
@@ -29,10 +36,13 @@ running the risk of being an architectural bottleneck.
 ### Rule of thumb
 > This leads to the satisfying rule of thumb that an architect’s value is inversely proportional to the number of decisions he or she makes.
 
-### Another Metaphor for the Architect
+### Another Metaphor for an Architect
 > I’ve heard so far: guide, as in mountaineering. A guide is a more experienced and skillful team member who teaches other team members to better fend for themselves yet is always there for the really tricky stuff.
 
-
+### Prime driver for the complexity
+> "One aspect I found particularly interesting was his comment that irreversibility was one of the prime drivers of complexity."
+> He saw agile methods, in manufacturing and software development, as a shift that seeks to contain complexity by reducing irreversibility as opposed to tackling other complexity drivers.
+> I think that one of an architect’s most important tasks is to remove architecture by finding ways to eliminate irreversibility in software designs.
 
 ## Reference
 [1] [Who needs an architect?](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf) by Martin Fowler \
