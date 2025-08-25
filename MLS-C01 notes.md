@@ -67,3 +67,10 @@ graph TD;
     B[Fetch, clean and prepare data]-->C[Train and evaluate a model];
     C[Train and evaluate a model]-->A[Deploy model, evaluate results in production];
 ```
+1. Notebook instances of EC2 are spun up from the console
+* Have direct access to S3
+* Scikit_learn, Spark, Tensorflow
+* Wide variery of built-in models
+* Ability to spin up training instances
+* Ability to deploy trainied models for making prediction at scale
+* Can also instructe SageMaker form notebook to do the hyper-parameter tuning job on my model
