@@ -91,5 +91,5 @@ Standard tools that are available in Jupyter Notebook e.g. Scikit_learn, NunPy a
 ```mermaid
 graph TD;
     A[Source S3 bucket] --> B[Processing container: Instance 1];
-    A[Destination S3 bucket] <-- B[Processing container: Instance 1];
+    C[Destination S3 bucket] <-- B[Processing container: Instance 1];
 ```
