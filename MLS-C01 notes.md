@@ -1,5 +1,5 @@
 # MLS-C01 notes
-Souece: [Udemy Course](https://www.udemy.com/course/aws-certified-machine-learning-specialty-mls): 
+Source: [Udemy Course](https://www.udemy.com/course/aws-certified-machine-learning-specialty-mls): 
 
 ## Course specific notes
 1. Jump to section 4 only when fully familiar with AWS concepts like IAM, Storage, Database etc.
