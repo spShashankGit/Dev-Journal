@@ -161,6 +161,136 @@ class GDPRComplianceManager:
 - European Securities and Markets Authority (ESMA)
 - National competent authorities
 
+### 4. Digital Operational Resilience Act (DORA)
+
+**Framework Name**: DORA (Digital Operational Resilience Act)
+
+**Short Description**: EU regulation that establishes a comprehensive framework for digital operational resilience in the financial services sector.
+
+**Why It Was Introduced**:
+- Strengthen ICT risk management in financial services
+- Harmonize operational resilience requirements across EU
+- Address growing cyber threats and digital dependencies
+- Ensure business continuity and operational resilience
+- Regulate third-party ICT service provider risks
+
+**Who Introduced It**: European Commission and European Parliament
+
+**Who Should Follow It**:
+- Banks and credit institutions
+- Insurance and reinsurance companies
+- Investment firms and market operators
+- Payment institutions and e-money institutions
+- Crypto-asset service providers
+- Critical ICT third-party service providers
+
+**Testing Bodies**:
+- European Supervisory Authorities (ESAs)
+- National competent authorities
+- European Central Bank (ECB) for significant institutions
+
+**Implementation Example**:
+```python
+class DORAComplianceFramework:
+    def __init__(self):
+        self.ict_risk_management_framework = {
+            'governance': 'ICT risk management strategy and policies',
+            'identification': 'ICT risk identification and classification',
+            'protection': 'ICT security controls and measures',
+            'detection': 'ICT incident detection and monitoring',
+            'response': 'ICT incident response and recovery',
+            'learning': 'Post-incident analysis and improvement'
+        }
+    
+    def implement_ict_risk_management(self, organization):
+        """Implement DORA ICT risk management requirements"""
+        # Article 5-15: ICT risk management framework
+        if not self.has_ict_risk_strategy(organization):
+            raise DORAViolation("Missing ICT risk management strategy")
+        
+        if not self.has_adequate_governance(organization):
+            raise DORAViolation("Inadequate ICT governance structure")
+        
+        return self.validate_ict_controls(organization)
+    
+    def report_major_incident(self, incident):
+        """DORA Article 19: Major ICT-related incident reporting"""
+        if self.is_major_incident(incident):
+            # Report to competent authority within required timeframe
+            report = {
+                'incident_id': incident.id,
+                'classification': self.classify_incident(incident),
+                'impact_assessment': self.assess_impact(incident),
+                'root_cause_analysis': self.analyze_root_cause(incident),
+                'recovery_measures': self.define_recovery_measures(incident),
+                'timeline': incident.timeline
+            }
+            
+            # Initial report within 24 hours
+            self.submit_initial_report(report)
+            
+            # Final report within one month
+            self.schedule_final_report(report, incident)
+    
+    def conduct_threat_led_penetration_testing(self, entity):
+        """DORA Article 26: Advanced testing (TLPT)"""
+        if self.requires_tlpt(entity):
+            tlpt_framework = {
+                'threat_intelligence': self.gather_threat_intelligence(),
+                'attack_scenarios': self.design_realistic_scenarios(),
+                'red_team_testing': self.execute_controlled_attacks(),
+                'remediation': self.identify_vulnerabilities()
+            }
+            
+            return self.execute_tlpt(tlpt_framework)
+    
+    def manage_third_party_risk(self, ict_provider):
+        """DORA Chapter V: Managing ICT third-party risk"""
+        contract_requirements = {
+            'service_level_agreements': 'Detailed SLAs with penalty clauses',
+            'data_protection': 'GDPR compliance and data sovereignty',
+            'incident_notification': 'Immediate incident reporting requirements',
+            'audit_rights': 'Right to audit and inspect',
+            'exit_strategy': 'Data portability and service continuity',
+            'subcontracting': 'Restrictions and approval processes'
+        }
+        
+        if not self.validate_contract_terms(ict_provider, contract_requirements):
+            raise DORAViolation("ICT third-party contract non-compliance")
+        
+        # Ongoing monitoring and risk assessment
+        return self.monitor_third_party_performance(ict_provider)
+
+# DORA-compliant incident classification
+class DORAIncidentClassifier:
+    def __init__(self):
+        self.severity_levels = {
+            'MAJOR': {
+                'availability_threshold': 2,  # hours
+                'clients_affected_threshold': 100000,
+                'data_loss': True,
+                'reputational_impact': 'HIGH'
+            },
+            'SIGNIFICANT': {
+                'availability_threshold': 6,  # hours
+                'clients_affected_threshold': 10000,
+                'data_loss': False,
+                'reputational_impact': 'MEDIUM'
+            }
+        }
+    
+    def classify_incident(self, incident):
+        """Classify ICT incident according to DORA criteria"""
+        if (incident.duration_hours >= self.severity_levels['MAJOR']['availability_threshold'] or
+            incident.clients_affected >= self.severity_levels['MAJOR']['clients_affected_threshold']):
+            return 'MAJOR'
+        elif (incident.duration_hours >= self.severity_levels['SIGNIFICANT']['availability_threshold'] or
+              incident.clients_affected >= self.severity_levels['SIGNIFICANT']['clients_affected_threshold']):
+            return 'SIGNIFICANT'
+        else:
+            return 'MINOR'
+```
+
 ## German-Specific Frameworks
 
 ### 1. Federal Financial Supervisory Authority (BaFin) Requirements
@@ -461,6 +591,7 @@ data:
         - SOX
         - GDPR
         - PSD2
+        - DORA
       
       monitoring:
         real_time_alerts: enabled
@@ -479,7 +610,8 @@ class ComplianceTestSuite:
             'pci_dss': PCIDSSTestRunner(),
             'sox': SOXTestRunner(),
             'gdpr': GDPRTestRunner(),
-            'psd2': PSD2TestRunner()
+            'psd2': PSD2TestRunner(),
+            'dora': DORATestRunner()
         }
     
     def run_compliance_tests(self, framework=None):
