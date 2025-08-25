@@ -63,7 +63,7 @@ This is a cyclic
 
 ```mermaid
 graph TD;
-    Deploy model, evaluate results in production --> Fetch, clean and prepare data;
-    Fetch, clean and prepare data-->Train and evaluate a model;
-    Train and evaluate a model-->Deploy model, evaluate results in production;
+    A[Deploy model, evaluate results in production] --> B[Fetch, clean and prepare data];
+    B[Fetch, clean and prepare data]-->C[Train and evaluate a model];
+    C[Train and evaluate a model]-->A[Deploy model, evaluate results in production];
 ```
