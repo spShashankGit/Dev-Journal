@@ -93,3 +93,32 @@ graph TD;
     A[Source S3 bucket] --> B[Processing container: Instance 1];
     B[Processing container: Instance 1] --> C[Destination S3 bucket];
 ```
+
+### Training on SageMaker
+1. Create a training job
+   * Url of S3 bucket with training data
+   * ML compute resources
+   * URL of S3 bucket for output
+   * ECR path to training code
+2. Training options
+   * Built-in training algorithm
+   * Spark MLLib
+   * Custom python Tensorflow/ MXNet Code
+   * PyTorch, Scikit-learn, RLEstimator
+   * XGBoost, Hugging Face, Chainer
+   * Bring your own Docker image with code
+   * Algorithm purchases from AWS marketplace
+  
+
+
+### Deploy Trained Models
+1. Save your trained model to S3
+2. Can deploy two ways:
+   * Persistent endpoint for making individual prediction on demand
+   * SageMaker Batch Transform to get perdictions for an entire dataset and shudown the instance when you are done.
+3. Other ways to use model
+   * Inference pipelines for more complex processing
+   * SageMaker Neo for deploying to edge devices
+   * Elastic Inference for accelerating deep learning models
+   * Automatic scaling (increase # of endpoints as needed)
+   * Shadow Testing evaluates new models against currently deployed model to catch errors
