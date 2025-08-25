@@ -74,3 +74,22 @@ graph TD;
 * Ability to spin up training instances
 * Ability to deploy trainied models for making prediction at scale
 * Can also instructe SageMaker form notebook to do the hyper-parameter tuning job on my model
+
+SageMaker expect the data to comes from the S3 bucket.
+The format depends on the code you have written for the model.
+For the built-in model usually it is RecordIO/ Protobuf format. The built-in models can also take CSVs but RecordIO/Protobuf will be lot more efficient if we can do that.
+
+Preprocessing can also be done in SageMaker notebook.
+
+Input source for the data could be Athena, EMR, Redshift and Amazon keyspaces databases.#
+
+#### Can also integrate Spark with SageMaker.
+If you want to pre-process massive data using Spark, you can use SageMaker within Spark to do so.
+
+Standard tools that are available in Jupyter Notebook e.g. Scikit_learn, NunPy are also available here to slice and dice the data before feeding the data to the training job(model).
+
+```mermaid
+graph TD;
+    A[Source S3 bucket] --> B[Processing container: Instance 1];
+    B[Processing container: Instance 1]-->C[Destination S3 bucket];
+```
