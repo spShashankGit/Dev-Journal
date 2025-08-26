@@ -118,7 +118,7 @@ graph TD;
    * SageMaker Batch Transform to get perdictions for an entire dataset and shudown the instance when you are done.
 3. Other ways to use model
    * Inference pipelines for more complex processing
-   * SageMaker Neo for deploying to edge devices
+   * **SageMaker Neo** for deploying to edge devices
    * Elastic Inference for accelerating deep learning models
    * Automatic scaling (increase # of endpoints as needed)
    * Shadow Testing evaluates new models against currently deployed model to catch errors
