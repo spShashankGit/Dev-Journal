@@ -122,3 +122,8 @@ graph TD;
    * Elastic Inference for accelerating deep learning models
    * Automatic scaling (increase # of endpoints as needed)
    * Shadow Testing evaluates new models against currently deployed model to catch errors
+  
+
+## SageMaker Built-In Algorithm
+Expecations from the exam is to know about these algorithms.
+New name SageMaker AI
