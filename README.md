@@ -32,3 +32,6 @@ Feel free to explore the topics and use this as a reference for software enginee
 
 ### International Law & Humanitarian Issues
 - [Geneva Convention](geneva-convention.md) - Comprehensive guide to the international treaties establishing humanitarian protections in armed conflicts
+
+### Whitepaper summaries
+- [Google; Evaluate your cloud migration options](fdfd)
