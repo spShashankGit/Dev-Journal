@@ -116,4 +116,4 @@ The retailer chose to move the application up and out to cloud, implementing A/B
 > It’s typical and in fact desirable for different workloads or even individual elements of a system to take unique paths to the cloud.
 
 # Reference
-1. Google Cloud Whitepaper titled "Evaluate Your Cloud Migration Options" - [link to the paper](https://cloud.google.com/resources/understanding-cloud-migration-frameworks-whitepaper)
+1. Google Cloud Whitepaper titled "Evaluate Your Cloud Migration Options" - [link to the whitepaper](https://cloud.google.com/resources/understanding-cloud-migration-frameworks-whitepaper)
