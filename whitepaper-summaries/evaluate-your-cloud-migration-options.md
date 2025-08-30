@@ -82,5 +82,20 @@ avoiding the costs of redevelopment, and allowing an enterprise to transform its
 2.  Which elements of a service require rapid code releases or the ability to validate new features using A/B testing (meaning that a new version of the software is made available to a percentage of users)?
 3.  Which elements change infrequently, but would benefit from automated scaling and deployment?
 
+> With the answers to these questions, you can begin to decompose workloads (if amenable) and map them against the up or out framework, thus presenting the organization with a pragmatic migration approach that maximizes value.
+
+## Applying the model
+Front-end was moved-up and out quickly because it requires frequesnt feature updates to be ahead of the competitior. 
+The retailer chose to move the application up and out to cloud, implementing A/B testing and an automated CI/CD pipeline to deploy the cloud-native applications to Google Kubernetes Engine (GKE).
+<img width="289" height="229" alt="image" src="https://github.com/user-attachments/assets/d44c9d09-0ec6-40dc-ab6e-05458cf596da" />
+
+> The retailer’s mid-tier application processing also stood to benefit from refactoring and re-architecting over time, but they determined they could generate more immediate value by shifting to an automated scale-out model and gaining operational efficiencies in the cloud.
+<img width="290" height="231" alt="image" src="https://github.com/user-attachments/assets/ee40780c-3615-4e9d-b231-1ca43cfb480e" />
+
+> The retailer’s back-end catalog systems change quite rarely and were hosted on well-understood and easily maintained systems. To focus their initial energies, they decided to keep these systems in place until they can replace them completely in the future.
+
+> Taking this approach allowed the retailer to minimize the time and effort required to accomplish their primary goal—rapid iteration of a customer experience that was becoming stale. They also gained operational and capital efficiencies and set themselves in a good position to migrate their catalog data to the cloud when the time and price are right for them.
+<img width="345" height="254" alt="image" src="https://github.com/user-attachments/assets/226ba4ad-6ce6-4fe7-bd04-4b704b64da85" />
+
 # Reference
 1. Google Cloud Whitepaper titled "Evaluate Your Cloud Migration Options" - [link to the paper](https://cloud.google.com/resources/understanding-cloud-migration-frameworks-whitepaper)
