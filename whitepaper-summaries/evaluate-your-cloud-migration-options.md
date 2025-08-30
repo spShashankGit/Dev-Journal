@@ -63,5 +63,19 @@ learning
 - Improved security and access capabilities
 - Enhanced resilience
 
+### Migration to cloud (out) is similar to migration to Saas (up)
+> Moving out into the cloud transforms how an enterprise operates and acquires IT infrastructure from an asset-based model to usage-based model. This transformation isn’t quite so stark, however.
+>Similar to transforming application architectures to move ‘up’ the stack towards cloud-native systems and services architecture, moving ‘out’ into the cloud can be seen as a progressive transformation toward cloud-centric operations.
+
+### Migration Step 1
+> Lifting existing applications and replatforming them onto cloud infrastructure minimizes initial effort,
+avoiding the costs of redevelopment, and allowing an enterprise to transform its infrastructure acquisition and scaling processes while minimizing impact to existing operations models.
+
+> Adjusting operations models to increase the use of automation and cloud-native tooling accelerates the overall transformation and maximizes the value from abstracted infrastructure services.
+
+> Finally, decomposing application elements to take advantage of managed cloud services, such as migrating off of self-managed MySQL databases onto provider-managed Database-as-a-Service, requires some additional effort but lays the foundation for focusing engineering effort on truly precious resources: the data and insights generated rather than the databases and analytics platforms themselves. 
+
+> Not only is combining up and out allowed, it’s encouraged. We think of it as a cloud-native hybrid model, where applications are deployed as containers or functions and can be easily shifted and shared from on-premises to the cloud as needed, all while maintaining a consistent deployment, run-time, and management framework.
+
 # Reference
 1. Google Cloud Whitepaper titled "Evaluate Your Cloud Migration Options" - [link to the paper](https://cloud.google.com/resources/understanding-cloud-migration-frameworks-whitepaper)
