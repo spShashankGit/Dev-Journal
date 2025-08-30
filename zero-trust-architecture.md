@@ -36,13 +36,18 @@ infrastructure today. Organizations should seek to incrementally implement zero 
 This document provides a comprehensive overview of Zero Trust Architecture (ZTA) based on the National Institute of Standards and Technology (NIST) Special Publication 800-207. Zero Trust Architecture represents a paradigm shift from traditional perimeter-based security models to a comprehensive security framework that treats all users, devices, and network traffic as untrusted.
 
 ## What is Zero Trust Architecture? (NIST Definition)
-
-According to NIST SP 800-207, Zero Trust Architecture is an enterprise's cybersecurity plan that uses zero trust principles and encompasses component relationships, workflow planning, and access policies. Zero trust provides a collection of concepts and ideas designed to minimize uncertainty in enforcing accurate, least privilege per-request access decisions in information systems and services in the face of a network viewed as compromised.
-
+> Zero trust (ZT) provides a collection of concepts and ideas designed to minimize
+uncertainty in enforcing accurate, least privilege per-request access decisions in
+information systems and services in the face of a network viewed as compromised. Zero
+trust architecture (ZTA) is an enterprise’s cybersecurity plan that utilizes zero trust concepts and encompasses component relationships, workflow planning, and access
+policies. Therefore, a zero trust enterprise is the network infrastructure (physical and virtual) and operational policies that are in place for an enterprise as a product of a zero trust architecture plan.
 Zero trust architecture is a security model, a set of system design principles, and a coordinated cybersecurity and system management strategy based on an acknowledgment that threats exist both inside and outside traditional network boundaries.
 
-## Zero Trust Principles (Per NIST SP 800-207)
+> **Insight:** To lessen uncertainties (as they cannot be eliminated), the focus is on authentication, authorization, and shrinking implicit trust zones while maintaining availability and minimizing temporal delays in authentication mechanisms. Access rules are made as granular as possible toenforce least privileges needed to perform the action in the request. 
+> <img width="766" height="279" alt="image" src="https://github.com/user-attachments/assets/546775a0-6264-410a-a81d-3eeb519cba9e" />
 
+
+## Zero Trust Principles (Per NIST SP 800-207)
 The zero trust security model is based on the following tenets:
 
 ### 1. All data sources and computing services are considered resources
