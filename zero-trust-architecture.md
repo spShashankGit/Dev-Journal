@@ -5,6 +5,32 @@
 > Zero trust (ZT) is the term for an evolving set of cybersecurity paradigms that move defenses from static, network-based perimeters to focus on users, assets, and resources. A zero trust architecture (ZTA) uses zero trust principles to plan industrial and enterprise infrastructure and workflows. Zero trust assumes there is no implicit trust granted to assets or user accounts based solely on their physical or network location (i.e., local area networks versus the internet) or based on asset ownership (enterprise or personally owned). Authentication and authorization (both subject and device) are discrete functions performed before a session to an enterprise resource is established. Zero trust is a response to enterprise network trends that include remote users, bring your own device (BYOD), and cloud-based assets that are not located within an enterpriseowned network boundary.
 > **Zero trust focuses on protecting resources** (assets, services, workflows, network accounts, etc.), **not network segments, as the network location is no longer seen as the prime component to the security posture of the resource.** This document contains an abstract definition of zero trust architecture (ZTA) and gives general deployment models and use cases where zero trust could improve an enterprise’s overall information technology security posture.
 
+## What was the need to have a ZTA
+> A typical enterprise’s infrastructure has grown increasingly complex. A single enterprise may operate several internal networks, remote offices with their own local infrastructure, remote and/or mobile individuals, and cloud services. This complexity has outstripped legacy methods of perimeter-based network security as there is no single, easily identified perimeter for the enterprise. Perimeter-based network security has also been shown to be insufficient since once attackers breach the perimeter, further lateral movement is unhindered.
+
+> This complex enterprise has led to the development of a new model for cybersecurity known as “zero trust” (ZT). A ZT approach is primarily focused on data and service protection but can and should be expanded to include all enterprise assets (devices, infrastructure components, applications, virtual and cloud components) and subjects (end users, applications and other nonhuman entities that request information from resources). 
+
+### Asuumtion
+> Zero trust security models assume that an attacker is present in the environment and that an enterprise-owned environment is no different—or no more trustworthy—than any nonenterprise-owned environment. 
+This means:
+>  In this new paradigm, an enterprise must assume no implicit trust and continually analyze and evaluate the risks to its assets and business functions and then enact protections to mitigate these risks
+
+> In zero trust, these protections usually involve minimizing access to resources (such as data and compute resources and applications/services) to only those subjects and assets identified as needing access as well as continually authenticating and authorizing the identity and security posture of each access request.
+
+## What is the ZTA?
+> ZT is not a single architecture but a set of guiding principles for workflow, system design and operations that can be used to improve the security posture of any classification or sensitivity level [FIPS199].
+
+> **Insight:** Many organizations already have elements of a ZTA in their enterprise
+infrastructure today. Organizations should seek to incrementally implement zero trust principles, process changes, and technology solutions that protect their data assets and business functions by use case.
+
+> **Insight:** Most enterprise infrastructures will operate in a hybrid zero trust/perimeter-based mode while continuing to invest in IT modernization initiatives and improve organization business processes.
+
+### Federal agencies have been tasked to move to ZTA for more than a decade
+> Federal agencies have been urged to move to security based on zero trust principles for more than a decade, building capabilities and policies such as the
+> 1. Federal Information Security Modernization Act (FISMA) followed by the Risk Management Framework (RMF);
+> 2. Federal Identity, Credential, and Access Management (FICAM);
+> 3. Trusted Internet Connections (TIC); and
+> 4. Continuous Diagnostics and Mitigation (CDM) programs.
 
 ## Executive Summary
 This document provides a comprehensive overview of Zero Trust Architecture (ZTA) based on the National Institute of Standards and Technology (NIST) Special Publication 800-207. Zero Trust Architecture represents a paradigm shift from traditional perimeter-based security models to a comprehensive security framework that treats all users, devices, and network traffic as untrusted.
