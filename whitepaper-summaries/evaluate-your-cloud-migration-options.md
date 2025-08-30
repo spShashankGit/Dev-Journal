@@ -85,6 +85,7 @@ avoiding the costs of redevelopment, and allowing an enterprise to transform its
 > With the answers to these questions, you can begin to decompose workloads (if amenable) and map them against the up or out framework, thus presenting the organization with a pragmatic migration approach that maximizes value.
 
 ## Applying the model
+### Case Study 1: Retailer Enterprise
 Front-end was moved-up and out quickly because it requires frequesnt feature updates to be ahead of the competitior. 
 The retailer chose to move the application up and out to cloud, implementing A/B testing and an automated CI/CD pipeline to deploy the cloud-native applications to Google Kubernetes Engine (GKE).
 <img width="289" height="229" alt="image" src="https://github.com/user-attachments/assets/d44c9d09-0ec6-40dc-ab6e-05458cf596da" />
@@ -96,6 +97,23 @@ The retailer chose to move the application up and out to cloud, implementing A/B
 
 > Taking this approach allowed the retailer to minimize the time and effort required to accomplish their primary goal—rapid iteration of a customer experience that was becoming stale. They also gained operational and capital efficiencies and set themselves in a good position to migrate their catalog data to the cloud when the time and price are right for them.
 <img width="345" height="254" alt="image" src="https://github.com/user-attachments/assets/226ba4ad-6ce6-4fe7-bd04-4b704b64da85" />
+
+### Case Study 2: Enterprise 2 - Saved on licencing cost by up and out freamework
+> Enterprise seeing accelerated growth within their data warehouse and is confronted with consistent and significant increase in licencing costs.
+>In addition, it may be increasing investment in engineering and hardware costs to support the data warehouse. Here too, up and out is a useful framework.
+
+### Migrating Hadoop -> Google Compute Enginer
+> One enterprise we worked with chose simply to move out into the cloud, migrating their existing Hadoop farm onto Compute Engine. Doing so allowed them to shift resources away from the internal facilities, networking, and compute capacity necessary to support their rapidly expanding data warehouse. By taking this approach, they chose to retain the engineering and operational burden of deploying and maintaining the data warehouse platform itself, thereby avoiding disruption within the data analysis tool chain.
+<img width="261" height="201" alt="image" src="https://github.com/user-attachments/assets/5a8fdbf2-c481-4443-a6ba-d67523d1ef64" />
+
+### Data warehouse -> Big Query
+> Another retailer chose to move both up and out, migrating from their on-premises, self-managed data warehousing solution to adopt BigQuery, Google’s managed cloud data warehouse solution. Taking this approach allowed the retailer to shift their focus away from managing the infrastructure, systems, and licenses responsible for hosting and analyzing their data. The infrastructure was no longer the precious resource—the data was. As a result, the engineering resources once focused on building and operating the data warehouse where now enriching data and enabling business functions across the retailer to get the most value from the retailer’s data. Furthermore, the engineering team responsible for maintaining the data warehouse was now able to expand its scope, exploring and applying machine learning models on their data to deliver value.
+<img width="273" height="217" alt="image" src="https://github.com/user-attachments/assets/2fa37224-1adf-4cc2-98f9-dc1c783f2c4d" />
+
+> Simple but evocative frameworks like ‘up or out’ can help IT decision makers navigate the inevitable complexity of a cloud migration. **Like any good model, simplicity is a feature, not a bug, as it helps keep the focus on the desired outcome and is easily communicated to a variety of audiences**. When planning a cloud migration, plotting a path for individual workloads and architectural elements on the up or out framework helps IT decision makers focus on the benefits achieved by re-platforming, re-architecting—or a combination of the two. It also depicts how a migration is accomplished over time in an approachable manner that can be shared with a wide audience in both business and IT. 
+
+> Insight:
+> It’s typical and in fact desirable for different workloads or even individual elements of a system to take unique paths to the cloud.
 
 # Reference
 1. Google Cloud Whitepaper titled "Evaluate Your Cloud Migration Options" - [link to the paper](https://cloud.google.com/resources/understanding-cloud-migration-frameworks-whitepaper)
