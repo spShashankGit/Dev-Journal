@@ -77,5 +77,10 @@ avoiding the costs of redevelopment, and allowing an enterprise to transform its
 
 > Not only is combining up and out allowed, it’s encouraged. We think of it as a cloud-native hybrid model, where applications are deployed as containers or functions and can be easily shifted and shared from on-premises to the cloud as needed, all while maintaining a consistent deployment, run-time, and management framework.
 
+### Question list
+> 1. Which elements of an application or service would benefit most from an event-driven, serverless approach?
+2.  Which elements of a service require rapid code releases or the ability to validate new features using A/B testing (meaning that a new version of the software is made available to a percentage of users)?
+3.  Which elements change infrequently, but would benefit from automated scaling and deployment?
+
 # Reference
 1. Google Cloud Whitepaper titled "Evaluate Your Cloud Migration Options" - [link to the paper](https://cloud.google.com/resources/understanding-cloud-migration-frameworks-whitepaper)
