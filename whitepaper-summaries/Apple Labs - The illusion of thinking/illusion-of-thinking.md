@@ -52,7 +52,8 @@ see previous section [LLM vs LRM](###lrm-vs-their-standard-llm-three-performance
 ## Ability of LLMs
 1. LLMs demostrate promising language understanding with strong compression capabilities, their intelligence and reasoning abilities remain a critical topic of scientific debate.
     2. LLMs undergo **multiple** costly trainign phases using vast amounts of trainign data.
-2. 
+2. **Insight:** Earlier iterations of LLMs exhibited poor performance on reasoning benchmarks. To address these shortcomings, several approaches have been explored with the common theme among them being "scaling" both the training data and test-time computation.
+3. **Insight:** Generating a CoT and incorporating self-verification prior to the final answer have been shown to improve model performance.
 ___
 ## Open question:
 1. Are these models capable of generalizavle reasoning, or are they leveraging different forms of pattern matching? 
