@@ -54,7 +54,16 @@ see previous section [LLM vs LRM](###lrm-vs-their-standard-llm-three-performance
     2. LLMs undergo **multiple** costly trainign phases using vast amounts of trainign data.
 2. **Insight:** Earlier iterations of LLMs exhibited poor performance on reasoning benchmarks. To address these shortcomings, several approaches have been explored with the common theme among them being "scaling" both the training data and test-time computation.
 3. **Insight:** Generating a CoT[15, 16, 17, 18] and incorporating self-verification[19, 20, 21] prior to the final answer have been shown to improve model performance.
+
+4. **New-tem:** “overthinking phenomenon”, where models produce verbose, redundant outputs, even after finding the solution, creating significant inference computational overhead.
 ___
+
+## Line of research
+1. New line of research focuses on compensating for the lack of supervised data by teaching models to think more effectively through supervised learning or reinforcement learning [22, 23, 24, 25, 26, 27].
+    1. A notable open-source example of these improvements is Deepseek- R1 [3], which demonstrated that applying RL with verifiable rewards can significantly enhance model performance, matching that of closed models like OpenAI’s o1 [2], leading to a new generation of language models referred to as Large Reasoning Models (LRMs) such as Gemini flash thinking [5], Claude 3.7 Sonnet thinking [4], etc.
+
+
+----
 ## Open question:
 1. Are these models capable of generalizavle reasoning, or are they leveraging different forms of pattern matching? 
 2. How does their performance scale with increasing problem complexity? 
