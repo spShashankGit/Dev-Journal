@@ -13,7 +13,7 @@ Limitation of LRM
 4. Conclusion 2: They exhibit a counter-intuitive scaling limit: their reasoning effort increases with problem complexity up to a point, then declines despite having an adequate token budget.
 
 > ### LRM vs their standard LLM, Three performance regime
-> 1. Low-complexity tasks where standard models surprisingly outperform LRMs.
+> 1. Low-complexity tasks where standard models surprisingly LLMs outperform LRMs.
 > 2. Medium-complexity tasks where additionaly thinking in LRMs demostrates advantages, and
 > 3. High-complexity tasks where both models experience complete collapse.
 
@@ -25,17 +25,31 @@ This helped to throw light on their strengths, limitations, and ultimately raisi
 7. "Thinnking mechanism" in LLMs like OpenAI's o1/o3, DeepSeek-R1, Claude 3.7 Sonnet Thinking, and Gemini Thinking is long Chain-of-Thought(CoT) with self-reflection. 
 
 8. Test setup: Instead of standard benchmark (e.g. math problems), we adopt controllable puzzle environments that let us vary complexity systematically - by adjusting puzzle elements while preserving the core logic - and inspect both solutions and internal reasoning. 
-    - These puzzle offer fine-grained control over complexity
-    - Avoid contamination, common in established benchmarks
-    - Require only the explicitly provided rules, emphasizing algorithms reasoning
-    - Support rigrous, simulator-based evaluation, enabling precise solution check and detailed failure analyses.
------------------------------------------------------------------------------
+    1. These puzzle offer fine-grained control over complexity
+    2. Avoid contamination, common in established benchmarks
+    3. Require only the explicitly provided rules, emphasizing algorithms reasoning
+    4. Support rigrous, simulator-based evaluation, enabling precise solution check and detailed failure analyses.
+
+
+## Investigation results
+1. Despite sophisticated self-reflection mechanism learned through reinforcement learning, these models fail to develop generalizable problem-solving capabilities for planning tasks, with performance collapsing to zero beyond a certain complexity threshold.
+
+2. Comparison between LRMs and standard LLMs under equivalent inference compute reveals three distinction reasoning regimes 
+see previous section [LLM vs LRM](###lrm-vs-their-standard-llm-three-performance-regime)
+
+3. Analysis of thoughts (or intermediate reasoning traces) reveal complexity-dependent patterns: 
+    - In simpler problems, reasoning models often identify correct solutions early but inefficiently continue exploring incorrect alternatives - an "overthinking" phenomenon.
+    - At moderate complexity, correct solutions emerge only after extensive exploration of incorrect paths. 
+    - Beyond a certain complexity threshold, models complexity fail to find correct solutions. This indicated LRMs possess limited self-correction capabilities that, while valuable, reveal fundamental inefficiencies and clear scaling limitations.
+
+
+___
 ## Open question:
 1. Are these models capable of generalizavle reasoning, or are they leveraging different forms of pattern matching? 
 2. How does their performance scale with increasing problem complexity? 
 3. How do they compare to their non-thinking standard LLM counterparts when provided with the same inference token compute? 
 4. What are the inherent limitations of current reasoning approaches?
 5. What improvements might be necessary to advance towards more robust reasoning capabilities?
-______________________________________________________________________________
+----
 ## Source of whitepaper: 
 1. https://ml-site.cdn-apple.com/papers/the-illusion-of-thinking.pdf, accessed on 07.09.2025
