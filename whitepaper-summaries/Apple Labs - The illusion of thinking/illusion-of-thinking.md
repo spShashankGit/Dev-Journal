@@ -12,10 +12,10 @@ Limitation of LRM
 
 4. Conclusion 2: They exhibit a counter-intuitive scaling limit: their reasoning effort increases with problem complexity up to a point, then declines despite having an adequate token budget.
 
-## LRM vs their standard LLM, Three performance regime
-1. Low-complexity tasks where standard models surprisingly outperform LRMs.
-2. Medium-complexity tasks where additionaly thinking in LRMs demostrates advantages, and
-3. High-complexity tasks where both models experience complete collapse.
+> ## LRM vs their standard LLM, Three performance regime
+> 1. Low-complexity tasks where standard models surprisingly outperform LRMs.
+> 2. Medium-complexity tasks where additionaly thinking in LRMs demostrates advantages, and
+> 3. High-complexity tasks where both models experience complete collapse.
 
 5. In the paper it was reported that LRMs fail to use explicit algorithms and reason inconsistently across puzzles.
 
@@ -25,10 +25,10 @@ This helped to throw light on their strengths, limitations, and ultimately raisi
 7. "Thinnking mechanism" in LLMs like OpenAI's o1/o3, DeepSeek-R1, Claude 3.7 Sonnet Thinking, and Gemini Thinking is long Chain-of-Thought(CoT) with self-reflection. 
 
 8. Test setup: Instead of standard benchmark (e.g. math problems), we adopt controllable puzzle environments that let us vary complexity systematically - by adjusting puzzle elements while preserving the core logic - and inspect both solutions and internal reasoning. 
-- These puzzle offer fine-grained control over complexity
-- Avoid contamination, common in established benchmarks
-- Require only the explicitly provided rules, emphasizing algorithms reasoning
-- Support rigrous, simulator-based evaluation, enabling precise solution check and detailed failure analyses.
+    - These puzzle offer fine-grained control over complexity
+    - Avoid contamination, common in established benchmarks
+    - Require only the explicitly provided rules, emphasizing algorithms reasoning
+    - Support rigrous, simulator-based evaluation, enabling precise solution check and detailed failure analyses.
 -----------------------------------------------------------------------------
 ## Open question:
 1. Are these models capable of generalizavle reasoning, or are they leveraging different forms of pattern matching? 
