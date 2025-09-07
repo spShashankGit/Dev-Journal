@@ -42,6 +42,11 @@ see previous section [LLM vs LRM](###lrm-vs-their-standard-llm-three-performance
     - At moderate complexity, correct solutions emerge only after extensive exploration of incorrect paths. 
     - Beyond a certain complexity threshold, models complexity fail to find correct solutions. This indicated LRMs possess limited self-correction capabilities that, while valuable, reveal fundamental inefficiencies and clear scaling limitations.
 
+## Key contribution of the study
+1. Question the current evaluation paradigm of LRMs on established math benchmarks and design a controlled experimental testbed by leveraging algorithmic puzzle environments that enable controllable experimention with respect to problem complexity.
+2. Showcase state of the art LRMs (e.g., o3-mini, DeepSeek-R1, Claude-3.7-Sonnet-Thinking) still fail to develop generalized problem-solving capabilities, with accuracy ultimately collapsing to zero beyond certain complexity across different environments.
+3. There exist a scaling limit in the LRMs' resoning effort with respect to problem complexity, evidenced by the counterintuitive decreasing trend in the thinking token after a complexity point.
+4. Study questioned current evaluation paradigm based on final accuracy and extend the evaluation to internmediate solutions of thinking traces with the help of deterministic puzzle simulators. The analysis reveal that as the problem complexity increases, correct solutions systematically emerge at later positions in thinking compared to incorrect ones, providing quantitative insights into the self-correction mechanism within LRMs.
 
 ___
 ## Open question:
