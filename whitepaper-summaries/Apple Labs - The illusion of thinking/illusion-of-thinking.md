@@ -30,7 +30,7 @@ This helped to throw light on their strengths, limitations, and ultimately raisi
 - Require only the explicitly provided rules, emphasizing algorithms reasoning
 - Support rigrous, simulator-based evaluation, enabling precise solution check and detailed failure analyses.
 -----------------------------------------------------------------------------
-Open question:
+## Open question:
 1. Are these models capable of generalizavle reasoning, or are they leveraging different forms of pattern matching? 
 2. How does their performance scale with increasing problem complexity? 
 3. How do they compare to their non-thinking standard LLM counterparts when provided with the same inference token compute? 
