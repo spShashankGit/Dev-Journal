@@ -49,6 +49,10 @@ see previous section [LLM vs LRM](###lrm-vs-their-standard-llm-three-performance
 4. Study questioned current evaluation paradigm based on final accuracy and extend the evaluation to internmediate solutions of thinking traces with the help of deterministic puzzle simulators. The analysis reveal that as the problem complexity increases, correct solutions systematically emerge at later positions in thinking compared to incorrect ones, providing quantitative insights into the self-correction mechanism within LRMs.
 5. **Uncovered surprising** limitation in LRMs ability to perform exact computation, including their **failure to benefit from explicit algorithms and their inconsistent reasoning across puzzle types**.
 
+## Ability of LLMs
+1. LLMs demostrate promising language understanding with strong compression capabilities, their intelligence and reasoning abilities remain a critical topic of scientific debate.
+    2. LLMs undergo **multiple** costly trainign phases using vast amounts of trainign data.
+2. 
 ___
 ## Open question:
 1. Are these models capable of generalizavle reasoning, or are they leveraging different forms of pattern matching? 
