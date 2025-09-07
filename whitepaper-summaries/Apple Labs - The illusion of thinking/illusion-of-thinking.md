@@ -53,7 +53,7 @@ see previous section [LLM vs LRM](###lrm-vs-their-standard-llm-three-performance
 1. LLMs demostrate promising language understanding with strong compression capabilities, their intelligence and reasoning abilities remain a critical topic of scientific debate.
     2. LLMs undergo **multiple** costly trainign phases using vast amounts of trainign data.
 2. **Insight:** Earlier iterations of LLMs exhibited poor performance on reasoning benchmarks. To address these shortcomings, several approaches have been explored with the common theme among them being "scaling" both the training data and test-time computation.
-3. **Insight:** Generating a CoT and incorporating self-verification prior to the final answer have been shown to improve model performance.
+3. **Insight:** Generating a CoT[15, 16, 17, 18] and incorporating self-verification prior to the final answer have been shown to improve model performance.
 ___
 ## Open question:
 1. Are these models capable of generalizavle reasoning, or are they leveraging different forms of pattern matching? 
@@ -62,5 +62,16 @@ ___
 4. What are the inherent limitations of current reasoning approaches?
 5. What improvements might be necessary to advance towards more robust reasoning capabilities?
 ----
-## Source of whitepaper: 
-1. https://ml-site.cdn-apple.com/papers/the-illusion-of-thinking.pdf, accessed on 07.09.2025
+## Reference: 
+[1] Source of whitepaper: https://ml-site.cdn-apple.com/papers/the-illusion-of-thinking.pdf, accessed on 07.09.2025
+
+
+[15] Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed H. Chi, Quoc V. Le, and Denny Zhou. Chain-of-thought prompting elicits reasoning in large language models. In Sanmi Koyejo, S. Mohamed, A. Agarwal, Danielle Belgrave, K. Cho, and A. Oh, editors, Advances in Neural Information Processing Systems 35: Annual Conference on Neural Information Processing Systems 2022, NeurIPS 2022, New Orleans, LA, USA, November 28 - December 9, 2022, 2022.
+
+[16] Mehran Kazemi, Najoung Kim, Deepti Bhatia, Xin Xu, and Deepak Ramachandran. Lambada: Backward chaining for automated reasoning in natural language. arXiv preprint arXiv:2212.13894, 2022.
+
+
+[17] Hattie Zhou, Azade Nova, Hugo Larochelle, Aaron Courville, Behnam Neyshabur, and Hanie Sedghi. Teaching algorithmic reasoning via in-context learning. arXiv preprint arXiv:2211.09066,2022.
+
+
+[18] Takeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, and Yusuke Iwasawa. Large language models are zero-shot reasoners. Advances in neural information processing systems, 35:22199–22213, 2022.
