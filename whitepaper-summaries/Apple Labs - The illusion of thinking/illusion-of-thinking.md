@@ -16,5 +16,10 @@ Limitation of LRM
 1. Low-complexity tasks where standard models surprisingly outperform LRMs.
 2. Medium-complexity tasks where additionaly thinking in LRMs demostrates advantages, and
 3. High-complexity tasks where both models experience complete collapse.
+
+5. In the paper it was reported that LRMs fail to use explicit algorithms and reason inconsistently across puzzles.
+
+6. In this paper reasoning traces were studies in more depth to understand the pattern of explored solutoins and analysing the models' computatational behaviour. 
+This helped to throw light on their strengths, limitations, and ultimately raising crucial questions about their true reasoning capabilities.
 ## Source of whitepaper: 
 1. https://ml-site.cdn-apple.com/papers/the-illusion-of-thinking.pdf, accessed on 07.09.2025
