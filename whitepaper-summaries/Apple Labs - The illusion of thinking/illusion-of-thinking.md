@@ -23,6 +23,10 @@ Limitation of LRM
 This helped to throw light on their strengths, limitations, and ultimately raising crucial questions about their true reasoning capabilities.
 
 7. "Thinnking mechanism" in LLMs like OpenAI's o1/o3, DeepSeek-R1, Claude 3.7 Sonnet Thinking, and Gemini Thinking is long Chain-of-Thought(CoT) with self-reflection. 
+
+-----------------------------------------------------------------------------
+Open question:
+1. Are these models capable of generalizavle reasoning, or are they leveraging different forms of pattern matching? 
 ______________________________________________________________________________
 ## Source of whitepaper: 
 1. https://ml-site.cdn-apple.com/papers/the-illusion-of-thinking.pdf, accessed on 07.09.2025
