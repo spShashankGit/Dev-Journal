@@ -12,5 +12,9 @@ Limitation of LRM
 
 4. Conclusion 2: They exhibit a counter-intuitive scaling limit: their reasoning effort increases with problem complexity up to a point, then declines despite having an adequate token budget.
 
+## LRM vs their standard LLM, Three performance regime
+1. Low-complexity tasks where standard models surprisingly outperform LRMs.
+2. Medium-complexity tasks where additionaly thinking in LRMs demostrates advantages, and
+3. High-complexity tasks where both models experience complete collapse.
 ## Source of whitepaper: 
 1. https://ml-site.cdn-apple.com/papers/the-illusion-of-thinking.pdf, accessed on 07.09.2025
