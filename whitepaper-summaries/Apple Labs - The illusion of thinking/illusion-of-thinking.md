@@ -53,7 +53,7 @@ see previous section [LLM vs LRM](###lrm-vs-their-standard-llm-three-performance
 1. LLMs demostrate promising language understanding with strong compression capabilities, their intelligence and reasoning abilities remain a critical topic of scientific debate.
     2. LLMs undergo **multiple** costly trainign phases using vast amounts of trainign data.
 2. **Insight:** Earlier iterations of LLMs exhibited poor performance on reasoning benchmarks. To address these shortcomings, several approaches have been explored with the common theme among them being "scaling" both the training data and test-time computation.
-3. **Insight:** Generating a CoT[15, 16, 17, 18] and incorporating self-verification prior to the final answer have been shown to improve model performance.
+3. **Insight:** Generating a CoT[15, 16, 17, 18] and incorporating self-verification[19, 20, 21] prior to the final answer have been shown to improve model performance.
 ___
 ## Open question:
 1. Are these models capable of generalizavle reasoning, or are they leveraging different forms of pattern matching? 
@@ -75,3 +75,14 @@ ___
 
 
 [18] Takeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, and Yusuke Iwasawa. Large language models are zero-shot reasoners. Advances in neural information processing systems, 35:22199–22213, 2022.
+
+
+[19] Yixuan Weng, Minjun Zhu, Fei Xia, Bin Li, Shizhu He, Shengping Liu, Bin Sun, Kang Liu, and Jun Zhao. Large language models are better reasoners with self-verification. In Houda Bouamor, Juan Pino, and Kalika Bali, editors, Findings of the Association for Computational Linguistics: EMNLP 2023, pages 2550–2575, Singapore, December 2023. Association for Computational Linguistics.
+
+
+[20] Yifei Li, Zeqi Lin, Shizhuo Zhang, Qiang Fu, Bei Chen, Jian-Guang Lou, and Weizhu Chen. Making language models better reasoners with step-aware verifier. In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 5315–5333, 2023.
+
+[21] Eric Zhao, Pranjal Awasthi, and Sreenivas Gollapudi. Sample, scrutinize and scale: Effective inference-time search by scaling verification. arXiv preprint arXiv:2502.01839, 2025.
+
+
+[22] Eric Zelikman, Yuhuai Wu, Jesse Mu, and Noah Goodman. STar: Bootstrapping reasoning with reasoning. In Alice H. Oh, Alekh Agarwal, Danielle Belgra
