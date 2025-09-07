@@ -55,7 +55,9 @@ see previous section [LLM vs LRM](###lrm-vs-their-standard-llm-three-performance
 2. **Insight:** Earlier iterations of LLMs exhibited poor performance on reasoning benchmarks. To address these shortcomings, several approaches have been explored with the common theme among them being "scaling" both the training data and test-time computation.
 3. **Insight:** Generating a CoT[15, 16, 17, 18] and incorporating self-verification[19, 20, 21] prior to the final answer have been shown to improve model performance.
 
-4. **New-tem:** “overthinking phenomenon”, where models produce verbose, redundant outputs, even after finding the solution, creating significant inference computational overhead.
+4. **New-tem:** “overthinking phenomenon” in LRMs, where models produce verbose, redundant outputs, even after finding the solution, creating significant inference computational overhead.
+
+5. **Insights:** LRMs have shown emergent behaviours such as discrepancy between thought traces and final answers.
 ___
 
 ## Line of research
