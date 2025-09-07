@@ -27,6 +27,9 @@ This helped to throw light on their strengths, limitations, and ultimately raisi
 -----------------------------------------------------------------------------
 Open question:
 1. Are these models capable of generalizavle reasoning, or are they leveraging different forms of pattern matching? 
+2. How does their performance scale with increasing problem complexity? 
+3. How do they compare to their non-thinking standard LLM counterparts when provided with the same inference token compute? 
+4. What are the inherent limitations of current reasoning approaches, and what improvements might be necessary to advance towards more robust reasoning capabilities?
 ______________________________________________________________________________
 ## Source of whitepaper: 
 1. https://ml-site.cdn-apple.com/papers/the-illusion-of-thinking.pdf, accessed on 07.09.2025
