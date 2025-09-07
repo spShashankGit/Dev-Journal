@@ -24,6 +24,7 @@ This helped to throw light on their strengths, limitations, and ultimately raisi
 
 7. "Thinnking mechanism" in LLMs like OpenAI's o1/o3, DeepSeek-R1, Claude 3.7 Sonnet Thinking, and Gemini Thinking is long Chain-of-Thought(CoT) with self-reflection. 
 
+8. Test setup: Instead of standard benchmark (e.g. math problems), we adopt controllable puzzle environments that let us vary complexity systematically - by adjusting puzzle elements while preserving the core logic - and inspect both solutions and internal reasoning. 
 -----------------------------------------------------------------------------
 Open question:
 1. Are these models capable of generalizavle reasoning, or are they leveraging different forms of pattern matching? 
