@@ -28,6 +28,8 @@ Insight: Hallucination on the birthday facts
 ### Why hallucinations survive post-training
 
 
+### Contirbution of the paper:
+> Contributions. We identify the main statistical drivers of hallucinations, from their pretraining origins to their post-training persistence. A novel connection between supervised and unsupervised learning demystifies their origin, even when training data contain IDK. The persistence of hallucinations, despite extensive work on the problem, is explained by the recognition that hallucination-like guessing is rewarded by most primary evaluations. We discuss statistically rigorous modifications to existing evaluations that pave the way to effective mitigation.
 ___________
 #### Draft for the post
 This time I was faster! 
