@@ -12,9 +12,21 @@ Terms learned in this paper
 The hallucination that contradicts the training data or the external reality.
 
 ### Error caused by pretraining
+Insight
+> During pretraining, a base model learns the distribution of language in a large text corpus. We show that, even with error-free training data, the statistical objective minimized during pretraining would lead to a language model that generates errors. 
 
+Insight: Relationship between the generative error rate and the Is it Valid misclassification rate
+> (generative error rate) ≳ 2·(IIV misclassification rate).
+> Language models avoid many types of errors such as spelling mistakes, and not all errors are hallucinations.
+> The reduction from IIV misclassification to generation illuminates the statistical nature of generative errors. 
+> The analysis shows how pretraining directly contributes to errors.
+> Furthermore, it shows that the same statistical factors contributing to errors in binary classification also cause language model errors.
+
+Insight: Hallucination on the birthday facts
+> 20% of the birthday facts appear exactly once in the pretrained data, then one expects base models to hallucinate on at least 20% fo birthday facts.
 ___________
 #### Draft for the post
+This time I was faster! 
 Recently read the paper from OpenAI research titled: Why Language Models Hallucinate
 This paper checks the status quo and mention that reason for Hallucination is the sub-optimal evaluation criteria which have same panelty for the wrong answer as for the no-answer.
 Hence like a college student language models try to give an answer in a hope that it sticks as there are no-negative consequences in the evaluation metric for a false answer.
@@ -26,3 +38,9 @@ Lets talk solution:
 1. The idea researchers at OpenAI suggested is that we need a Socio-Technical migration i.. modifing the scoring of the existing benchmarks.
 I suggested Socio-Technical change too, which is to mention the variance in the accuracy of the model updfront, and append the metadata as of the model like: how many runs were made to achieve the leadboard results, what was the hardware & software used with the exact version of the software packages and also the GPU Drivers used. 
 In my reasearch GPU driver version made the difference in the accuracy of the Deep Neural Network accuracy.
+
+2. The powerful insight that the paper uncover is
+(generative error rate) ≳ 2·(IIV misclassification rate).
+Where generative error rate = All the errors that are generate the languagve model
+IVV Misclassification rate = All the error made by the binanry classifier in determining Is-It-Valid(IVV)
+
