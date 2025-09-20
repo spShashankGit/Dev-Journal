@@ -24,6 +24,10 @@ Insight: Relationship between the generative error rate and the Is it Valid misc
 
 Insight: Hallucination on the birthday facts
 > 20% of the birthday facts appear exactly once in the pretrained data, then one expects base models to hallucinate on at least 20% fo birthday facts.
+
+### Why hallucinations survive post-training
+
+
 ___________
 #### Draft for the post
 This time I was faster! 
