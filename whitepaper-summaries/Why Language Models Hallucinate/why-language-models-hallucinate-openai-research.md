@@ -40,6 +40,18 @@ I am actually liking this insight, mainly because it is analysisng the reason be
 
 My initial idea was to only share my notes from the open paper but the more I read the more I realised it is so similar to my research so I will both of them, of course indicating clearly if the insight is from OpenAI research or from my research.
 
+## Related Work
+Identified causes of Hallucination in language model:
+1. Model Overconfidence
+2. Decoding Randomness
+3. Snowballing effects
+4. Long-tailes training samples
+5. Misleading alignment training
+6. Spurious correlations
+7. Exposure bias
+8. Reversal curse
+9. Context hijacking
+
 Lets talk solution:
 1. The idea researchers at OpenAI suggested is that we need a Socio-Technical mitigation i.. modifing the scoring of the existing benchmarks.
 I suggested Socio-Technical change too, which is to mention the variance in the accuracy of the model updfront, and append the metadata as of the model like: how many runs were made to achieve the leadboard results, what was the hardware & software used with the exact version of the software packages and also the GPU Drivers used. 
