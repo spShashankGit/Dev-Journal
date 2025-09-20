@@ -10,7 +10,7 @@ Limitation of LRM
 
 3. Conclusion from paper: Through extensive experimentation across diverse puzzles, we show that frontier LRMs face a complete accuracy collapse beyond certain complexities. 
 
-4. Conclusion 2: They exhibit a counter-intuitive scaling limit: their reasoning effort increases with problem complexity up to a point, then declines despite having an adequate token budget.
+4. Conclusion 2: LRMs exhibit a counter-intuitive scaling limit: their reasoning effort increases with problem complexity up to a point, then declines despite having an adequate token budget.
 
 > ### LRM vs their standard LLM, Three performance regime
 > 1. Low-complexity tasks where standard models surprisingly LLMs outperform LRMs.
