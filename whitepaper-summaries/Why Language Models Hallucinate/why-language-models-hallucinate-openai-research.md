@@ -110,3 +110,6 @@ James Manyika, Juan Carlos Niebles, Yoav Shoham, Russell Wald, Tobi Walsh, Armin
 Lapo Santarlasci, Julia Betts Lotufo, Alexandra Rome, Andrew Shi, and Sukrut Oak. 2025.
 Artificial Intelligence Index Report 2025. Annual Report. AI Index Steering Committee, Institute
 for Human-Centered AI, Stanford University, Stanford, CA
+
+
+Link to the paper: https://arxiv.org/abs/2509.04664
