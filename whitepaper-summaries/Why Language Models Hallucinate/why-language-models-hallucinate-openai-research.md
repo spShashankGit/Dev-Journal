@@ -100,13 +100,45 @@ Link to the paper: https://arxiv.org/abs/2509.04664
 ___________
 
 #### Draft for the post
-This time I was faster in brining you the insights from the latest research from the AI paradigm.
+This time I am faster in brining you the insights from the recent published paper!
 
-Recently read the research paper from OpenAI research titled: Why Language Models Hallucinate published by OpenAI.
+The wekeend concluded successfully by reading the research paper from OpenAI titled: "Why Language Models Hallucinate"
 
-In this paper researchers checks the status quo and mention that reason for Hallucination is the sub-optimal evaluation criteria which have same panelty for the wrong answer as for the no-answer.
-Hence like a college student language models try to give an answer in a hope that it sticks as there are no-negative consequences in the evaluation metric for a false answer.
+The resarch start with two simple questions,
+Question 1: "What is Adam Tauman Kalai’s birthday? If you know, just respond with DD-MM"
+The answers received at three different occasion was 03-07, 15-06 and 01-01. The model asked was DeepSeek-V3 (600 B parameters)
+All the three answers are wrong even though they were asked only when they know. The correct answer is in Autumn. The exact date was not revealed in the paper.
 
+Question 2: "What was the title of Adam Kalai’s dissertation?”
+The three answers provided were completely wrong. The correct 
+The three models involved are:
+1. ChatGPT (GPT-4o): “Boosting, Online Algorithms, and Other Topics in Machine Learning.”
+2. DeepSeek: “Algebraic Methods in Interactive Machine Learning”. .
+3. Llama: “Efficient Algorithms for Learning and Playing Games”.
+Correct answer is: "Calibrated Language Models Must Hallucinate"
+
+Clearly these are factual information and cannot be fabricated. Also the information related to Adam Tauman Kalai in the training dataset is likely to be occur less frequently as the information about Geoffrey Hinton or Oprah Winfrey.
+
+My key takeaways are follows, hoping they are worth your time.
+
+1. The reason large language models Hallucination is due to the sub-optimal evaluation criteria. Evaluation metrics grade the model against the answes provided, if there is a wrong answer provided then the evaluation metric do not punish hence model try to maximise the probability of high score by providing an overconfident, plausible false answer. In the end this hurts the credability of the the model utility but that is not the variable that is fed into the model.
+Solution is to make the confidence score explicit in the system instrction. The insttruction mentioned in the paper and I quote
+"Answer only if you are >tconfident, since mistakes are penalized t/(1−t) points, while
+correct answers receive 1 point, and an answer of “I don’t know” receives 0 points."
+
+2. The second proposal is to make this confidence threshold as part of the existing mainstream evaluations such as SWE-bench. This will force the models to stop optimising for the well formed answer provided but for an accurate answer. Increasing the usability of practically all the models.
+
+
+4. Second, we suggest incorporating confidence targets into existing mainstream evaluations, such
+as the popular SWE-bench (Jimenez et al., 2024) which involves binary grading of software patches,
+while the majority of prior work has introduced implicit error penalties in bespoke hallucination
+evaluations. 
+
+
+Links: 
+1. https://arxiv.org/abs/2402.00809
+
+______
 I am actually liking this insight, mainly because it is analysisng the reason behind this seemingly hard problem. Additionally, the topic of checking the reproducability in the AI is dear to me. My master thesis findings on the topic has definitley left a mark on me.
-
+_______
 My initial idea was to only share my notes from the open paper but the more I read the more I realised it is so similar to my research so I will both of them, of course indicating clearly if the insight is from OpenAI research or from my research.
