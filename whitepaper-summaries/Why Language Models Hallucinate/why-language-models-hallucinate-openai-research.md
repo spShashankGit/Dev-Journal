@@ -49,15 +49,6 @@ Insight: What to do:
 > Similarly, we propose evaluations explicitly state confidence targets in their instructions, within the prompt (or system message). For example, one could append a statement like the following to each question: 
 
 > Answer only if you are >t confident, since mistakes are penalized t/(1−t) points, while correct answers receive 1 point, and an answer of “I don’t know” receives 0 points.
-___________
-#### Draft for the post
-This time I was faster! 
-Recently read the paper from OpenAI research titled: Why Language Models Hallucinate
-This paper checks the status quo and mention that reason for Hallucination is the sub-optimal evaluation criteria which have same panelty for the wrong answer as for the no-answer.
-Hence like a college student language models try to give an answer in a hope that it sticks as there are no-negative consequences in the evaluation metric for a false answer.
-I am actually liking this insight, mainly because it is analysisng the reason behind this seemingly hard problem. Additionally, the topic of checking the reproducability in the AI is dear to me. My master thesis findings on the topic has definitley left a mark on me.
-
-My initial idea was to only share my notes from the open paper but the more I read the more I realised it is so similar to my research so I will both of them, of course indicating clearly if the insight is from OpenAI research or from my research.
 
 ## Related Work
 Identified causes of Hallucination in language model:
@@ -105,3 +96,17 @@ Al-Onaizan, Mohit Bansal, and Yun-Nung Chen (Eds.). Association for Computationa
 
 
 Link to the paper: https://arxiv.org/abs/2509.04664
+
+___________
+
+#### Draft for the post
+This time I was faster in brining you the insights from the latest research from the AI paradigm.
+
+Recently read the research paper from OpenAI research titled: Why Language Models Hallucinate published by OpenAI.
+
+In this paper researchers checks the status quo and mention that reason for Hallucination is the sub-optimal evaluation criteria which have same panelty for the wrong answer as for the no-answer.
+Hence like a college student language models try to give an answer in a hope that it sticks as there are no-negative consequences in the evaluation metric for a false answer.
+
+I am actually liking this insight, mainly because it is analysisng the reason behind this seemingly hard problem. Additionally, the topic of checking the reproducability in the AI is dear to me. My master thesis findings on the topic has definitley left a mark on me.
+
+My initial idea was to only share my notes from the open paper but the more I read the more I realised it is so similar to my research so I will both of them, of course indicating clearly if the insight is from OpenAI research or from my research.
