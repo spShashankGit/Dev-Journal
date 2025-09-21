@@ -44,6 +44,11 @@ Insight:
 
 Insight: 
 > The 2025 AI Index report [2](Maslej et al., 2025), for instance, notes that hallucination benchmarks “have struggled to gain traction within the AI community.”
+
+Insight: What to do:
+> Similarly, we propose evaluations explicitly state confidence targets in their instructions, within the prompt (or system message). For example, one could append a statement like the following to each question: 
+
+> Answer only if you are >t confident, since mistakes are penalized t/(1−t) points, while correct answers receive 1 point, and an answer of “I don’t know” receives 0 points.
 ___________
 #### Draft for the post
 This time I was faster! 
@@ -76,7 +81,18 @@ In my reasearch GPU driver version made the difference in the accuracy of the De
 Where generative error rate = All the errors that are generate the languagve model
 IVV Misclassification rate = All the error made by the binanry classifier in determining Is-It-Valid(IVV)
 
+3. First, we propose making
+the confidence threshold explicit in the instructions, whereas the prior work has largely omitted
+mentioning the confidence targets or penalties in the instructions. (A notable exception is the work
+of Wu et al. (2025) who introduce “risk-informing” prompts with explicit penalties.) The ideal
+penalty might reflect likely real-world harms, but that is impractical as it is specific to the problem,
+the target application, and the user group. Without transparent specification within the instructions,
+it would be difficult to achieve consensus among language-model creators on the correct thresholds.
 
+4. Second, we suggest incorporating confidence targets into existing mainstream evaluations, such
+as the popular SWE-bench (Jimenez et al., 2024) which involves binary grading of software patches,
+while the majority of prior work has introduced implicit error penalties in bespoke hallucination
+evaluations. 
 
 
 Reference:
