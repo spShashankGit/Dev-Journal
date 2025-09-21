@@ -96,20 +96,12 @@ evaluations.
 
 
 Reference:
-1. Zorik Gekhman, Gal Yona, Roee Aharoni, Matan Eyal, Amir Feder, Roi Reichart, and Jonathan
-Herzig. 2024. Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations?. In Pro-
-ceedings of the 2024 Conference on Empirical Methods in Natural Language Processing, Yaser
-Al-Onaizan, Mohit Bansal, and Yun-Nung Chen (Eds.). Association for Computational Linguistics,
-Miami, Florida, USA, 7765–7784. https://doi.org/10.18653/v1/2024.emnlp-main.444
+1. Zorik Gekhman, Gal Yona, Roee Aharoni, Matan Eyal, Amir Feder, Roi Reichart, and Jonathan Herzig. 2024. Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations?. In Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing, Yaser
+Al-Onaizan, Mohit Bansal, and Yun-Nung Chen (Eds.). Association for Computational Linguistics, Miami, Florida, USA, 7765–7784. https://doi.org/10.18653/v1/2024.emnlp-main.444
 
 
 
-2. Nestor Maslej, Loredana Fattorini, Raymond Perrault, Yolanda Gil, Vanessa Parli, Njenga Kariuki,
-Emily Capstick, Anka Reuel, Erik Brynjolfsson, John Etchemendy, Katrina Ligett, Terah Lyons,
-James Manyika, Juan Carlos Niebles, Yoav Shoham, Russell Wald, Tobi Walsh, Armin Hamrah,
-Lapo Santarlasci, Julia Betts Lotufo, Alexandra Rome, Andrew Shi, and Sukrut Oak. 2025.
-Artificial Intelligence Index Report 2025. Annual Report. AI Index Steering Committee, Institute
-for Human-Centered AI, Stanford University, Stanford, CA
+2. Nestor Maslej, Loredana Fattorini, Raymond Perrault, Yolanda Gil, Vanessa Parli, Njenga Kariuki, Emily Capstick, Anka Reuel, Erik Brynjolfsson, John Etchemendy, Katrina Ligett, Terah Lyons, James Manyika, Juan Carlos Niebles, Yoav Shoham, Russell Wald, Tobi Walsh, Armin Hamrah, Lapo Santarlasci, Julia Betts Lotufo, Alexandra Rome, Andrew Shi, and Sukrut Oak. 2025. Artificial Intelligence Index Report 2025. Annual Report. AI Index Steering Committee, Institute for Human-Centered AI, Stanford University, Stanford, CA
 
 
 Link to the paper: https://arxiv.org/abs/2509.04664
