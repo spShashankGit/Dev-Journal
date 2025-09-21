@@ -30,6 +30,12 @@ Insight: Hallucination on the birthday facts
 
 ### Contirbution of the paper:
 > Contributions. We identify the main statistical drivers of hallucinations, from their pretraining origins to their post-training persistence. A novel connection between supervised and unsupervised learning demystifies their origin, even when training data contain IDK. The persistence of hallucinations, despite extensive work on the problem, is explained by the recognition that hallucination-like guessing is rewarded by most primary evaluations. We discuss statistically rigorous modifications to existing evaluations that pave the way to effective mitigation.
+
+#### Post-training techniques
+1. 
+
+Insight: Post-training techniqes that have shown to reduce the hallucination
+> Several post-training techniques—such as reinforcement learning from human feedback (RLHF) (Ouyang et al., 2022), reinforcement learning from AI feedback (RLAIF) (Bai et al., 2022), and direct preference optimization (DPO) (Rafailov et al., 2023)—have been shown to reduce hallucinations, including conspiracy theories and common misconceptions.
 ___________
 #### Draft for the post
 This time I was faster! 
