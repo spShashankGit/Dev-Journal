@@ -122,6 +122,7 @@ Clearly these are factual information and cannot be fabricated. Also the informa
 My key takeaways are follows, hoping they are worth your time.
 
 1. The reason large language models Hallucination is due to the sub-optimal evaluation criteria. Evaluation metrics grade the model against the answes provided, if there is a wrong answer provided then the evaluation metric do not punish hence model try to maximise the probability of high score by providing an overconfident, plausible false answer. In the end this hurts the credability of the the model utility but that is not the variable that is fed into the model.
+
 Solution is to make the confidence score explicit in the system instrction. The insttruction mentioned in the paper and I quote
 "Answer only if you are >tconfident, since mistakes are penalized t/(1−t) points, while
 correct answers receive 1 point, and an answer of “I don’t know” receives 0 points."
