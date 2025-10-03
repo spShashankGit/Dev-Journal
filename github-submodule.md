@@ -12,4 +12,5 @@ Lifecycle:
 2. Similarly, when you do git pull you, submodules will not be updated automatically.
 3. The way to update the submodules is to do that by --recursive-submodueles flag.
 4. or update the git config (local or global) submodule.recurse true/false
+4. (main*) means new changes are in the sub-module
 
