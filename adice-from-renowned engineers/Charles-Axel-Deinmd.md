@@ -38,6 +38,11 @@ What can you do to fix this?
 2. Insight: CAD also exoerienced that when there are lot of incidents coming in there is almost always fire-fighting mode on. This means patching the software and seldom fixing the underlying architecture.
 Eventually when the noise dries down it is 
 
+When they were hiring at lage scale what worked is that build up relationship with the recruiter which means they had weekly check-in where they are telling what kind of candidates they are looking for and the recruiters will tell what kind of cohot or companies they are looking to target.
+Anentode: Hearing some news from the company so maybe people from there are open for offer.
+Anectode 2: HM says we are have tech stack in python, nodejs and a bit of a java etc. 
+Recruiter says: Oh so you are looking for someone with experience in these three languages and
+HM: oh no, language doesn't matter we are looking for experienced professional.
 
 Refernece:
 1. High Ghowth Startups: Uber and CloudKitchens with Charles-Axel Dein, https://www.youtube.com/watch?v=bM0Wq7aLd5w, accessed on 04.10.2025
