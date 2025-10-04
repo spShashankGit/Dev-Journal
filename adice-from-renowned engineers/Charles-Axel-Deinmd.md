@@ -47,6 +47,14 @@ HM: oh no, language doesn't matter we are looking for experienced professional.
 Tipe for interview training:
 1. You shadow the inteview and give feedback.
 2. You reverse shadow the interview i.e. you drinve the interview and feedback is provided to you.
+One can become great interviewer with feedback and with on the job training.
+
+### Signs of being in hypergrowth mode
+You are hiring a lot and there are things breaking left and right.
+
+#### Sign that you are out of hypergrowth phase
+Okay, now I actually have time to look at this systematically and fix and build a system that I am pretty happy with not necessarily a second system from scratch, this is rearely a good idea.
+
 
 Refernece:
 1. High Ghowth Startups: Uber and CloudKitchens with Charles-Axel Dein, https://www.youtube.com/watch?v=bM0Wq7aLd5w, accessed on 04.10.2025
