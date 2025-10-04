@@ -68,8 +68,14 @@ So CAD was very methodological in his approach and people appreciated that he wa
 One of the manage of CAD said that the most powerful expression that you can tell to somebody is "I need you help" The employee also feels empoyer to make decisions.
 When you hand over responsibility to someone, then you expect them to drive the poject and one in a while you will hear some incidents and this is completely fine. 
 
-CAD: Best way to learn is to make mistakes.
+CAD: Best way to learn is to make mistakes. If you want to invest in your own people, you have to let them make their own mistake.
 
+### Github repo
+How did the repo started Wanted to automate the process of giving people feedback and sending them to certain good articles.
+Start compiling list of articles, articles are are considered as classic articles on the topic.
 
 Refernece:
 1. High Ghowth Startups: Uber and CloudKitchens with Charles-Axel Dein, https://www.youtube.com/watch?v=bM0Wq7aLd5w, accessed on 04.10.2025
+
+
+2. Charle's repo: professional-programming, https://github.com/charlax/professional-programming/tree/master, accessed on 04.10.2025
