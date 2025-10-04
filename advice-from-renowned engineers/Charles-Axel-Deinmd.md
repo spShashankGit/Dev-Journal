@@ -89,10 +89,13 @@ Staff and senior staff levels holds true at this level too.
 CloudKitchens expect staffe engineers to really find creative ways to speed up execution or achieve a 10x improvement in quality. Not only reviewing RFC's or attending meetings.
 2. Lifting: Lifting people around you. We are knowledge workers so you have train people around you, you have to give a hand, you have to help, you have to have a good attitude. The best engineers Charles has work with has this amazing attitude of ownership i.e. taking a problem and not stopping at teams boundaries for instance seeing the problem in mobile app, going to API Gateqway and see problem is not there, and then looking at backend and then ship a fix.
 
+3. Humour: A little bit of self-depricating humour, it is hard to get an ego.
+
 ### Github repo
 How did the repo started Wanted to automate the process of giving people feedback and sending them to certain good articles.
 Start compiling list of articles, articles are are considered as classic articles on the topic.
 
+T-Shaped graph: Rake i.e. go over different topics.
 _______________________________
 Refernece:
 1. High Ghowth Startups: Uber and CloudKitchens with Charles-Axel Dein, https://www.youtube.com/watch?v=bM0Wq7aLd5w, accessed on 04.10.2025
