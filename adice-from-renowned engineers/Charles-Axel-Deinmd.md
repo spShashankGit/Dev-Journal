@@ -44,5 +44,9 @@ Anectode 2: HM says we are have tech stack in python, nodejs and a bit of a java
 Recruiter says: Oh so you are looking for someone with experience in these three languages and
 HM: oh no, language doesn't matter we are looking for experienced professional.
 
+Tipe for interview training:
+1. You shadow the inteview and give feedback.
+2. You reverse shadow the interview i.e. you drinve the interview and feedback is provided to you.
+
 Refernece:
 1. High Ghowth Startups: Uber and CloudKitchens with Charles-Axel Dein, https://www.youtube.com/watch?v=bM0Wq7aLd5w, accessed on 04.10.2025
