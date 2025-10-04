@@ -55,6 +55,21 @@ You are hiring a lot and there are things breaking left and right.
 #### Sign that you are out of hypergrowth phase
 Okay, now I actually have time to look at this systematically and fix and build a system that I am pretty happy with not necessarily a second system from scratch, this is rearely a good idea.
 
+### What can you do when you are feeling overloaded?
+1. Personal productivity is important for CAD, he has invested a lot. Book he read was getting things done.
+The earlier you invest in your personal productivity, the mode dividents it will pay (compounded).
+2. Principal, divide and conquer: You need to find people that take-over some of the topics from you. Tech lead a project for instance.
+
+3. CAD when asked PE to become the lead he specifically asked "I want to you to lead the project"
+I will check-in with you once a week and if something comes up before that let me know.
+Here is the plan etc.
+So CAD was very methodological in his approach and people appreciated that he was specific, they find it was nice for them to showcase their capabilities and finally they understood that the situation is such that manager has left CAD has got more responsibility and he cannot do everytghing by himself so he has to distribute.
+
+One of the manage of CAD said that the most powerful expression that you can tell to somebody is "I need you help" The employee also feels empoyer to make decisions.
+When you hand over responsibility to someone, then you expect them to drive the poject and one in a while you will hear some incidents and this is completely fine. 
+
+CAD: Best way to learn is to make mistakes.
+
 
 Refernece:
 1. High Ghowth Startups: Uber and CloudKitchens with Charles-Axel Dein, https://www.youtube.com/watch?v=bM0Wq7aLd5w, accessed on 04.10.2025
