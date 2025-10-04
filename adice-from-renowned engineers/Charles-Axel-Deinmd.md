@@ -70,6 +70,25 @@ When you hand over responsibility to someone, then you expect them to drive the 
 
 CAD: Best way to learn is to make mistakes. If you want to invest in your own people, you have to let them make their own mistake.
 
+One other important thing to keep in mind for personal productivity is to: have a good process for keeping youself up to date with what's going on in the industry.
+Charles tries to read in total of 1 hour per day, 
+i.e. engineering articles ever day. When he finds a new classic article he adds that to the repository. [2] 🚀
+He has been doing that for last 15 years or so.
+
+What are the sources of good articles?
+1. RSS feed of top-10 articles of the day?
+2. Then he checks because there is a diamond that don't necessarily makes it to the top.
+3. Good newsletter e.g. bytes for front-end engineers is very good and hilarious.
+4. Newsletter from the programming language like Python, Java, CK etc software tech leads as well.
+
+## Story of a stand-out software engineer
+Traits of a typical good engineer
+1. Shipping. Many seniors do meta work,reviewing RFCs, attending meetings, influencing this, strategising that. It is difficulat to understand what is going on.
+Focus on building, shipping value, being creative, being an expert in your programming language, in system architecture
+Staff and senior staff levels holds true at this level too.
+CloudKitchens expect staffe engineers to really find creative ways to speed up execution or achieve a 10x improvement in quality. Not only reviewing RFC's or attending meetings.
+2. Lifting: Lifting people around you. We are knowledge workers so you have train people around you, you have to give a hand, you have to help, you have to have a good attitude. The best engineers Charles has work with has this amazing attitude of ownership i.e. taking a problem and not stopping at teams boundaries for instance seeing the problem in mobile app, going to API Gateqway and see problem is not there, and then looking at backend and then ship a fix.
+
 ### Github repo
 How did the repo started Wanted to automate the process of giving people feedback and sending them to certain good articles.
 Start compiling list of articles, articles are are considered as classic articles on the topic.
