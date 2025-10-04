@@ -74,6 +74,7 @@ CAD: Best way to learn is to make mistakes. If you want to invest in your own pe
 How did the repo started Wanted to automate the process of giving people feedback and sending them to certain good articles.
 Start compiling list of articles, articles are are considered as classic articles on the topic.
 
+_______________________________
 Refernece:
 1. High Ghowth Startups: Uber and CloudKitchens with Charles-Axel Dein, https://www.youtube.com/watch?v=bM0Wq7aLd5w, accessed on 04.10.2025
 
