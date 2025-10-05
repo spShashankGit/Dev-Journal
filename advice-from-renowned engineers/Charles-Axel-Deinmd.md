@@ -107,27 +107,30 @@ CloudKitchens expect staffe engineers to really find creative ways to speed up e
 
 3. **Humour**: A little bit of self-depricating humour, it is hard to get an ego.
 
-4. Good engineer has **structure and methond** in place to start fixing problem, it starts with observability matrix. Example, everyone is looking at system a that problem is here and there is another engineer who checks and says we are looking into wrong repo, the problem is in system B. Goes back to shipping.
+4. Good engineer has **structure and method** in place to start fixing problem, it starts with observability matrix. Example, everyone is looking at system a that problem is here and there is another engineer who checks and says we are looking into wrong repo, the problem is in system B. Goes back to shipping.
 You can only do that if you keep youself close to the code.
 
 ## Importance of reading over doing?
 How to balance this?
 
 You are confronted wiht this topic, you are in doing mode i.e. you need to get the results. If you get the book from shelf and start reading it, people usually do not see that super well.
-Outside of work: Read a book about the fundamentals of the topic you are confronted with. Because when you are trying to make things work, you are missing the fundamental of this topic and if you add that it will unblock you and considerably speed up the process.
+**Outside of work:** Read a book about the fundamentals of the topic you are confronted with. Because when you are trying to make things work, you are missing the fundamental of this topic and if you add that it will unblock you and considerably speed up the process.
 Reading and doing goes hand-in-hand and you have to do both.
-Book recommendation: 
+
+## Book recommendation: 
 1. Complication, Surgeon, it is about how do you learn from your mistakes. And hwo to have a scientif process to learn from those mistakes.
 https://www.amazon.de/-/en/gp/product/1846681324/ref=ewc_pr_img_1?smid=A3JWKAKR8XB7XF&psc=1
 
 2. Aviation incident postmortm: 
-### Github repo
+
+## Github repo
 How did the repo started Wanted to automate the process of giving people feedback and sending them to certain good articles.
 Start compiling list of articles, articles are are considered as classic articles on the topic.
 
 T-Shaped graph: Rake i.e. go over different topics.
+
 _______________________________
-Refernece:
+## References:
 1. High Ghowth Startups: Uber and CloudKitchens with Charles-Axel Dein, https://www.youtube.com/watch?v=bM0Wq7aLd5w, accessed on 04.10.2025
 
 
