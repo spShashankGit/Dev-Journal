@@ -5,6 +5,9 @@
 ## Personal Productivity
 1. Personal productivity is very important to understand quickly the type of architecture.
 2. Investing early on in Personal productivity is a good idea because it pays rich dividens (compounded).
+3. Have a good process for keeping youself up-to-date with what's going on in the industry.
+Charles tries to read in total of 1 hour per day, usually reading engineering articles ever day. 
+When he finds a new classic article he adds that to the repository.[2] 🚀
 
 3. **Non-obvious tip:** Extreme ownership, which means do not stop at the boundry of your team rather go out of the way and understand how the dependencies are with other teams and systems.
 
@@ -87,7 +90,7 @@ Charles tries to read in total of 1 hour per day,
 i.e. engineering articles ever day. When he finds a new classic article he adds that to the repository. [2] 🚀
 He has been doing that for last 15 years or so.
 
-What are the sources of good articles?
+### What are the sources of good articles?
 1. RSS feed of top-10 articles of the day?
 2. Then he checks because there is a diamond that don't necessarily makes it to the top.
 3. Good newsletter e.g. bytes for front-end engineers is very good and hilarious.
@@ -95,15 +98,16 @@ What are the sources of good articles?
 
 ## Story of a stand-out software engineer
 Traits of a typical good engineer
-1. Shipping. Many seniors do meta work,reviewing RFCs, attending meetings, influencing this, strategising that. It is difficulat to understand what is going on.
+1. **Shipping** Many seniors do meta work,reviewing RFCs, attending meetings, influencing this, strategising that. It is difficulat to understand what is going on.
 Focus on building, shipping value, being creative, being an expert in your programming language, in system architecture
 Staff and senior staff levels holds true at this level too.
 CloudKitchens expect staffe engineers to really find creative ways to speed up execution or achieve a 10x improvement in quality. Not only reviewing RFC's or attending meetings.
-2. Lifting: Lifting people around you. We are knowledge workers so you have train people around you, you have to give a hand, you have to help, you have to have a good attitude. The best engineers Charles has work with has this amazing attitude of ownership i.e. taking a problem and not stopping at teams boundaries for instance seeing the problem in mobile app, going to API Gateqway and see problem is not there, and then looking at backend and then ship a fix.
 
-3. Humour: A little bit of self-depricating humour, it is hard to get an ego.
+2. **Lifting:** Lifting people around you. We are knowledge workers so you have train people around you, you have to give a hand, you have to help, you have to have a good attitude. The best engineers Charles has work with has this amazing attitude of ownership i.e. taking a problem and not stopping at teams boundaries for instance seeing the problem in mobile app, going to API Gateqway and see problem is not there, and then looking at backend and then ship a fix.
 
-4. Good engineer has structure and methond in place to start fixing problem, it starts with observability matrix. Example, everyone is lookign at system a that problem is here and there is another engineer who checks and says we are looking into wrong repo, the problem is in system B. Goes back to shipping.
+3. **Humour**: A little bit of self-depricating humour, it is hard to get an ego.
+
+4. Good engineer has **structure and methond** in place to start fixing problem, it starts with observability matrix. Example, everyone is looking at system a that problem is here and there is another engineer who checks and says we are looking into wrong repo, the problem is in system B. Goes back to shipping.
 You can only do that if you keep youself close to the code.
 
 ## Importanc of reading over doing?
