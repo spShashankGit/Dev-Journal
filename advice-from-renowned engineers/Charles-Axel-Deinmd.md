@@ -110,7 +110,7 @@ CloudKitchens expect staffe engineers to really find creative ways to speed up e
 4. Good engineer has **structure and methond** in place to start fixing problem, it starts with observability matrix. Example, everyone is looking at system a that problem is here and there is another engineer who checks and says we are looking into wrong repo, the problem is in system B. Goes back to shipping.
 You can only do that if you keep youself close to the code.
 
-## Importanc of reading over doing?
+## Importance of reading over doing?
 How to balance this?
 
 You are confronted wiht this topic, you are in doing mode i.e. you need to get the results. If you get the book from shelf and start reading it, people usually do not see that super well.
