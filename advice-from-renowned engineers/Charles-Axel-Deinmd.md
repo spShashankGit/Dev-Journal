@@ -1,12 +1,14 @@
 # Notes
 
-Disclaimer: These notes are written so that I can refer to them at later stage without having to traverse throught the podcast and/or youtube videos.
+**Disclaimer:** These notes are written so that I can refer to them at later stage without having to traverse throught the podcast and/or youtube videos.
 
-1. Personal productivity is very important to understand quickly the type of architecture.
+## Personal Productivity
+Personal productivity is very important to understand quickly the type of architecture.
+Investing early on in Personal productivity is a good idea because it pays rich dividens (compounded).
 
-1. Non-obvious tip: Extreme ownership, which means do not stop at the boundry of your team rather go out of the way and understand how the dependencies are with other teams and systems.
+1. **Non-obvious tip:** Extreme ownership, which means do not stop at the boundry of your team rather go out of the way and understand how the dependencies are with other teams and systems.
 
-1. It is important to differentciate deployment form release. That is deploy the code but it behind the feature file. Next step, is to turn-on the feature flag only for your users and then you can roll-out slowly.
+1. It is important to differentciate deployment from release. That is deploy the code but it behind the feature file. Next step, is to turn-on the feature flag only for your users and then you can roll-out slowly.
 > This simple approach works wonder in terms of providing stability.
 
 1. Regulatory companies have usually a development environment, a staging environment, optionally a user-testing environment and finally the production environment.
