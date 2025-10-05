@@ -32,50 +32,55 @@
 **Time to Detection**, Detecting at uber is easiest because the volume of request is high and if something break then there should be some kind of monitoring that will detect it.
 
 ## Automation
-1. Automation topic is dear to Charles. He mentions the an artile titled "Ironies of automation".
-+ Sometimes when we automate we replace user error with design automation error.We lack context, we don't understand how the software or the process is used. So when we automate, we put in the wrong automation.
-+ We cannot automate everything so we automate the easiest part and leave the most difficult part to the user to perform.
+Automation topic is dear to Charles. He mentions the an artile titled "Ironies of automation"[3].
+1. Sometimes when we automate we replace user error with design automation error.We lack context, we don't understand how the software or the process is used. So when we automate, we put in the wrong automation.
+2. We cannot automate everything so we automate the easiest part and leave the most difficult part to the user to perform.
 
-What can you do to fix this?
-1. Do the process manually, so that it gives you the business context or product context or operational context. Like start-up do things first that do not scale.
-2. Tranparency, so many automations especially in developer context are doing a lot of things. As a result you do not see anything and then when something breaks you are left to debug
+### What can you do to fix this?
+1. **Do the process manually**, so that it gives you the business context or product context or operational context. Like start-up do things first that do not scale.
+2. **Tranparency**, so many automations especially in developer context are doing a lot of things. As a result you do not see anything and then when something breaks you are left to debug
 
-1. The best way to know about the system is to see the incidents. This will tell you where are the bottlnecks and what are the services that are under pressure.
+3. The best way to know about the system is to see the incidents. This will tell you where are the bottlnecks and what are the services that are under pressure.
 
-2. Insight: Charles also exoerienced that when there are lot of incidents coming in there is almost always fire-fighting mode on. This means patching the software and seldom fixing the underlying architecture.
-Eventually when the noise dries down it is 
+4. **Insight**: Charles also experienced that when there are lot of incidents coming in there is almost always fire-fighting mode on. This means patching the software is priority and seldom it happens that team fix the underlying architecture.
+Eventually when the noise dries down it is important to fix the root-cause of the problem.
 
+## 
 When they were hiring at lage scale what worked is that build up relationship with the recruiter which means they had weekly check-in where they are telling what kind of candidates they are looking for and the recruiters will tell what kind of cohot or companies they are looking to target.
-Anentode: Hearing some news from the company so maybe people from there are open for offer.
-Anectode 2: HM says we are have tech stack in python, nodejs and a bit of a java etc. 
-Recruiter says: Oh so you are looking for someone with experience in these three languages and
-HM: oh no, language doesn't matter we are looking for experienced professional.
+**Annectode**: Hearing some news from the company so maybe people from there are open for offer. This is a sign that recruiters use to find/reach-out to the candidates.
+**Annectode 2**: Hiring Manager(HM) says we are have tech stack in python, nodejs and a bit of a java etc. 
 
-Tipe for interview training:
+Recruiter says: Oh so you are looking for someone with experience in these three languages and
+
+HM: No, language doesn't matter we are looking for experienced professional.
+
+### Tips for training the interviewer:
 1. You shadow the inteview and give feedback.
 2. You reverse shadow the interview i.e. you drinve the interview and feedback is provided to you.
-One can become great interviewer with feedback and with on the job training.
+**Note:** One can become great interviewer with feedback and with on the job training.
 
-### Signs of being in hypergrowth mode
-You are hiring a lot and there are things breaking left and right.
+## Sign that the company is going through the hyper-growth phase:
+You are hiring a lot and there are things breaking left and right. The team who needs the help most are the one who are affected by the interviews the most.
 
-#### Sign that you are out of hypergrowth phase
+## Sign that the company is out of the hyper-growth phase:
 Okay, now I actually have time to look at this systematically and fix and build a system that I am pretty happy with not necessarily a second system from scratch, this is rearely a good idea.
 
-### What can you do when you are feeling overloaded?
+## What can you do when you are feeling overloaded?
 1. Personal productivity is important for Charles, he has invested a lot. Book he read was getting things done.
-The earlier you invest in your personal productivity, the mode dividents it will pay (compounded).
-2. Principal, divide and conquer: You need to find people that take-over some of the topics from you. Tech lead a project for instance.
+2. The earlier you invest in your personal productivity, the mode dividents it will pay (compounded).
+3. Principal, divide and conquer: You need to find people that take-over some of the topics from you. Tech lead a project for instance.
 
-3. Charles when asked PE to become the lead he specifically asked "I want to you to lead the project"
-I will check-in with you once a week and if something comes up before that let me know.
-Here is the plan etc.
-So Charles was very methodological in his approach and people appreciated that he was specific, they find it was nice for them to showcase their capabilities and finally they understood that the situation is such that manager has left Charles has got more responsibility and he cannot do everytghing by himself so he has to distribute.
+4. Charles when asked Gergely (Pragmatic Engineer) to become the lead he specifically asked "I want to you to lead the project"
+### Ideas for checking on the topics that you have handed-over
+1. Charles will check-in with Gregely once a week and if something comes up before that let me know.
+2. Here is the plan etc.
+3. Bottom line: Charles was very methodological in his approach and people appreciated that he was specific, they find it was nice for them to showcase their capabilities and finally they understood that the situation is such that manager has left Charles has got more responsibility and he cannot do everytghing by himself so he has to distribute.
 
-One of the manage of Charles said that the most powerful expression that you can tell to somebody is "I need you help" The employee also feels empoyer to make decisions.
+**Advice:** One of the manage of Charles said that the most powerful expression that you can tell to somebody is __"I need you help"__. 
+The employee also feels empower to make decisions.
 When you hand over responsibility to someone, then you expect them to drive the poject and one in a while you will hear some incidents and this is completely fine. 
 
-Charles: Best way to learn is to make mistakes. If you want to invest in your own people, you have to let them make their own mistake.
+**Leadership Advice**: Charles: Best way to learn is to make mistakes. If you want to invest in your own people, you have to let them make their own mistake.
 
 One other important thing to keep in mind for personal productivity is to: have a good process for keeping youself up to date with what's going on in the industry.
 Charles tries to read in total of 1 hour per day, 
@@ -123,3 +128,5 @@ Refernece:
 
 
 2. Charle's repo: professional-programming, https://github.com/charlax/professional-programming/tree/master, accessed on 04.10.2025
+
+3. Ironies of Automatio, https://ckrybus.com/static/papers/Bainbridge_1983_Automatica.pdf, accessed on 05.10.2025
