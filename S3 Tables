@@ -7,9 +7,16 @@ Current usage: Data used for Analytics, Machine Learning and AI
 Usage: Meterological data, financial transactions and records
 Format: Apache Parquet (Tabular format)
 
-Problem with Parquet datafiles: Evolving the schema was difficult because adding and removing columns means that #
+Problem with Parquet datafiles: Evolving the schema was difficult because adding and removing columns means that efforts is spent in making sure data can be consumed at speeed at scale. Does this mean we need to update schema in each and every application?
 Iceberg: Adds metadata file, metadata allows to structure the data, safe transactions, time-travel, SQL semantic, allows consistency of the data
-Iceberg allows customers to 
+
+Iceberg features
+1. Time travel
+2. Schema information
+3. Compaction
+
+
+
 
 
 ## Reference: 
