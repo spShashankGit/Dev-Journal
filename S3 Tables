@@ -9,7 +9,18 @@ Table bucket: Store Apache Iceberg format tables natively in S3 and S3 now suppo
 2. Resource policy can be written directly against them.
 3. Has dedicated endpoint s3tables.region.amazonaws.com that can be used to access these resources.
 
+Tables Operations
+1. S3tables:ListTable
+2. S3tables:CreateTable
+3. S3tables:GetTableMetadataLocation
+4. S3tables:UpdateTableMetadataLocation
+5. S3tables:DeleteTable
 
+Table Management
+1. S3tables:PutTablePolicy
+2. S3tables:PutTableBucketPolicy
+3. S3tables:PutTableMaintenanceConfig
+4. S3tables:PutTableBucketMaintenanceConfig
 
 S3
 Originally build: 2006
