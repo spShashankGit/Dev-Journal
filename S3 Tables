@@ -61,7 +61,22 @@ of the automatic scaling that S3 provides. Blog post is also available [2]
 Overtimes tables will continue to grow and this means query will be more because it has to go through now additional files.
 Iceberg provides a way to solve this i.e. do the compaction of the smaller data files into the larget ones.
 This traditionally need developers to do this. Now in S3 this can be achieved in the background and automatically leads to the shorter query times.
-Can lead uptom 3x improvement in the query times.
+Can lead uptom 3x improvement in the query times. Blog post is linked[3]
+
+**Security Controls**
+Now that S3Tables itself are resources you can apply resource polidy to them and manage read/write permissions to them directly.
+(Allowing you to be able to govern access to the table and the table bucket itself.)
+
+Namespace: Logically group tables within table buckets.
+
+S3 Tables - Automated maintenance: 
+Any update in an iceberg tables result in a commit operation and that create a brand new snapshot for that table.
+And this is great property of icebreg that lets you go back in time and be able to see a view of the table from the past and be able to rollback to it.
+Old snapshots need not to stay forever as you will be pointing your dataset to the newest snapshot.
+To manage this applications needs teams to do that. Now AWS can take care of that for us.
+The S3 tables will make sure old snapshort are agin out(deleted?) and the associated files and garbage collector(clean up unreferenced file associated with older snapshot) for that files are run. Elimiinating the manual effort.
+All of these procedures are policy driven. So that you can define how many of these snapshots you want to keep around and for how long you want to keep them around.
+Also checking the integrity of the table i.e. you can go back and look up ho maintenance operations are faring for those tables.
 
 **S3**
 Originally build: 2006
@@ -81,8 +96,7 @@ Iceberg features
 
 
 
-
-
 ## Reference: 
 1. https://www.youtube.com/watch?v=1U7yX4HTLCI
 2. https://aws.amazon.com/blogs/storage/how-amazon-ads-uses-iceberg-optimizations-to-accelerate-their-spark-workload-on-amazon-s3/
+3. https://aws.amazon.com/blogs/storage/how-amazon-s3-tables-use-compaction-to-improve-query-performance-by-up-to-3-times/
