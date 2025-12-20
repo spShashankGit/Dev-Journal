@@ -58,6 +58,11 @@ TPS startes at 55000 read/seconds
 AWS contributed to Iceberg: in which you are writing your data and laying out your data files in Iceberg now is better optimized to be able to take advantage
 of the automatic scaling that S3 provides. Blog post is also available [2]
 
+Overtimes tables will continue to grow and this means query will be more because it has to go through now additional files.
+Iceberg provides a way to solve this i.e. do the compaction of the smaller data files into the larget ones.
+This traditionally need developers to do this. Now in S3 this can be achieved in the background and automatically leads to the shorter query times.
+Can lead uptom 3x improvement in the query times.
+
 **S3**
 Originally build: 2006
 Idea: Store the data securely & durably have it available when needed.
