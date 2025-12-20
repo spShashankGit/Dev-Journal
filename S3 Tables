@@ -1,5 +1,17 @@
 # S3 Tables
 
+GA: 03.12.2024
+Purpose-build to store tabular data and provide fully-managed Apache Iceberg tables in S3.
+Table bucket: Store Apache Iceberg format tables natively in S3 and S3 now supports tables as a new construct.
+
+**S3 Tables:**
+1. Each of the table has it's own ARN,
+2. Resource policy can be written directly against them.
+3. Has dedicated endpoint s3tables.region.amazonaws.com that can be used to access these resources.
+
+
+
+S3
 Originally build: 2006
 Idea: Store the data securely & durably have it available when needed.
 Envisioned filed stored: Video, Photos and other static content
