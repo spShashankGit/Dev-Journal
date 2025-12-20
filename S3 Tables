@@ -1,0 +1,14 @@
+# S3 Tables
+
+Originally build: 2006
+Idea: Store the data securely & durably have it available when needed.
+Envisioned filed stored: Video, Photos and other static content
+Current usage: Data used for Analytics, Machine Learning and AI 
+Usage: Meterological data, financial transactions and records
+Format: Apache Parquet (Tabular format)
+
+
+
+
+## Reference: 
+1. https://www.youtube.com/watch?v=1U7yX4HTLCI
