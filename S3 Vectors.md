@@ -68,6 +68,23 @@ It gves you latency upto 100ms range,
 store upto 2 Billion vector per index and
 upto 10,000 indexes per vector bucket.
 
+It has some APIs that you can use to interact with S3 bucket
+1. PutVector
+2. GetVector
+3. DeleteVector
+4. ListVector
+5. QueryVector
+
+Characterstic: Scale from Zero, pay only for waht you use.
+Tiny little AI protypes using vector storage.
+Elasticity scaling, durability, reliability, security, performance.
+This is a vector bucket with simple APIs.
+
+**Demo code:Python**
+Embedding model: Amzon Nova
+<img width="297" height="98" alt="image" src="https://github.com/user-attachments/assets/f10b31a8-1571-495b-bef4-9485bce7e29b" />
+
+<img width="943" height="933" alt="image" src="https://github.com/user-attachments/assets/bba9036a-9fb3-40e9-893d-9c86b40a0e7a" />
 
 ## Reference
 1. https://youtu.be/Sy2LHRyMXAo?si=S0gJHmCfeuheXLRz&t=2584
