@@ -55,27 +55,34 @@ AWS specifically apply optimisation on our behalf for that S3table.
 *Under load S3 request additional resources to achieve the demand. | 
 
 **Open Source Contribution:** AWS contributed to Iceberg: in which you are writing your data and laying out your data files in Iceberg now is better optimized to be able to take advantage
-of the automatic scaling that S3 provides. Blog post is also available [2] \
+of the automatic scaling that S3 provides. Blog post is also available [2]
+______
 
+### Compaction of smaller tables into bigger one
+**Real world observation**
 Overtimes tables will continue to grow and this means query will be more because it has to go through now additional files.
 Iceberg provides a way to solve this i.e. do the compaction of the smaller data files into the larget ones.
+
+**Current and future solution for compaction**
 This traditionally need developers to do this. Now in S3 this can be achieved in the background and automatically leads to the shorter query times.
 Can lead uptom 3x improvement in the query times. Blog post is linked[3]
-
+___
 **Security Controls**
-Now that S3Tables itself are resources you can apply resource polidy to them and manage read/write permissions to them directly.
+Now that S3Tables itself are resources you can apply resource policy to them and manage read/write permissions to them directly.
 (Allowing you to be able to govern access to the table and the table bucket itself.)
 
-Namespace: Logically group tables within table buckets.
-
-S3 Tables - Automated maintenance: 
-Any update in an iceberg tables result in a commit operation and that create a brand new snapshot for that table.
+**Namespace**: Logically group tables within table buckets.
+___________________________________
+### Snapshot maintenance
+**S3 Tables - Automated maintenance:**\
+**Real world observation** Any update in an iceberg tables result in a commit operation and that create a brand new snapshot for that table.
 And this is great property of icebreg that lets you go back in time and be able to see a view of the table from the past and be able to rollback to it.
 Old snapshots need not to stay forever as you will be pointing your dataset to the newest snapshot.
-To manage this applications needs teams to do that. Now AWS can take care of that for us.
-The S3 tables will make sure old snapshort are agin out(deleted?) and the associated files and garbage collector(clean up unreferenced file associated with older snapshot) for that files are run. Elimiinating the manual effort.
+
+**Current and future soltution for snapshot lifecycle management**: To manage this applications needs teams to do that. Now AWS can take care of that for us.
+The S3 tables will make sure old snapshort are phasing out(deleted?) and the associated files and garbage collector(clean up unreferenced file associated with older snapshot) for that files are run. Elimiinating the manual effort.
 All of these procedures are policy driven. So that you can define how many of these snapshots you want to keep around and for how long you want to keep them around.
-Also checking the integrity of the table i.e. you can go back and look up ho maintenance operations are faring for those tables.
+Also checking the integrity of the table i.e. you can go back and look up the maintenance operations for those tables.
 
 **S3**
 Originally build: 2006
