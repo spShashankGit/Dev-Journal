@@ -1,13 +1,12 @@
 # S3 Tables
 
-GA: 03.12.2024
-Purpose-build to store tabular data and provide fully-managed Apache Iceberg tables in S3.
+GA: 03.12.2024 \
 Table bucket: Store Apache Iceberg format tables natively in S3 and S3 now supports tables as a new construct.
 
 **S3 Tables:**
-1. Each of the table has it's own ARN,
-2. Resource policy can be written directly against them.
-3. Has dedicated endpoint s3tables.region.amazonaws.com that can be used to access these resources.
+1. Each of the table has it's own ARN.
+2. Resource policy can be written directly against the ARN.
+3. Has dedicated endpoint ```s3tables.region.amazonaws.com``` that can be used to access these resources.
 
 **Tables Operations**
 1. S3tables:ListTable
@@ -21,30 +20,32 @@ CRUP operations on the tables directly.
 1. S3tables:PutTablePolicy
 2. S3tables:PutTableBucketPolicy
 3. S3tables:PutTableMaintenanceConfig
-4. S3tables:PutTableBucketMaintenanceConfig
-They are both at bucket level and s3table bucket level.
-How long you want your snapshot to be available?
-How long you want to take to age them out?
+4. S3tables:PutTableBucketMaintenanceConfig \
+They are both at table level and s3table bucket level. \
+How long you want your snapshot to be available? \
+How long you want to take to age them out? \
+These are the parameters that you can use to define your lifecycle management operations via the policy.
 
 **New Protection**
-1. No delete allowed of existing objects
-2. No overwrite allowed of existing objects
-3. Audit with AWS CloudTrail
-2 & 3 are in place so that the integrity of the table is maintained.
+1. No delete operation allowed of existing objects
+2. No overwrite operation allowed of existing objects
+3. Audit with AWS CloudTrail \
+2 & 3 are in place so that the integrity of the table is maintained. \
 Right way to delete/overwrite the object is throught the maintenance policies.
 
-Additional benefits:
+**Additional benefits:**
 1. Optimised Performance
 2. Security Controls
 3. Cost Optimisation (automatic)
 
-**Optimised Performance:S3 Tables""
+**Optimised Performance:S3 Tables**
 1. 10x Transactions Per Second (TPS)
-2. 3x Faster Query Performance
-S3tables are purpose-build of tables, so as soon S3recognised theis dataset is in tabular format that you are storing in iceberg format. AWS specifically apply optimisation on our behalf 
+2. 3x Faster Query Performance \
+S3tables are purpose-build for tables, so as soon S3 recognises the dataset is in iceberg tabular format.
+AWS specifically apply optimisation on our behalf for that S3table.
 
-**Performance benchmarks**
-General purpose buckets: 
+**Performance benchmarks** \
+**General purpose buckets:**
 Scale by prefix
 Adds TPS capacity under load, 
 starts at 5500 reads/seconds
@@ -169,4 +170,3 @@ to get the best out of the data that you're storing. The whole S3 team has actua
 2. https://aws.amazon.com/blogs/storage/how-amazon-ads-uses-iceberg-optimizations-to-accelerate-their-spark-workload-on-amazon-s3/
 3. https://aws.amazon.com/blogs/storage/how-amazon-s3-tables-use-compaction-to-improve-query-performance-by-up-to-3-times/
 4. https://github.com/awslabs/s3-tables-catalog
-
