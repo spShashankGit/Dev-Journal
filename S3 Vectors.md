@@ -37,6 +37,18 @@ This we can do by comparing the mathematical value of the vector that we derive 
 We can calculate the distance between one data point and another.
 We can also cluster data poitns together, this cluster represent data that have similar meaning.
 
+Now we can load of this in the vector store and build applications that can effectively calculate the similarities and differences and do grouping across thousands of dimensions.
+This is very important for the agents to behave human like i.e. they can figure out the similar items together. 
+
+The idea of replicationg hte reality in the equation is not new, we have been trying to model the realitxy in eqiation is a age old mathematical probiem. Example: Orientation the rocket into the outer space is a question of identifying the x,y & z cordinates.
+
+
+### How to find the nearest neighbour of the new piece of data?
+Calculate the vector of the new image/data points using the same embedding model and then compare it with other datapoints how similar or dissimilar it is with other data points across a particular dimension.
+
+#### Semantic Search
+This ability to find and identify similar bits of data
+in terms of meaning is called **semantic search**. And this is the **foundation of how all modern AI systems** retrieve and interact with information.
 
 ## Reference
 1. https://youtu.be/Sy2LHRyMXAo?si=S0gJHmCfeuheXLRz&t=2584
