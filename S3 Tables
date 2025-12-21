@@ -78,6 +78,8 @@ The S3 tables will make sure old snapshort are agin out(deleted?) and the associ
 All of these procedures are policy driven. So that you can define how many of these snapshots you want to keep around and for how long you want to keep them around.
 Also checking the integrity of the table i.e. you can go back and look up ho maintenance operations are faring for those tables.
 
+
+
 **S3**
 Originally build: 2006
 Idea: Store the data securely & durably have it available when needed.
