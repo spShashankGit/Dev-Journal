@@ -150,7 +150,19 @@ Workload examples:
 1. Stream-in, store in table and visualise the quicksight.
 <img width="748" height="396" alt="image" src="https://github.com/user-attachments/assets/e774f023-88c1-42e7-8d26-22c97576d827" />
 
-2. 
+**Summary:**
+S3 Tables is our fully-managed Iceberg service. You get all the benefits of Apache Iceberg like time travel,
+
+transactional semantics, row-level updates and deletes, along with all the benefits of S3, right? Things that S3 is known for, elastic storage,
+
+extremely high performance for large data sets. And with S3 Tables, you get all of this without the operational overhead
+
+of existing Iceberg storage. We do all the maintenance for you, like Adi told you. We offer you access control mechanisms
+
+with IAM and with Lake Formation. We automatically integrate all of this stuff with the the AWS analytics systems
+to get the best out of the data that you're storing. The whole S3 team has actually worked incredibly hard
+
+
 
 ## Reference: 
 1. https://www.youtube.com/watch?v=1U7yX4HTLCI
