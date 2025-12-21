@@ -86,5 +86,16 @@ Embedding model: Amzon Nova
 
 <img width="943" height="933" alt="image" src="https://github.com/user-attachments/assets/bba9036a-9fb3-40e9-893d-9c86b40a0e7a" />
 
+**Final goal:**
+Chat with the data i.e. used the Nova and the CLI to ask the question about the name of the volunteers of the reinvent 2025.
+
+<img width="846" height="624" alt="image" src="https://github.com/user-attachments/assets/0a7b95c7-3e14-42bf-9118-8f02e2da1d5a" />
+
+Knowledgebase ID:
+<img width="558" height="140" alt="image" src="https://github.com/user-attachments/assets/f813de68-834d-4e48-80e8-4331a10ab479" />
+
+Answer of the prompt:
+<img width="787" height="209" alt="image" src="https://github.com/user-attachments/assets/31681ccc-e919-4042-b8fa-143dd3e57775" />
+
 ## Reference
 1. https://youtu.be/Sy2LHRyMXAo?si=S0gJHmCfeuheXLRz&t=2584
