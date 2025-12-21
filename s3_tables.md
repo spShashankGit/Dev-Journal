@@ -1,5 +1,4 @@
 # S3 Tables
-
 GA: 03.12.2024 \
 Table bucket: Store Apache Iceberg format tables natively in S3 and S3 now supports tables as a new construct.
 
@@ -65,7 +64,7 @@ Iceberg provides a way to solve this i.e. do the compaction of the smaller data 
 
 **Current and future solution for compaction**
 This traditionally need developers to do this. Now in S3 this can be achieved in the background and automatically leads to the shorter query times.
-Can lead uptom 3x improvement in the query times. Blog post is linked[3]
+Can lead uptom 3x improvement in the query times. Blog post is linked[^3]
 ___
 **Security Controls**
 Now that S3Tables itself are resources you can apply resource policy to them and manage read/write permissions to them directly.
@@ -123,23 +122,21 @@ i.e. query the data using the Athena, perform deep analysis using Redshift and s
 Constrcut visualization using Amazon quicksight.
 You can connect data sources like Kinesis and CloudWatch log and IoT devices.
 
-S3 tables is a native iceberg product. There is a rich ecosystem both inside the AWS ecosystem that is known to write the data into the Iceberg tables but also third-party services that know how to generate the Iceberg tables and store them somewhere you would like them to.
+**S3 tables is a native iceberg product.** There is a rich ecosystem both inside the AWS ecosystem that is known to write the data into the Iceberg tables but also third-party services that know how to generate the Iceberg tables and store them somewhere you would like them to.
 
-Analyse the data that is stores in teh S3 Tables
-Option 1: Amazon Athena: Serverless sequel engine that can natively query S3 Tables through Glue Table Catalogue.
-```Select * from catalogu:name.namespace_of_tables.table_name```
+Analyse the data that is stores in the S3 Tables\
+**Option 1: Amazon Athena:** Serverless sequel engine that can natively query S3 Tables through Glue Table Catalogue.
+`Select * from catalogue:name.namespace_of_tables.table_name`
 
-
-Option 2: Amazon Redshift: Warehouse analytics service, offer rich integration of the services across the entine organisation.
+**Option 2: Amazon Redshift:** Warehouse analytics service, offer rich integration of the services across the entine organisation.
 Offers real high performance query engine specifically for Iceberg and for large volumes of Iceberg in particular.
 
 With Athena you can query a simple query and then go to fast query engine like Redshift for terrabyte of petabyte of the iceberg table.
 Ability to get the fine-grained access control with the AWS Lake Formation.
-
-Lake Formation is a way to specify which users have access to each of your tables and even to individual columns or rows within a table.
-So Lake Formation integrates with IAM, of course, but it also integrates with IAM Identity Center.
-roles or your IAM users, but over your federated identities.
-33:52
+_____
+**Lake Formation** is a way to specify which users have access to each of your tables and even to individual columns or rows within a table.
+So Lake Formation integrates with IAM and it also integrates with IAM Identity Center.
+Roles or your IAM users, but over your federated identities.
 So things like an active directory instance with your users or an Okta instance or any number of identity providers that integrate with IAM.
 Autmatic.
 
@@ -149,31 +146,33 @@ Offer an open source Iceberg catalogue for integrating your analytics engine of 
 
 In Iceberg catalogue is essentially a connector that helps to discover the Iceberg metadata for the table you want to query.
 
-**S3 tables cataloue tables for Iceberg is a plugin that allows your spark plugin to directly connect to the S3 Tabels to discover and work with the tables.
+**S3 tables catalouge tables for Iceberg**: is a plugin that allows your spark plugin to directly connect to the S3 Tabels to discover and work with the tables.
 Docs available for copy-paste instruction on how to connect external spark workload to S3 tables.
-The S3 Tables Catalogue is open source and can be found at [4].
+The S3 Tables Catalogue is open source and can be found at [^4].
 
 Workload examples: 
 1. Stream-in, store in table and visualise the quicksight.
 <img width="748" height="396" alt="image" src="https://github.com/user-attachments/assets/e774f023-88c1-42e7-8d26-22c97576d827" />
 
 **Summary:**
-S3 Tables is our fully-managed Iceberg service. You get all the benefits of Apache Iceberg like time travel,
+S3 Tables is our fully-managed Iceberg service. You get all the benefits of Apache Iceberg like 
+1. time travel,
+2. transactional semantics, 
+3. row-level updates and deletes, 
+4. along with all the benefits of S3.
 
-transactional semantics, row-level updates and deletes, along with all the benefits of S3, right? Things that S3 is known for, elastic storage,
+Things that S3 is known for:
+1. elastic storage,
+2. extremely high performance for large data sets. 
 
-extremely high performance for large data sets. And with S3 Tables, you get all of this without the operational overhead
+And with S3 Tables, you get all of this without the operational overhead of existing Iceberg storage. We do all the maintenance for you. We offer you access control mechanisms with IAM and with Lake Formation. 
 
-of existing Iceberg storage. We do all the maintenance for you, like Adi told you. We offer you access control mechanisms
-
-with IAM and with Lake Formation. We automatically integrate all of this stuff with the the AWS analytics systems
-to get the best out of the data that you're storing. The whole S3 team has actually worked incredibly hard
-
+We automatically integrate all of this stuff with the the AWS analytics systems to get the best out of the data that you're storing.
 
 
 ## Reference: 
 1. https://www.youtube.com/watch?v=1U7yX4HTLCI
 
 [^2]: https://aws.amazon.com/blogs/storage/how-amazon-ads-uses-iceberg-optimizations-to-accelerate-their-spark-workload-on-amazon-s3/
-3. https://aws.amazon.com/blogs/storage/how-amazon-s3-tables-use-compaction-to-improve-query-performance-by-up-to-3-times/
-4. https://github.com/awslabs/s3-tables-catalog
+[^3]: https://aws.amazon.com/blogs/storage/how-amazon-s3-tables-use-compaction-to-improve-query-performance-by-up-to-3-times/
+[^4]: https://github.com/awslabs/s3-tables-catalog
