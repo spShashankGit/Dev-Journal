@@ -83,23 +83,25 @@ Old snapshots need not to stay forever as you will be pointing your dataset to t
 The S3 tables will make sure old snapshort are phasing out(deleted?) and the associated files and garbage collector(clean up unreferenced file associated with older snapshot) for that files are run. Elimiinating the manual effort.
 All of these procedures are policy driven. So that you can define how many of these snapshots you want to keep around and for how long you want to keep them around.
 Also checking the integrity of the table i.e. you can go back and look up the maintenance operations for those tables.
+- - - - - - - - - - - - - - - - - - - - - - - - - -
 
-**S3**
-Originally build: 2006
-Idea: Store the data securely & durably have it available when needed.
-Envisioned filed stored: Video, Photos and other static content
-Current usage: Data used for Analytics, Machine Learning and AI 
-Usage: Meterological data, financial transactions and records
+### S3
+Originally build: 2006 \
+Idea: Store the data securely & durably have it available when needed.\
+Envisioned filed stored: Video, Photos and other static content\
+Current usage: Data used for Analytics, Machine Learning and AI \
+Usage: Meterological data, financial transactions and records \
 Format: Apache Parquet (Tabular format)
 
-Problem with Parquet datafiles: Evolving the schema was difficult because adding and removing columns means that efforts is spent in making sure data can be consumed at speeed at scale. Does this mean we need to update schema in each and every application?
+**Problem with Parquet datafiles:** Evolving the schema was difficult because adding and removing columns means that efforts is spent in making sure data can be consumed at speeed at scale. Does this mean we need to update schema in each and every application?
 Iceberg: Adds metadata file, metadata allows to structure the data, safe transactions, time-travel, SQL semantic, allows consistency of the data
 
-Iceberg features
+#### Iceberg features
 1. Time travel
 2. Schema information
 3. Compaction
-
+_____________
+### Demo session starts here
 
 **S3 Tables in action**
 James: Pr. Engineer at S3 team
