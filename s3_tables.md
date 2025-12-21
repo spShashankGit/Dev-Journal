@@ -44,8 +44,7 @@ Right way to delete/overwrite the object is throught the maintenance policies.
 S3tables are purpose-build for tables, so as soon S3 recognises the dataset is in iceberg tabular format.
 AWS specifically apply optimisation on our behalf for that S3table.
 
-**Performance benchmarks** \
-
+**Performance benchmarks**
 | General purpose buckets           | Table buckets |
 | ----------------------------      | ----------- |
 | Scale by prefix                   | S3 storage optimised for iceberg key naming|
@@ -54,6 +53,7 @@ AWS specifically apply optimisation on our behalf for that S3table.
 | Starts at 3500 writes/seconds.    | Starts at 35000 write/seconds
 *Under load S3 request additional resources to achieve the demand. | 
 
+[!NOTE]
 **Open Source Contribution:** AWS contributed to Iceberg: in which you are writing your data and laying out your data files in Iceberg now is better optimized to be able to take advantage
 of the automatic scaling that S3 provides. Blog post is also available [2]
 ______
@@ -112,13 +112,13 @@ AWS Analytics:
 2. Amazon Athena
 3. Amazon Redshift
 4. Amazon Quicksight
-5. Amazon Data Firehose
-Centre of all this integration is Glue Data Catalogue. Long time Glue Data Catalogue has supoprted tables stored in self managed S3 buckets.
-That means we have to managed the tables ourselves 
+5. Amazon Data Firehose\
 
-+ With S3 Tabels your tables are automatically registered with the Glue Data Catalogue so that we do not have to make sure that every table is registered there for the access.
+Centre of all this integration is Glue Data Catalogue. Long time Glue Data Catalogue has supoprted tables stored in self managed S3 buckets. That means we have to managed the tables ourselves.
 
-+ Ones the tables are registered with the Glue Data Catalogue they aitomatically show-up across the AWS Analytics ecosystem.
+With S3 Tabels your tables are automatically registered with the Glue Data Catalogue so that we do not have to make sure that every table is registered there for the access.
+
+Ones the tables are registered with the Glue Data Catalogue they aitomatically show-up across the AWS Analytics ecosystem.
 i.e. query the data using the Athena, perform deep analysis using Redshift and stream the data directly into your S3 tables using Amazon Data Firehose
 Constrcut visualization using Amazon quicksight.
 You can connect data sources like Kinesis and CloudWatch log and IoT devices.
