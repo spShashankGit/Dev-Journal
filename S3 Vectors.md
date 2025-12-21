@@ -50,5 +50,24 @@ Calculate the vector of the new image/data points using the same embedding model
 This ability to find and identify similar bits of data
 in terms of meaning is called **semantic search**. And this is the **foundation of how all modern AI systems** retrieve and interact with information.
 
+**Insight:**
+Metadata for the text can be bigger then the text storage itself. This goes to show how much meaning is threre in the human language.
+<img width="400" height="325" alt="image" src="https://github.com/user-attachments/assets/ded42886-b810-4762-96f1-1dc4b8f9a352" />
+1GB of text could have approx 2.3 GB of metadata.
+
+With RAG 100s of milisecond can be traded for the lower storage cost make sense.
+
+Semantic search on video, where video are retrieved from glacier archive, for this usecase.. trading latency for the storage cost is a very viable option.
+<img width="400" height="325" alt="image" src="https://github.com/user-attachments/assets/64d5dc1c-c87e-4591-889b-ea424bf7cc61" />
+
+After speaking with customer it has been identified:
+1. Growing new dataset that need reliable storage.
+2. Workloads willing to trade-off latency for a lower storatge cost.
+What is why S3 verctor is launced that is a native vector store in S3 that reduced the cost of vector storage by upto 90%.
+It gves you latency upto 100ms range,
+store upto 2 Billion vector per index and
+upto 10,000 indexes per vector bucket.
+
+
 ## Reference
 1. https://youtu.be/Sy2LHRyMXAo?si=S0gJHmCfeuheXLRz&t=2584
