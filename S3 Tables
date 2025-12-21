@@ -79,7 +79,6 @@ All of these procedures are policy driven. So that you can define how many of th
 Also checking the integrity of the table i.e. you can go back and look up ho maintenance operations are faring for those tables.
 
 
-
 **S3**
 Originally build: 2006
 Idea: Store the data securely & durably have it available when needed.
@@ -97,6 +96,18 @@ Iceberg features
 3. Compaction
 
 
+**S3 Tables in action**
+James: Pr. Engineer at S3 team
+
+Table on it own do not give us the possibility to read the data stored in the table i.e. read the bit or byts.
+AWS Analytics:
+1. Amazon EMR
+2. Amazon Athena
+3. Amazon Redshift
+4. Amazon Quicksight
+5. Amazon Data Firehose
+Centre of all this integration is Glue Data Catalogue. Long time Glue Data Catalogue has supoprted tables stored in self managed S3 buckets.
+That means we have to managed the tables ourselves 
 
 ## Reference: 
 1. https://www.youtube.com/watch?v=1U7yX4HTLCI
