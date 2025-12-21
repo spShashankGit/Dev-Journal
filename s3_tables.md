@@ -1,20 +1,3 @@
-# Test Page
-
-> [!IMPORTANT]
-> If this doesn't turn purple, something is wrong with the GitHub renderer in your specific repository.
-
-> [!TIP]
-> Helpful advice for doing things better or more easily.
-
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
-
 # S3 Tables
 
 GA: 03.12.2024 \
@@ -70,7 +53,8 @@ AWS specifically apply optimisation on our behalf for that S3table.
 | Starts at 3500 writes/seconds.    | Starts at 35000 write/seconds
 *Under load S3 request additional resources to achieve the demand. | 
 
-**Open Source Contribution:** AWS contributed to Iceberg: in which you are writing your data and laying out your data files in Iceberg now is better optimized to be able to take advantage
+> [!IMPORTANT]
+> Open Source Contribution:AWS contributed to Iceberg: in which you are writing your data and laying out your data files in Iceberg now is better optimized to be able to take advantage
 of the automatic scaling that S3 provides. Blog post is also available [^2]
 ______
 
