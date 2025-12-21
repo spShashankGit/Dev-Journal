@@ -123,9 +123,38 @@ Option 1: Amazon Athena: Serverless sequel engine that can natively query S3 Tab
 ```Select * from catalogu:name.namespace_of_tables.table_name```
 
 
-Option 2: Amazon Redshift
+Option 2: Amazon Redshift: Warehouse analytics service, offer rich integration of the services across the entine organisation.
+Offers real high performance query engine specifically for Iceberg and for large volumes of Iceberg in particular.
+
+With Athena you can query a simple query and then go to fast query engine like Redshift for terrabyte of petabyte of the iceberg table.
+Ability to get the fine-grained access control with the AWS Lake Formation.
+
+Lake Formation is a way to specify which users have access to each of your tables and even to individual columns or rows within a table.
+So Lake Formation integrates with IAM, of course, but it also integrates with IAM Identity Center.
+roles or your IAM users, but over your federated identities.
+33:52
+So things like an active directory instance with your users or an Okta instance or any number of identity providers that integrate with IAM.
+Autmatic.
+
+Customers also use S3 Tables with Amazom EMR using their spark infrastructure and the Flink streaming infrastructure.
+
+Offer an open source Iceberg catalogue for integrating your analytics engine of your choice with S3 Tables.
+
+In Iceberg catalogue is essentially a connector that helps to discover the Iceberg metadata for the table you want to query.
+
+**S3 tables cataloue tables for Iceberg is a plugin that allows your spark plugin to directly connect to the S3 Tabels to discover and work with the tables.
+Docs available for copy-paste instruction on how to connect external spark workload to S3 tables.
+The S3 Tables Catalogue is open source and can be found at [4].
+
+Workload examples: 
+1. Stream-in, store in table and visualise the quicksight.
+<img width="748" height="396" alt="image" src="https://github.com/user-attachments/assets/e774f023-88c1-42e7-8d26-22c97576d827" />
+
+2. 
 
 ## Reference: 
 1. https://www.youtube.com/watch?v=1U7yX4HTLCI
 2. https://aws.amazon.com/blogs/storage/how-amazon-ads-uses-iceberg-optimizations-to-accelerate-their-spark-workload-on-amazon-s3/
 3. https://aws.amazon.com/blogs/storage/how-amazon-s3-tables-use-compaction-to-improve-query-performance-by-up-to-3-times/
+4. https://github.com/awslabs/s3-tables-catalog
+
