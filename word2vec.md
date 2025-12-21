@@ -70,6 +70,7 @@ Divide the Dot Product by the product of the Magnitudes:
 
 $$\text{Similarity} = \frac{-0.0225}{0.286 \times 0.672} = \frac{-0.0225}{0.192} \approx \mathbf{-0.11}$$
 
+A score of -0.11 is very close to 0.
 
 ### How to Interpret the Score
 The result is always a number between -1 and 1:
@@ -79,3 +80,17 @@ The result is always a number between -1 and 1:
 * 0 (Angle is 90°): The vectors are "orthogonal" (perpendicular). They are completely unrelated (like "Blockchain" and "Bananas").
 
 * -1 (Angle is 180°): The vectors are perfect opposites. (In word embeddings, scores usually stay between 0 and 1).
+
+### What this tells us: 
+After only one single update of training, the computer still thinks "Car" and "Bus" are unrelated (orthogonal). They started in different "quadrants" of our graph.
+
+**Why?** Because the vectors started with random numbers. One update isn't enough to pull them together.
+
+### What happens in a real Semantic Search?
+In a real system like Google:
+
+1. The training runs for millions of iterations.
+
+2. The vectors eventually move so that they are pointing in almost the exact same direction.
+
+3. Their Cosine Similarity score would eventually climb from -0.11 to something like 0.85 or 0.95.
