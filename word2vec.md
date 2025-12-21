@@ -36,3 +36,46 @@ There are two primary ways to calculate the dot product of two vectors, $\vec{a}
 |Maximized When|Vectors are Parallel (0°)|Vectors are Perpendicular (90°)|
 |Zero When|Vectors are Perpendicular|Vectors are Parallel|
 |Commutative?|Yes (a⋅b=b⋅a)|No (a×b=−b×a)|
+
+
+
+## Cosine similarity
+ $$\text{Similarity}(\mathbf{A}, \mathbf{B}) = \cos(\theta) = \frac{\sum_{i=1}^{n} A_i B_i}{\sqrt{\sum_{i=1}^{n} A_i^2} \sqrt{\sum_{i=1}^{n} B_i^2}}$$
+
+
+### The Data 
+ We will use the "updated" vectors we calculated after one step of training:
+* Car (Vector A): $[0.23, 0.17]
+* $Bus (Vector B): $[-0.46, 0.49]$2. 
+
+The Three-Step Calculation
+
+**Step A:Calculate the Dot Product ($A \cdot B$)**\
+Multiply the $x$ coordinates, multiply the $y$ coordinates, and add them up.
+
+$$(0.23 \times -0.46) + (0.17 \times 0.49)$$
+$$-0.1058 + 0.0833 = \mathbf{-0.0225}$$
+
+**Step B:Calculate the Magnitudes (Lengths)**
+
+We use the Pythagorean theorem ($\sqrt{x^2 + y^2}$) for each.
+
+* **Magnitude A (Car):** $\sqrt{0.23^2 + 0.17^2} = \sqrt{0.0529 + 0.0289} = \mathbf{0.286}$
+
+* **Magnitude B (Bus):** $\sqrt{(-0.46)^2 + 0.49^2} = \sqrt{0.2116 + 0.2401} = \mathbf{0.672}$
+
+**Step C: The Final Division**
+
+Divide the Dot Product by the product of the Magnitudes:
+
+$$\text{Similarity} = \frac{-0.0225}{0.286 \times 0.672} = \frac{-0.0225}{0.192} \approx \mathbf{-0.11}$$
+
+
+### How to Interpret the Score
+The result is always a number between -1 and 1:
+
+* 1 (Angle is 0°): The vectors are identical in direction. In AI, this means the words/documents have the exact same meaning.
+
+* 0 (Angle is 90°): The vectors are "orthogonal" (perpendicular). They are completely unrelated (like "Blockchain" and "Bananas").
+
+* -1 (Angle is 180°): The vectors are perfect opposites. (In word embeddings, scores usually stay between 0 and 1).
