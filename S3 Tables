@@ -114,9 +114,16 @@ That means we have to managed the tables ourselves
 + Ones the tables are registered with the Glue Data Catalogue they aitomatically show-up across the AWS Analytics ecosystem.
 i.e. query the data using the Athena, perform deep analysis using Redshift and stream the data directly into your S3 tables using Amazon Data Firehose
 Constrcut visualization using Amazon quicksight.
-
 You can connect data sources like Kinesis and CloudWatch log and IoT devices.
 
+S3 tables is a native iceberg product. There is a rich ecosystem both inside the AWS ecosystem that is known to write the data into the Iceberg tables but also third-party services that know how to generate the Iceberg tables and store them somewhere you would like them to.
+
+Analyse the data that is stores in teh S3 Tables
+Option 1: Amazon Athena: Serverless sequel engine that can natively query S3 Tables through Glue Table Catalogue.
+```Select * from catalogu:name.namespace_of_tables.table_name```
+
+
+Option 2: Amazon Redshift
 
 ## Reference: 
 1. https://www.youtube.com/watch?v=1U7yX4HTLCI
