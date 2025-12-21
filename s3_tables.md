@@ -45,19 +45,17 @@ S3tables are purpose-build for tables, so as soon S3 recognises the dataset is i
 AWS specifically apply optimisation on our behalf for that S3table.
 
 **Performance benchmarks** \
-**General purpose buckets:**
-Scale by prefix
-Adds TPS capacity under load, 
-starts at 5500 reads/seconds
-starts at 3500 writes/seconds
-Under load S3 request additional resources to achieve the demand.
 
-Table buckets
-S3 storage optimised for iceberg key naming
-TPS startes at 55000 read/seconds
-35000 write/seconds
-AWS contributed to Iceberg: in which you are writing your data and laying out your data files in Iceberg now is better optimized to be able to take advantage
-of the automatic scaling that S3 provides. Blog post is also available [2]
+| General purpose buckets           | Table buckets |
+| ----------------------------      | ----------- |
+| Scale by prefix                   | S3 storage optimised for iceberg key naming|
+| Adds TPS capacity under load      | Add TPS capacity under load|
+| TPS startes at 55000 read/seconds | TPS startes at 55000 read/seconds |
+| Starts at 3500 writes/seconds.    | Starts at 35000 write/seconds
+| Under load S3 request additional resources to achieve the demand. | 
+
+**Open Source Contribution:** AWS contributed to Iceberg: in which you are writing your data and laying out your data files in Iceberg now is better optimized to be able to take advantage
+of the automatic scaling that S3 provides. Blog post is also available [2] \
 
 Overtimes tables will continue to grow and this means query will be more because it has to go through now additional files.
 Iceberg provides a way to solve this i.e. do the compaction of the smaller data files into the larget ones.
