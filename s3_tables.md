@@ -49,10 +49,10 @@ AWS specifically apply optimisation on our behalf for that S3table.
 | General purpose buckets           | Table buckets |
 | ----------------------------      | ----------- |
 | Scale by prefix                   | S3 storage optimised for iceberg key naming|
-| Adds TPS capacity under load      | Add TPS capacity under load|
+| Adds TPS capacity under load*     | Add TPS capacity under load*|
 | TPS startes at 55000 read/seconds | TPS startes at 55000 read/seconds |
 | Starts at 3500 writes/seconds.    | Starts at 35000 write/seconds
-| Under load S3 request additional resources to achieve the demand. | 
+*Under load S3 request additional resources to achieve the demand. | 
 
 **Open Source Contribution:** AWS contributed to Iceberg: in which you are writing your data and laying out your data files in Iceberg now is better optimized to be able to take advantage
 of the automatic scaling that S3 provides. Blog post is also available [2] \
@@ -76,7 +76,6 @@ To manage this applications needs teams to do that. Now AWS can take care of tha
 The S3 tables will make sure old snapshort are agin out(deleted?) and the associated files and garbage collector(clean up unreferenced file associated with older snapshot) for that files are run. Elimiinating the manual effort.
 All of these procedures are policy driven. So that you can define how many of these snapshots you want to keep around and for how long you want to keep them around.
 Also checking the integrity of the table i.e. you can go back and look up ho maintenance operations are faring for those tables.
-
 
 **S3**
 Originally build: 2006
