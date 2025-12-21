@@ -1,3 +1,20 @@
+# Test Page
+
+> [!IMPORTANT]
+> If this doesn't turn purple, something is wrong with the GitHub renderer in your specific repository.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
 # S3 Tables
 
 GA: 03.12.2024 \
@@ -53,9 +70,8 @@ AWS specifically apply optimisation on our behalf for that S3table.
 | Starts at 3500 writes/seconds.    | Starts at 35000 write/seconds
 *Under load S3 request additional resources to achieve the demand. | 
 
-[!NOTE]
 **Open Source Contribution:** AWS contributed to Iceberg: in which you are writing your data and laying out your data files in Iceberg now is better optimized to be able to take advantage
-of the automatic scaling that S3 provides. Blog post is also available [2]
+of the automatic scaling that S3 provides. Blog post is also available [^2]
 ______
 
 ### Compaction of smaller tables into bigger one
@@ -173,6 +189,7 @@ to get the best out of the data that you're storing. The whole S3 team has actua
 
 ## Reference: 
 1. https://www.youtube.com/watch?v=1U7yX4HTLCI
-2. https://aws.amazon.com/blogs/storage/how-amazon-ads-uses-iceberg-optimizations-to-accelerate-their-spark-workload-on-amazon-s3/
+
+[^2]: https://aws.amazon.com/blogs/storage/how-amazon-ads-uses-iceberg-optimizations-to-accelerate-their-spark-workload-on-amazon-s3/
 3. https://aws.amazon.com/blogs/storage/how-amazon-s3-tables-use-compaction-to-improve-query-performance-by-up-to-3-times/
 4. https://github.com/awslabs/s3-tables-catalog
