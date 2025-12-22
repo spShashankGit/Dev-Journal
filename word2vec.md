@@ -103,21 +103,23 @@ In a real system like Google:
 
 ## Blob post/ LinkedIn post
 
-### Beyond Keywords: How AI Actually "Understands" the World
+### Semantic Search: How AI "Understands" the World
 
-As holiday season is actually going on, I realised how come my phone is able to club all the dinner photos together and present them to me.
-The key questions is How is my phone able to understand what is inside the photos? 
+As holiday season is actually going on, I realised how come my phone is able to club all the dinner photos together and present them to me. One could argue I am late in asking this question, as this feature has been around for decades :D
+Well, I say, better late then never :D 
+
+For my research the key questions was: How is my phone able to understand the photos? 
 
 Turns out it is smart use of maths (vectors) and oversimiplifaction explanation is:
-1. Traverse the new data point (text or image)
-2. Generate the data (mathematical)
-    - Because computer do not understand pixels on screen or words, only numbers
-3. Perform the dot multiplication or cosine similarity on those vectors
-    - It is our way to mathematically figure out how similar or dissimilar the two vectors are
-4. Find the nearest neighbour of the searched keyword and suggest the recommendation
-    - Once all the data points are suggest the closest member
+1. Traverse the new text or image data point
+2. Generate the data (Embedding)
+    - Because computer do not understand pixels on screen or words, only numbers.
+3. Perform the dot multiplication or cosine similarity on those vectors (Cosine Similarity)
+    - It is our way to mathematically figure out how similar or dissimilar the two vectors are.
+4. Find the nearest neighbour of the searched keyword and suggest the recommendation (Vector Databases)
+    - Once all the data points are suggest the closest member.
 
-**Futrue work: How the databases are able to do this at scale?**
+**Futrue work: How the databases & search algorithms are able to do this at scale and which indexing algorithem  are they using?**
 
 Have you ever wondered why Google can find a "car" when you search for "fast vehicle," even if the word "car" isn't on the page? The secret lies in a fascinating blend of high-dimensional math and a "neighborhood" logic known as **Semantic Search**.
 
