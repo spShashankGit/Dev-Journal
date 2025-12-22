@@ -93,4 +93,87 @@ In a real system like Google:
 
 2. The vectors eventually move so that they are pointing in almost the exact same direction.
 
-3. Their Cosine Similarity score would eventually climb from -0.11 to something like 0.85 or 0.95.
+3. Their Cosine Similarity score would eventually climb from -0.11 to something like 0.85 or 0.95
+
+
+
+
+
+
+
+## Blob post/ LinkedIn post
+
+### Beyond Keywords: How AI Actually "Understands" the World
+
+As holiday season is actually going on, I realised how come my phone is able to club all the dinner photos together and present them to me.
+The key questions is How is my phone able to understand what is inside the photos? 
+
+Turns out it is smart use of maths (vectors) and oversimiplifaction explanation is:
+1. Traverse the new data point (text or image)
+2. Generate the data (mathematical)
+    - Because computer do not understand pixels on screen or words, only numbers
+3. Perform the dot multiplication or cosine similarity on those vectors
+    - It is our way to mathematically figure out how similar or dissimilar the two vectors are
+4. Find the nearest neighbour of the searched keyword and suggest the recommendation
+    - Once all the data points are suggest the closest member
+
+**Futrue work: How the databases are able to do this at scale?**
+
+Have you ever wondered why Google can find a "car" when you search for "fast vehicle," even if the word "car" isn't on the page? The secret lies in a fascinating blend of high-dimensional math and a "neighborhood" logic known as **Semantic Search**.
+
+In this post, we’ll break down the three pillars of modern AI search: **Embeddings**, **Cosine Similarity**, and **Vector Databases**.
+
+---
+
+### 1. Embeddings: Turning Words into a Map
+
+Computers don't understand letters; they understand numbers. To bridge this gap, we use **Vector Embeddings**.
+
+An embedding is a list of coordinates that places a word on a giant "meaning map."
+
+* **The Logic:** Words that "hang out" in the same sentences (like *Bus* and *Driver*) are nudged closer together by an AI.
+* **The Weirdness:** Sometimes, this map picks up on unexpected traits. In our experiments, a **Bus** and a **Banana** ended up closer than expected simply because they are both "Yellow" and "Oblong."
+
+### 2. Cosine Similarity: The AI's Compass
+
+Once words are on the map, how do we know how close they are? We use **Cosine Similarity**.
+
+Instead of measuring the distance with a ruler, we measure the **angle** between two vectors.
+
+* **1.0 Score:** The words are "twins" (e.g., *Automobile* and *Car*).
+* **0.5 Score:** They are "cousins" (e.g., *Bus* and *Car*—both vehicles).
+* **0.0 Score:** They are "strangers" (e.g., *Bus* and *Tuesday*).
+
+### 3. Semantic Search: Finding the Needle in the Haystack
+
+**Semantic Search** is the engine that puts this math to work. When you type a query, the system:
+
+1. **Vectorizes** your query into a coordinate.
+2. **Scans** a **Vector Database** (a specialized library for these numbers).
+3. **Calculates** the cosine similarity between your query and millions of documents.
+
+Because it searches by *intent* rather than *characters*, it can find matches that keyword-based search would miss entirely.
+
+---
+
+### Why It Matters
+
+This technology is the backbone of everything from **Netflix recommendations** to **ChatGPT**. It allows machines to grasp the nuance of human language—even if it occasionally gets distracted by the fact that school buses and bananas are both yellow!
+
+---
+
+### Summary Table for the Reader
+
+| Concept | What it is | Role |
+| --- | --- | --- |
+| **Embedding** | A list of numbers (coordinates) | Defines the "Meaning" |
+| **Cosine Similarity** | An angular measurement | Calculates "Relationship" |
+| **Vector Database** | A high-speed storage system | Enables "Search" |
+---
+
+
+![alt text](image.png)
+
+If you would like to see the jupyter notebook directly [Google colab link](https://colab.research.google.com/drive/16irp5ndxugWszjS_5MLyHDJqy9oF2UA1?usp=sharing)
+
+Jupyter notebook can be found on github [cosine_similarity.ipynb](https://github.com/spShashankGit/Dev-Journal/blob/main/cosine_similarity.ipynb)
