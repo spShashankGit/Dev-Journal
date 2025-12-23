@@ -1,13 +1,3 @@
-
-| Dimension (Feature) | Car (Vector) | Bus (Vector) | Apple (Vector)|
-|----|----|----|----|
-| Is it a vehicle?| 0.98 |0.99 |0.01 |
-|Is it for public transport? | 0.12 | 0.95 | 0.02|
-|Does it have wheels?|0.95|0.97|0.00|
-Is it edible?|0.00|0.00|0.98|
-
-
-
 ## The Dot Product (Scalar Product)
 The dot product measures how much two vectors "align" with each other. The result is always a scalar (a single number, not a vector).
 
@@ -95,6 +85,12 @@ In a real system like Google:
 
 3. Their Cosine Similarity score would eventually climb from -0.11 to something like 0.85 or 0.95
 
+| Dimension (Feature) | Car (Vector) | Bus (Vector) | Apple (Vector)|
+|----|----|----|----|
+| Is it a vehicle?| 0.98 |0.99 |0.01 |
+|Is it for public transport? | 0.12 | 0.95 | 0.02|
+|Does it have wheels?|0.95|0.97|0.00|
+Is it edible?|0.00|0.00|0.98|
 
 ^-^    | ^-^  |  ^-^  |  ^-^  |  ^-^   | ^-^  |  ^-^  |  ^-^  |  ^-^  |  ^-^  |  ^-^  |
 
