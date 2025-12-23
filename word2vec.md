@@ -96,26 +96,23 @@ In a real system like Google:
 3. Their Cosine Similarity score would eventually climb from -0.11 to something like 0.85 or 0.95
 
 
-
-
-
-
+^-^    | ^-^  |  ^-^  |  ^-^  |  ^-^   | ^-^  |  ^-^  |  ^-^  |  ^-^  |  ^-^  |  ^-^  |
 
 ## Blob post/ LinkedIn post
 
 ### Semantic Search: How AI "Understands" the World
 
-As holiday season is actually going on, I asked myself how come my phone is able to club all the dinner photos together in a reasonable library. One could argue I am late in asking this question, as this feature has been around for decades :D
+As holiday season is on, I asked myself how come my phone is able to club all the dinner photos together in a reasonably named library. One could argue I am late in asking this question, as this feature has been around for decades :D
 Well, I say, better late then never :D 
 
-For my research the key questions was: How is machine able to understand the photos? 
+For my research the key questions was: **How is machine able to understand the photos?**
 
-Turns out it is smart use of maths (vectors) and oversimiplifaction explanation is:
+Turns out it is smart use of maths (vectors) and my over-simplified explanation is:
 1. Traverse the new text or image data point
 2. Generate the data (Embedding)
     - Because computer do not understand pixels on screen or words, only numbers.
 3. Perform the dot multiplication or cosine similarity on those vectors (Cosine Similarity)
-    - It is our way to mathematically figure out how similar or dissimilar the two vectors are.
+    - It is our way to mathematically figure out how similar or dissimilar the two things (text or image) are.
 4. Find the nearest neighbour of the searched keyword and suggest the recommendation (Vector Databases)
     - Once all the data points are suggest the closest member.
 
@@ -128,27 +125,23 @@ Turns out it is smart use of maths (vectors) and oversimiplifaction explanation 
 | **Vector Database** | A high-speed storage system | Enables "Search" |
 ---
 
-**Future work: How the databases & search algorithms are able to do this at scale and which indexing algorithm  are they using?**
+**Future work: How the databases & search algorithms are able to do this at scale and which indexing algorithm are at work?**
 
 Have you ever wondered why Google can find a "car" when you search for "fast vehicle," even if the word "car" isn't on the page? The secret lies in a fascinating blend of high-dimensional math and a "neighborhood" logic known as **Semantic Search**.
 
 In this post, we’ll break down the three pillars of modern AI search: **Embeddings**, **Cosine Similarity**, and **Vector Databases**.
 
----
 
-### 1. Embeddings: Turning Words into a Map
+### 1. Embeddings: Turning data points into vector
 
 Computers don't understand letters; they understand numbers. To bridge this gap, we use **Vector Embeddings**.
-
 An embedding is a list of coordinates that places a word on a giant "meaning map."
-
 * **The Logic:** Words that "hang out" in the same sentences (like *Bus* and *Driver*) are nudged closer together by an AI.
 * **The Weirdness:** Sometimes, this map picks up on unexpected traits. In our experiments, a **Bus** and a **Banana** ended up closer than expected simply because they are both "Yellow" and "Oblong."
 
 ### 2. Cosine Similarity: The AI's Compass
 
 Once words are on the map, how do we know how close they are? We use **Cosine Similarity**.
-
 Instead of measuring the distance with a ruler, we measure the **angle** between two vectors.
 
 * **1.0 Score:** The words are "twins" (e.g., *Automobile* and *Car*).
