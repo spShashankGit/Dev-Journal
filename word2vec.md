@@ -105,10 +105,10 @@ In a real system like Google:
 
 ### Semantic Search: How AI "Understands" the World
 
-As holiday season is actually going on, I realised how come my phone is able to club all the dinner photos together and present them to me. One could argue I am late in asking this question, as this feature has been around for decades :D
+As holiday season is actually going on, I asked myself how come my phone is able to club all the dinner photos together in a reasonable library. One could argue I am late in asking this question, as this feature has been around for decades :D
 Well, I say, better late then never :D 
 
-For my research the key questions was: How is my phone able to understand the photos? 
+For my research the key questions was: How is machine able to understand the photos? 
 
 Turns out it is smart use of maths (vectors) and oversimiplifaction explanation is:
 1. Traverse the new text or image data point
@@ -119,7 +119,16 @@ Turns out it is smart use of maths (vectors) and oversimiplifaction explanation 
 4. Find the nearest neighbour of the searched keyword and suggest the recommendation (Vector Databases)
     - Once all the data points are suggest the closest member.
 
-**Futrue work: How the databases & search algorithms are able to do this at scale and which indexing algorithem  are they using?**
+### Summary of the whole experiment
+
+| Concept | What it is | Role |
+| --- | --- | --- |
+| **Embedding** | A list of numbers (coordinates) | Defines the "Meaning" |
+| **Cosine Similarity** | An angular measurement | Calculates "Relationship" |
+| **Vector Database** | A high-speed storage system | Enables "Search" |
+---
+
+**Future work: How the databases & search algorithms are able to do this at scale and which indexing algorithm  are they using?**
 
 Have you ever wondered why Google can find a "car" when you search for "fast vehicle," even if the word "car" isn't on the page? The secret lies in a fascinating blend of high-dimensional math and a "neighborhood" logic known as **Semantic Search**.
 
@@ -163,16 +172,6 @@ Because it searches by *intent* rather than *characters*, it can find matches th
 This technology is the backbone of everything from **Netflix recommendations** to **ChatGPT**. It allows machines to grasp the nuance of human language—even if it occasionally gets distracted by the fact that school buses and bananas are both yellow!
 
 ---
-
-### Summary Table for the Reader
-
-| Concept | What it is | Role |
-| --- | --- | --- |
-| **Embedding** | A list of numbers (coordinates) | Defines the "Meaning" |
-| **Cosine Similarity** | An angular measurement | Calculates "Relationship" |
-| **Vector Database** | A high-speed storage system | Enables "Search" |
----
-
 
 ![alt text](image.png)
 
