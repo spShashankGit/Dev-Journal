@@ -16,6 +16,5 @@ When you look closer Sarah is a project and not a human then you realise that th
 
 
 When the response contains explicit instruction that Sarah is a project and not a person, it is inferred that project cannot be invited to the meeting and following response was received.
-![Gemini response with Ontology](image-3.png)
-
+![Gemini response with Ontology](image-1.png)
 Hope this helps!
