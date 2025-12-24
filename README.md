@@ -34,4 +34,5 @@ Feel free to explore the topics and use this as a reference for software enginee
 - [Geneva Convention](geneva-convention.md) - Comprehensive guide to the international treaties establishing humanitarian protections in armed conflicts
 
 ### Whitepaper summaries
-- [Google-Evaluate your cloud migration options](whitepaper-summaries/evaluate-your-cloud-migration-options.md)
+- [Apple Labs - The illusion of thinking](whitepaper-summaries/Apple Labs - The illusion of thinking/illusion-of-thinking-apple-labs.md)
+- [OpenAI - Why language models hallucinate](whitepaper-summaries/Why Language Models Hallucinate/why-language-models-hallucinate-openai-research.md)
