@@ -38,6 +38,10 @@ Feel free to explore the topics and use this as a reference for software enginee
 ### Vector Embeddings
 - [Word2vec](word2vec.md)
 - [Vectors and storage solution for vector](s3_vectors.md)
+- [Cosine Similarities](cosine_similarity.ipynb)
 
 ### Tables as a storage solution
 - [S3 Tables a storage solution](s3_tables.md)
+
+### Metadata
+- [Metadata sharing/collection way](croissant-metadata.md)
