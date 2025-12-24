@@ -26,7 +26,7 @@ Feel free to explore the topics and use this as a reference for software enginee
 - [AI/ML Conferences Guide](AI-ML-Conferences.md) - Comprehensive guide to artificial intelligence and machine learning conferences worldwide
 
 ### Solutions Architect 
-- [Who needs an Architect?](who_needs_an_architect.md) - by Martin Fowler
+- [Who needs an Architect? - by Martin Fowler](who_needs_an_architect.md) 
 - [Cirbuit Breaker Pattern](circuit-breaker-pattern.md)
 
 ### International Law & Humanitarian Issues
