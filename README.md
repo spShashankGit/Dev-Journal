@@ -27,6 +27,7 @@ Feel free to explore the topics and use this as a reference for software enginee
 
 ### Solutions Architect 
 - [Who needs an Architect?](who_needs_an_architect.md) - by Martin Fowler
+- [Cirbuit Breaker Pattern](circuit-breaker-pattern.md)
 
 ### International Law & Humanitarian Issues
 - [Geneva Convention](geneva-convention.md) - Comprehensive guide to the international treaties establishing humanitarian protections in armed conflicts
