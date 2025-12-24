@@ -30,7 +30,7 @@ Feel free to explore the topics and use this as a reference for software enginee
 - [Cirbuit Breaker Pattern](circuit-breaker-pattern.md)
 
 ### International Law & Humanitarian Issues
-- [Geneva Convention](geneva-convention.md) - Comprehensive guide to the international treaties establishing humanitarian protections in armed conflicts
+- [Geneva Convention](geneva-convention.md)
 
 ### Whitepaper summaries
 - [Apple Labs - The illusion of thinking](./whitepaper-summaries/Apple%20Labs%20-%20The%20illusion%20of%20thinking/illusion-of-thinking-apple-labs.md)
