@@ -20,12 +20,10 @@ Feel free to explore the topics and use this as a reference for software enginee
 ### Machine Learning & Data Science
 - [Croissant Metadata](./croissant-metadata.md) - Understanding the standardized metadata format for ML datasets, its components, advantages, and why it was created.
 
-
 ### Coding best practices
 - [DRY Principle in Coding](DRY-Principle.md) - Understanding the "Don't Repeat Yourself" principle with practical examples
 - [Guard Conditions](guard-conditions.md) - Implementing defensive programming with guard conditions
 - [AI/ML Conferences Guide](AI-ML-Conferences.md) - Comprehensive guide to artificial intelligence and machine learning conferences worldwide
-
 
 ### Solutions Architect 
 - [Who needs an Architect?](who_needs_an_architect.md) - by Martin Fowler
@@ -36,3 +34,10 @@ Feel free to explore the topics and use this as a reference for software enginee
 ### Whitepaper summaries
 - [Apple Labs - The illusion of thinking](whitepaper-summaries/Apple Labs - The illusion of thinking/illusion-of-thinking-apple-labs.md)
 - [OpenAI - Why language models hallucinate](whitepaper-summaries/Why Language Models Hallucinate/why-language-models-hallucinate-openai-research.md)
+
+### Vector Embeddings
+- [Word2vec](word2vec.md)
+- [Vectors and storage solution for vector](s3_vectors.md)
+
+### Tables as a storage solution
+- [S3 Tables a storage solution](s3_tables.md)
