@@ -26,6 +26,9 @@ Feel free to explore the topics and use this as a reference for software enginee
 - [AI/ML Conferences Guide](AI-ML-Conferences.md) - Comprehensive guide to artificial intelligence and machine learning conferences worldwide
 - [Github submodules](./github-submodule.md)
 
+### Programming Paradigms
+- [Aspect-Oriented Programming](aspect-oriented-programming.md) - Comprehensive guide to AOP, programming paradigms, and Ralph Johnson's contributions
+
 ### Solutions Architect 
 - [Who needs an Architect? - by Martin Fowler](who_needs_an_architect.md) 
 - [Cirbuit Breaker Pattern](circuit-breaker-pattern.md)
