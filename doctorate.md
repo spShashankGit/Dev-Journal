@@ -18,3 +18,6 @@ Provide your own research proposal for the work or
 ### Duration
 Usually last betweeen 2-3 years for a full-time role
 For part-time role have seen on LinkedIn that it could last as long as 7 years and advantage is you get to do this while working at your full-time job.
+
+### Stipend
+Could be anywhere between 1500-3000€ depending upon the position, location and the company.
