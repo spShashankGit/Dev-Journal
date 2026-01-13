@@ -22,4 +22,4 @@ For part-time role have seen on LinkedIn that it could last as long as 7 years a
 Highly specialized field and the opportunity to make huge impact on the IT field through high-quality research..
 
 ### Stipend
-Could be anywhere between 1500-3000€ depending upon the position, location and the company.
+Could be anywhere between 1500-3000€ depending upon the position, location and the company..
