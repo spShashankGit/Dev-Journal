@@ -25,6 +25,10 @@ Mere discoveries, theories or mathematical formulae are not patentable in isolat
 > Software is just lines of code, like lines of poetry. Devoid of context software is not useful and so not patentable. However, software when running on a device creates all sorts of useful technical effects, for example routing phone calls, operating a robot arm or compressing data. Many inventions implemented on computers are therefore perfectly patentable – and an increasing proportion of applications to the European Patent Office, in fields ranging from transport to healthcare, feature software at some level.
 
 
+## What is Patent and what it is not?
+Take the quiz on EPO website, highly recommended [^4]
+
+[^4]: https://www.epo.org/en/new-to-patents/patent-quiz
 ## Cost
 Cost around 3500 for big company
 Cost around 2500 for an individual or small company [^1]
