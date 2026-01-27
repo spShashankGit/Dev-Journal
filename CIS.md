@@ -8,7 +8,7 @@ In the end, the Benchmarks are designed to be a key component of a comprehensive
 Recommendations on the services that are deployed on the AWS. For example:
 1. Ensure MFA is enabled for the 'root' user account (Automated)
 2. Ensure credentials unused for 45 days or more are disabled
-3. ..
+3. ...
 
 Each of the recommendation listed there are 
 1. Steps to be taken by the Auditer to test if the recommendation is being fulfulled.
