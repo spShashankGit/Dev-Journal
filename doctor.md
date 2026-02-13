@@ -23,3 +23,15 @@ Highly specialized field and the opportunity to make huge impact on the IT field
 
 ### Stipend
 Could be anywhere between 1500-3000€ depending upon the position, location and the company..
+
+
+Comments from Mahesh
+Few things I would like to suggest here are
+
+When to use ML: Whenever i think of using AI for a problem, first question comes to my mind is whether the problem requires AI or am I pushing it. The below is one of the several article which I finds useful.
+https://intellicoworks.com/rule-based-ai-vs-machine-learning/
+
+When I think of using a particular algorithm, one question comes to my mind is whether I am I choosing the right algorithm. I found these articles helpful on those ends
+-> https://machinelearningmastery.com/practical-guide-choosing-right-algorithm-your-problem/
+-> https://professional.mit.edu/news/articles/reinforcement-learning-right-your-ai-problem
+-> https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/single-agent-multiple-agents
