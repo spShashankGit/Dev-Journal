@@ -106,3 +106,26 @@ You have taken the high-rode of software engineering and architecture. Lot of th
 Greogr: Who wants themselved without printer drivers and a decent operating system, who want to go back to time when you cannot run code into the cloud servelss wihtout doing much anything.
 This can work internally very good internally if you understand your domain well.
 If you have good discipline you can make assumptions that other people cannot you can increase productivity you can harmoize and at the same time boost innovation.
+It can be done, it will not fall into your lap.
+
+## What are some of the strategies that we can adopt to do this incredible difficult thing?
+Architect Elevator
+Cloud Strategy
+Pltform Strategy
+
+You need a strategy: Strategy cannot be copy and paste architecture or strategy.
+Book cannot give answer, book need to go meta:
+1. How to make the right decisions
+2. How to find the right frameworks
+3. Here is the good model, framework to use.
+The book has to walk the fine balance so that it does not become so meta that it is not connected to the subject. e.g. How to become mgmt consultant.
+Oh you should have good decision discipline, should use 2x2 matrix etc.
+Walking that line is biggest challenge.
+Zoom out a bit, tell people how you make this decision and yet stay connected to the topics. Here is the concrete decision e.g. floating vs sinking, here is the concrete decision that is specific to platform.
+Took 3 years to write the book. Activwly writing on it 2024. It is not easy to write strategy book like that.
+
+
+
+
+
+
