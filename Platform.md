@@ -125,7 +125,11 @@ Zoom out a bit, tell people how you make this decision and yet stay connected to
 Took 3 years to write the book. Activwly writing on it 2024. It is not easy to write strategy book like that.
 
 
+Twilight zone of Architecture: 
+1. Everybody likes to talk about Buzzowrds
+2. Everybody like to talk about technology
 
+In between is a twilight zone: Everyone finds it fascinating, actionalble advice that does not fall in one or the other.. but this is actually not easy.
 
 
 
