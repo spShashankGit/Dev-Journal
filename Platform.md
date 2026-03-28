@@ -26,3 +26,25 @@ Platform standarising lot of things, making it available for innovation.
 Underneath you have the scale effect.
 Data centres, Global Network is huge invest. 
 Magic on top is people who are on top do not have to think about it. Run the lambda for 1ms and pay 0.01 cent.
+
+It world is fractal, lot of people are building platform in-house.
+Luckily, they are not building from scratch, usually building on cloud, analytics or data platform.
+
+They are feeling a bit of, 
+Make better assumptions for your organisations. AWS, Google and GCP cannot do that for all the organisation at one place.
+
+1. There is room for standarising processes and APIs.
+a. These economics are different for you then a large provider.
+b. Don't under-estimate how difficult it is to build these kind of things.
+
+# Good in-house platform
+Good in-house platform can narrow the variable for the in-house context. We are doing this thing, we do not need all that variance, therefore we can abstract just a little bit further.
+
+Tricky:
+a. Many cooks in the kitchen -> Securtiy is promised there is more compliance and constrains.
+b. Developers are being promised that they are more productive.
+c. Architects are promised that everything will follow common architectures and standards.
+You need to be very careful whether one thing can really achieve all these different aspects that you are after.
+e.g. We do not need for the whole world, however, this often start with setting default values.
+DynamoDB database: We always have replications, less cognitive loads etc.
+1000 piece puzzle, lets take 100 pieces away, makes it harder. It is a good intention not a good abstraction.
