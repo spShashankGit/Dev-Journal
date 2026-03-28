@@ -131,5 +131,21 @@ Twilight zone of Architecture:
 
 In between is a twilight zone: Everyone finds it fascinating, actionalble advice that does not fall in one or the other.. but this is actually not easy.
 
+Ambition is to span the whole level:
+1. How to chart the roadmap
+2. How to have good decision discipline
+3. Mid levels like floating vs sinking; fruit basket vs fruit salads metaphor that enable decision making approachable to wide range of audience.
+4. Some specific things for close to home people who build platforms like hey should just make terraform modules or make templates or should I do think in CDK? Very concrete things that peoples few floors down have to answer.
+Book goes throuhg all these levels, then it comes back out and goes a little bit into organiszation and team aspects.
+
+The reason is to strech the readers horizion, this is not a quick answer. The shape of your platform, the value propositions, fuit salads, floating and sinking that is relevant to use.
+
+Strongly believe you cannot run a platform wiht remote control:
+1. You cannot sit on top and say I heard platforms are good so make me a platform strategy - guranteed disaster
+2. vice versa - oh technically platforms are good, it must be good for my business, even though I do not understand the domain or I do not care - equal disaster.
+
+Team topoogy book - platform team was one of the team they 
 
 
+Examples where the platform got it right:
+1. 
