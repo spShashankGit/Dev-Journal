@@ -99,3 +99,10 @@ Going under water: Base platform is growing, if your platform doesn't evolve the
 
 Architecture as an option process.
 Boat vs Sumbarine is techno-economic decision.
+
+You have taken the high-rode of software engineering and architecture. Lot of the time we give the advice you should be a good architect or a good engineer. You have maneuvered yourself into a field which is less forgiving. You have internal customers, you have people on top of it, you have published interfaces, you have different economics, propolled youself into storm. The bar you set for yourself is very high.
+
+> Platforms are amongst the most valuable ideas in terms of structuring large scale systems and at the same time the most difficult things to do well. This is the peak of good architecture and good engineering.
+Greogr: Who wants themselved without printer drivers and a decent operating system, who want to go back to time when you cannot run code into the cloud servelss wihtout doing much anything.
+This can work internally very good internally if you understand your domain well.
+If you have good discipline you can make assumptions that other people cannot you can increase productivity you can harmoize and at the same time boost innovation.
