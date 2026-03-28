@@ -57,4 +57,12 @@ b. It will life things in different domains like an operating system e.g: Read a
 1. Do not allow to use this AZ or 
 2. Do not allow to use that service
 and argument that you cognitive load went down because now you only choose form 3 AZ instead of 32.
-This do not make developer life easier.
+This do not make developer life easier because they wanted to use the service that you just disabled.
+
+Getting this fine-line right is more involved then you generally aspects.
+This is one of the anti-pattern: lot of org platform engineering, that they beieve they understand cloud infrastructure and try to hide the use of cloud infrastructure wihtout adding any of those extra constraints or abstractions in any meaningful way. They are just doing the configuration for the team. This do not seem like a sensible use of this light approaches. They are just doing the configuration.
+
+Organisation sit underneath other stuff, that is the infrastructure and organistaion team. Isn't this the right place to make the platform? 
+Chapter IT services and Platform are antonyms, they are opposite of each other. Same team will make platform as a classic IT service. Like I need a virtual machine, I need a container or etc.
+Some ticketing sysetem kicks-off and after sometinme a container runtime comes out but this is not a platform.
+
