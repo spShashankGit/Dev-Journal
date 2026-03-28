@@ -29,7 +29,7 @@ Client and server can talk to each other over many protocols:
 e.g: Standard IO, HTTP, Websockets
 
 Msg specs are defined inside the spec file.
-![Uploading image.png…]()
+<img width="823" height="427" alt="image" src="https://github.com/user-attachments/assets/c7fa89c7-1210-4ba8-84bf-6041f3c14777" />
 Message types:
 1. ListToolRequest
 2. ListToolResult message
@@ -37,4 +37,8 @@ Message types:
 4. CallToolResults
 
 Example call:
+
+![Uploading image.png…]()
+We are goind to see all these pieces as we will configure our own MCP Client and MCP server later on.
+
 
