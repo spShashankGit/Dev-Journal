@@ -66,3 +66,36 @@ Organisation sit underneath other stuff, that is the infrastructure and organist
 Chapter IT services and Platform are antonyms, they are opposite of each other. Same team will make platform as a classic IT service. Like I need a virtual machine, I need a container or etc.
 Some ticketing sysetem kicks-off and after sometinme a container runtime comes out but this is not a platform.
 
+Ticketing system is not the way to go.
+
+To build a platform you need to understand what a problem domain of what the system taht you are building very well. 
+Key word is "Domain".
+
+## Test for platform
+Unlike other commong layers, Platforms do not try to anticipate all use cases.
+Business platforms, here is core of all insurance and he is country specific insurance thing and here for the product, make a few configuration setting a,b,c. SOunds really good on powerpoint, but do not work at all. The assumption is that you know all the needs of all the users upfront and you can go build exactly that.
+
+Test: Have people build something that you have not anticipated? If yes, all good. 
+If not, then you are not the right level, and you are falling back into the old model of I am smarter then everybody else so I try to anticipate all their needs and if we put them in this layer then they have to do almost nothing.
+
+The way to get there: Domain is very important.
+Financial servies industry customer: When they write to DB they need to have a ledger, say why Gregor has 10Billion dollard, well here is the whole history.
+That is specific to financial services, this is a ledger. This is something they use in their business domain. They use Dynamodb and Dynamode stream and define a serive called ledgered database. This is dynamodb with setting that is closer to their businss domain. 
+Lifting it into technical-business domain is really what a platform can provide a lot of value.
+
+This is a part of good software design. You need to understand the problem that you are trying to solve really well, whether it is a technical problem or whether it is a business problem. You need to focused on sovling this problem then having a random collection of tools. 100%
+
+> Lot of organistaion fall into the trap of we do not have good developers lets build a platform to get better productivity out of current developers. To build a platform you need even smarter developers which you might not have and then this whole things goes in a downward spiral. Need a very good software engineering discipline to even think about something like this.
+> b. platform sits underneath the development, people think it has to be something very very technical but the example of FS is not technical but it is closer to the domain that IT organistaion is operating in.
+> This works much better, so even thought the platform sits underneath the concepts should express actually be higher level concepts. There folks stumble a lot especially if it runs out of an infrastructure team. They will not know the business domain well enough to make platform that has real abstractions that represent business need from that domain.
+
+
+Sinking vs floaring platform -> Genuine need that cloud do not include, fully integrated CICD pipeline, on prem, build on last.
+Provider do not stand still, uptill now ever provider has fully CICD tool, build tools, source repos etc.
+Going under water: Base platform is growing, if your platform doesn't evolve then you are duplicating something. Catch is:
+1. You have users on the existing plaform should also do new things you have migration
+2. You have investment in the existing platform so mgmt will say where is my return if you throw this away who is gonna pay for this, because we have multi-year recovery horizon.
+3. Boat vs Submarine
+
+Architecture as an option process.
+Boat vs Sumbarine is techno-economic decision.
