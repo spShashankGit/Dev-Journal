@@ -37,7 +37,7 @@ Make better assumptions for your organisations. AWS, Google and GCP cannot do th
 a. These economics are different for you then a large provider.
 b. Don't under-estimate how difficult it is to build these kind of things.
 
-# Good in-house platform
+## Good in-house platform
 Good in-house platform can narrow the variable for the in-house context. We are doing this thing, we do not need all that variance, therefore we can abstract just a little bit further.
 
 Tricky:
@@ -47,4 +47,14 @@ c. Architects are promised that everything will follow common architectures and 
 You need to be very careful whether one thing can really achieve all these different aspects that you are after.
 e.g. We do not need for the whole world, however, this often start with setting default values.
 DynamoDB database: We always have replications, less cognitive loads etc.
-1000 piece puzzle, lets take 100 pieces away, makes it harder. It is a good intention not a good abstraction.
+1000 piece puzzle, lets take 100 pieces away, makes it harder. **It is a good intention not a good abstraction.**
+
+## Good abstraction 
+a. Good abstraction will introduce a new vocabulary
+b. It will life things in different domains like an operating system e.g: Read and write a file is called stream and or socket for Network. Not like disc sectors or magnetic encoding so we have a different vocabulary and this is an important part that is miss.
+
+## Bad example again
+1. Do not allow to use this AZ or 
+2. Do not allow to use that service
+and argument that you cognitive load went down because now you only choose form 3 AZ instead of 32.
+This do not make developer life easier.
