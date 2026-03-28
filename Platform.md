@@ -19,3 +19,10 @@ Platforms are abstractions that actually work because finding good abstraction i
 e.g. RPC is like a local procedure call, it isn't as with distributed systems you have latency, does not have a call stack, it has different type systems, partial failures.
 Good example of a platform: Operating System because it abstracts away lot of physical aspects that otherwise will be very tedious to deal with. But on top of it you build whatever you please.
 OS do not seem to constrain you a lot.
+
+Amazon and Microsoft have a large hand in providing the platform for the world to build on.
+
+Platform standarising lot of things, making it available for innovation.
+Underneath you have the scale effect.
+Data centres, Global Network is huge invest. 
+Magic on top is people who are on top do not have to think about it. Run the lambda for 1ms and pay 0.01 cent.
