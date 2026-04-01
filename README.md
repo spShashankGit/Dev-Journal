@@ -48,6 +48,3 @@ Feel free to explore the topics and use this as a reference for software enginee
 ### Metadata
 - [Metadata sharing/collection way](croissant-metadata.md)
 
-
-## Testing the video embedding feature of Github -This is royalty free music from Youtube
-[![Lets test how the ](https://img.youtube.com/vi/AXui7XUvFjQ/0.jpg)](https://www.youtube.com/watch?v=AXui7XUvFjQ)
