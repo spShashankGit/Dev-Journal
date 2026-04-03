@@ -173,6 +173,7 @@ Double pyramid - Up and Downward pyramid.
 
 Guidelines:
 1. Lot of platforms falls into the trap of hiding the complexity instead of making it easier for you to deal with the complexity.
+2. Architect look for Rate of change. 
 
 Engine room - 
 How much complexity to hide vs how much complexity to expose.
@@ -195,6 +196,3 @@ Cloud is massive and this is something that was not there before.
 Further reading:
 1. [Team Topology](https://martinfowler.com/bliki/TeamTopologies.html)
 2. Domain Driver Desing
-
-
-Rate of change. 
