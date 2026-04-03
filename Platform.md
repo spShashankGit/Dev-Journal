@@ -176,11 +176,19 @@ How much complexity to hide vs how much complexity to expose.
 
 Bad Abstraction:
 1. If there is one API exposed with 2 string parameters and three interger parameters. In order to unsterdand how it works you are given 40 pages of document to read. This is a bad example of abstraction.
+2. YAML is fine for infra, typescript for the domain language.
+
+DDD is about 20+ years old and now our Technical domain is also sufficiently complicated enough.
+Epics sees a lot of uptick in the Techno-Domain Driven Design.
 
 Vocabulary
 1. Self elevating.
 
-
+Async systems are great at the event driven architecture
+Activase statef for serverless
+Enterprise architecture book.
+Cloud is massive and this is something that was not there before.
 
 Further reading:
 1. [Team Topology](https://martinfowler.com/bliki/TeamTopologies.html)
+2. Domain Driver Desing
