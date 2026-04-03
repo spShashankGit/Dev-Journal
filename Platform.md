@@ -155,3 +155,10 @@ Owe a lot to Manual for the book Team Topology.
 2. You have the team, the lever then you take the cognitive load down. 
 (Taking pieces away will make the applicaiton harder.)
 Getting things out of the business domain, really defining higher level abstracts, where it's a ledger database or a hosted website, or something that is meaningful as a construct.
+
+Test of abstraction: What we say as abstraction must make sense without knowing the layer underneath.
+1. Doing this for the whole cloud services is a bad idea. How will come up with a vocabulary that people do not need to know what are services underneath. You must be smarter then me (Gregor Hohpe).
+2. Doing this for the ledgered database is simple and obvious example. This is a great oppoertunity to reduce the cognitive load .
+
+I restrict your choice that means your cognitive load goes down. What I really want is that I do not want you to use the stuff that I do not like you to use doing.
+(Be careful for people mis-appropriating the terms for their own benefit)
