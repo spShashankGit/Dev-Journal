@@ -179,3 +179,8 @@ Bad Abstraction:
 
 Vocabulary
 1. Self elevating.
+
+
+
+Further reading:
+1. [Team Topology](https://martinfowler.com/bliki/TeamTopologies.html)
