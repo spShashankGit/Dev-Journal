@@ -7,7 +7,7 @@
 ## What is a platform? 
 Platforms are ways to standarise some aspects of your system, in a way that it boost innovation and diversity on top of that layer.
 
-## Commong practise in IT
+## Common practise in IT
 We we tend to have this challenge that the more we make something common the more we harmonize it.
 The less flexibility we have on top.
 
@@ -42,7 +42,9 @@ Good in-house platform can narrow the variable for the in-house context. We are 
 
 Tricky:
 a. Many cooks in the kitchen -> Securtiy is promised there is more compliance and constrains.
+
 b. Developers are being promised that they are more productive.
+
 c. Architects are promised that everything will follow common architectures and standards.
 You need to be very careful whether one thing can really achieve all these different aspects that you are after.
 e.g. We do not need for the whole world, however, this often start with setting default values.
@@ -51,6 +53,7 @@ DynamoDB database: We always have replications, less cognitive loads etc.
 
 ## Good abstraction 
 a. Good abstraction will introduce a new vocabulary
+
 b. It will life things in different domains like an operating system e.g: Read and write a file is called stream and or socket for Network. Not like disc sectors or magnetic encoding so we have a different vocabulary and this is an important part that is miss.
 
 ## Bad example again
@@ -192,3 +195,6 @@ Cloud is massive and this is something that was not there before.
 Further reading:
 1. [Team Topology](https://martinfowler.com/bliki/TeamTopologies.html)
 2. Domain Driver Desing
+
+
+Rate of change. 
