@@ -162,3 +162,17 @@ Test of abstraction: What we say as abstraction must make sense without knowing 
 
 I restrict your choice that means your cognitive load goes down. What I really want is that I do not want you to use the stuff that I do not like you to use doing.
 (Be careful for people mis-appropriating the terms for their own benefit)
+
+
+Bad assumption:
+1. We can assume we can anticipate all the requirements that will come.
+Double pyramid - Up and Downward pyramid.
+
+Guidelines:
+1. Lot of platforms falls into the trap of hiding the complexity instead of making it easier for you to deal with the complexity.
+
+Engine room - 
+How much complexity to hide vs how much complexity to expose.
+
+Vocabulary
+1. Self elevating.
