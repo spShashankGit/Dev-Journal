@@ -148,4 +148,10 @@ Team topoogy book - platform team was one of the team they
 
 
 Examples where the platform got it right:
-1. 
+Owe a lot to Manual for the book Team Topology.
+
+1. Continuous Delivery - Distributing teams the work, one for requirement gathering, one for development, one for operations. If this doees not worken then we collapse that and shift left. DevOps, DecSecOps etc. You are pilling all onto one team.
+
+2. You have the team, the lever then you take the cognitive load down. 
+(Taking pieces away will make the applicaiton harder.)
+Getting things out of the business domain, really defining higher level abstracts, where it's a ledger database or a hosted website, or something that is meaningful as a construct.
