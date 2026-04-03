@@ -174,5 +174,8 @@ Guidelines:
 Engine room - 
 How much complexity to hide vs how much complexity to expose.
 
+Bad Abstraction:
+1. If there is one API exposed with 2 string parameters and three interger parameters. In order to unsterdand how it works you are given 40 pages of document to read. This is a bad example of abstraction.
+
 Vocabulary
 1. Self elevating.
