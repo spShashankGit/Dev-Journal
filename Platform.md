@@ -112,8 +112,8 @@ If you have good discipline you can make assumptions that other people cannot yo
 It can be done, it will not fall into your lap.
 
 ## What are some of the strategies that we can adopt to do this incredible difficult thing?
-Architect Elevator
-Cloud Strategy
+Architect Elevator -> 
+Cloud Strategy -> 
 Pltform Strategy
 
 You need a strategy: Strategy cannot be copy and paste architecture or strategy.
