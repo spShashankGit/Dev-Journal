@@ -19,6 +19,7 @@ Feel free to explore the topics and use this as a reference for software enginee
 
 ### Machine Learning & Data Science
 - [Croissant Metadata](./croissant-metadata.md) - Understanding the standardized metadata format for ML datasets, its components, advantages, and why it was created.
+- [Apache Iceberg Table Format](./iceberg-table-format.md) - Comprehensive guide to Apache Iceberg and other table formats (Delta Lake, Hudi, Kudu), their features, benchmarks, cloud support, and implementation examples.
 
 ### Coding best practices
 - [DRY Principle in Coding](DRY-Principle.md) - Understanding the "Don't Repeat Yourself" principle with practical examples
