@@ -1,5 +1,9 @@
 # Open Table Format
 
+### References
+1. https://delta.io/blog/open-table-formats/
+
+
 Open table formats solve performance and reliability problems with traditional data lakes. By storing metadata along with your tabular data, open table formats give you great features like:
 1. Reliable ACID transactions
 2. Advanced data skipping
