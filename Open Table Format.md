@@ -92,5 +92,43 @@ Delta Lake is almost always more reliable, faster and more developer-friendly th
 2. Delta Lake abstracts the file metadata to a transaction log and supports Z Ordering, so you can run queries faster
 3. Delta Lakes make it easy to perform common data operations like dropping columns, renaming columns, deleting rows, and DML operations.
 
+----
+Yes, exactly. Delta Lake and Apache Iceberg are **direct competitors** — both are open table formats that solve the same problems.
+
+### The Big Three Open Table Formats:
+
+| Format | Created By | Year | Primary Ecosystem |
+|--------|------------|------|-------------------|
+| **Delta Lake** | Databricks | 2019 | Spark, Databricks |
+| **Apache Iceberg** | Netflix | 2017 | Multi-engine (Trino, Spark, Flink, etc.) |
+| **Apache Hudi** | Uber | 2016 | Spark, streaming use cases |
+
+### They All Provide:
+- ACID transactions
+- Time travel / versioning
+- Schema evolution
+- Partition evolution
+- Efficient upserts/deletes
+
+### Key Differences:
+
+| Aspect | Delta Lake | Iceberg |
+|--------|------------|---------|
+| **Engine support** | Best with Spark/Databricks | Truly engine-agnostic |
+| **Cloud vendor support** | Databricks-centric | AWS, Snowflake, Dremio, etc. |
+| **Hidden partitions** | No | Yes (partition evolution without rewriting) |
+| **Transaction log** | JSON-based `_delta_log/` | Manifest files + metadata |
+| **Adoption** | Strong in Databricks shops | Growing fast, especially multi-cloud |
+
+### Choosing Between Them:
+- **Delta Lake** → Best if you're all-in on Databricks/Spark
+- **Iceberg** → Best for multi-engine environments or AWS-native stacks
+- **Hudi** → Best for streaming-heavy, incremental ingestion workloads
+
+**AWS** has strong native support for it.
+----
+
+
+
 ### References
 1. https://delta.io/blog/open-table-formats/
