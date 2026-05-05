@@ -92,7 +92,5 @@ Delta Lake is almost always more reliable, faster and more developer-friendly th
 2. Delta Lake abstracts the file metadata to a transaction log and supports Z Ordering, so you can run queries faster
 3. Delta Lakes make it easy to perform common data operations like dropping columns, renaming columns, deleting rows, and DML operations.
 
-
-
 ### References
 1. https://delta.io/blog/open-table-formats/
