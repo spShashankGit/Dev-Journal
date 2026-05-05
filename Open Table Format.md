@@ -49,6 +49,15 @@ This kind of situation is not possible with ACID transactions: the entire write 
 ### Delta Lake
 Delta Lake makes your queries run faster than a regular data lake.
 
+Delta Lake optimizes your queries by:
+
+1. Storing file paths in a separate transaction log
+2. Storing metadata in the transaction log
+3. Prioritizing partial reads via file-skipping
+4. Co-locating similar data to allow for better file skipping
+
+#### Reading the metadata of the table 
+<img width="2002" height="1196" alt="image" src="https://github.com/user-attachments/assets/e464b555-b938-42fd-8c0f-c9b54fedf7fc" />
 
 
 ### References
