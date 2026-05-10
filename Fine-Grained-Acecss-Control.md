@@ -51,6 +51,11 @@ If the grantee account is in the same organization as the granter account, the s
 If the account is not part of the organization , you can still be able to share externally as well.
 
 **Demo Time**
+1. AWS Management Console and logged in as Admin.
+2. Management Account: AWS Organization have a master account who will going to manage all the accounts. This account can see various OUs like Marketting and other OU as Sales.
+3. Invitation: You can invite an existing AWS account to be part of the OU by sending an invite. You need an acount number to send the invitation. As soon as this is done, it starts to show up under the OU.
+
+**To share the data across the organization we need to enable the Resource Access Manager setting and enable the checkbox which says Enable_Sharing_with_AWS_Organization**
 ____
 Reference:
 https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=88s
