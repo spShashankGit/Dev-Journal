@@ -55,7 +55,7 @@ If the account is not part of the organization , you can still be able to share 
 2. Management Account: AWS Organization have a master account who will going to manage all the accounts. This account can see various OUs like Marketting and other OU as Sales.
 3. Invitation: You can invite an existing AWS account to be part of the OU by sending an invite. You need an acount number to send the invitation. As soon as this is done, it starts to show up under the OU.
 
-**To share the data across the organization we need to enable the Resource Access Manager setting and enable the checkbox which says Enable_Sharing_with_AWS_Organization**
+**To share the data across the organization we need to enable the Resource Access Manager(RAM) setting and enable the checkbox which says Enable_Sharing_with_AWS_Organization**
 
 Producer account: will create data on S3 and catalogue it using Glue.
 This will be used a resource to share wiht the entire organization.
@@ -88,10 +88,47 @@ Grant permissions -> External Grants -> Listing all the options to share -> Opti
 Login: As AWS Administrator.
 Lake Formation > Database > Create Database > Resource Link
 (Create resource link to the database so that consumer can see the data.)
-<img width="614" height="539" alt="image" src="https://github.com/user-attachments/assets/2c05a27f-e609-499c-8e24-97b22fa49ea8" />
 
 <img width="662" height="506" alt="image" src="https://github.com/user-attachments/assets/45c09b3f-6e54-4827-8561-fe29010519c2" />
 
+Next step if to provide the Analytics the privlages to describe the database.
+
+
+# AI generated summary with timestamps
+## 🛠️ Step-by-Step Workflows
+The process involves three distinct personas performing specific roles to enable seamless data access.
+## 1. The Organization Administrator (Global Setup)
+Persona: AWS Administrator with access to the Management/Master account ([5:11](https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=311s)).
+Goal: To establish the organizational trust and enable sharing capabilities.
+
+* Step 1: Log into the AWS Management Console and verify the AWS Organization structure (e.g., creating OUs like "Sales" or "Marketing") ([5:11](https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=311s)).
+* Step 2: Invite member accounts to join the organization if they are not already present ([5:41](https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=341s)).
+* Step 3: Navigate to the Resource Access Manager (RAM) console ([6:41](https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=401s)).
+* Step 4: In RAM Settings, check the box to "Enable sharing with AWS Organizations" to allow Lake Formation to use the organization's structure for resource sharing ([6:52](https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=412s)).
+
+## 2. The Data Producer (Data Sharing)
+Persona: Lake Formation Administrator in the Producer account (the account owning the data) ([7:40](https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=460s)).
+Goal: To grant data access to the Consumer account(s).
+
+* Step 1: Register the S3 bucket containing the data as a Data Lake location in Lake Formation ([8:23](https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=503s)).
+* Step 2: Select the database or tables to be shared and click Grant ([8:53](https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=533s)).
+* Step 3: Under "Principals," choose External Accounts and select the entire AWS Organization or a specific OU ([9:18](https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=558s)).
+* Step 4: Assign permissions (e.g., DESCRIBE for the database and SELECT/DESCRIBE for tables) and click Grant ([10:02](https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=602s)).
+
+## 3. The Data Consumer (Data Access)
+Persona: Lake Formation Administrator in the Consumer account ([12:00](https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=720s)).
+Goal: To make the shared data available to local users (e.g., Analysts).
+
+* Step 1: Locate the shared database in the Lake Formation console ([12:09](https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=729s)).
+* Step 2: Create a Resource Link for the shared database to make it visible to local services like Amazon Athena ([12:28](https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=748s)).
+* Step 3: Use "Grant on target" to give local IAM roles (like a "Business Analyst") permission to query the actual underlying tables ([14:47](https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=887s)).
+* Step 4: The Business Analyst persona can then log into Amazon Athena and query the shared data immediately ([15:56](https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=956s)).
+
+`IAMAllowedPrincipals` is a role makes lake formation backward compatible. 
+> Principal is an IAM group - IAMAllowedPrincipals
+Lake Formation sets Super permission on all databases and tables in the Data Catalog to a group called IAMAllowedPrincipals by default. If this group permission exists on a database or a table, all principals in your account will have access to the resource through the IAM principal policies for AWS Glue. It provides backward compatibility when you start using Lake Formation permissions to secure the Data Catalog resources that were earlier protected by IAM policies for AWS Glue.
+> When you use Lake Formation to manage permissions for your Data Catalog resources, you need to first revoke the IAMAllowedPrincipals permission on the resources, or opt in the principals and the resources to hybrid access mode for Lake Formation permissions to work.
+Source: https://docs.aws.amazon.com/lake-formation/latest/dg/lf-permissions-reference.html
 
 
 ____
