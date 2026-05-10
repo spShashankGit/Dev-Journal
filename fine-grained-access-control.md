@@ -150,3 +150,12 @@ This is a great way to showcase how to do column level filtering.
 ___
 Reference:
 https://www.youtube.com/watch?v=zF2M4dmOISc
+
+
+_________Part 3_____________________________________
+Tag based access control
+<img width="1171" height="382" alt="image" src="https://github.com/user-attachments/assets/9281b4ce-a2a5-402f-a5e3-694394f1e556" />
+
+_______
+Reference:
+https://www.youtube.com/watch?v=7jm3ukY_aGQ
