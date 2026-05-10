@@ -36,7 +36,7 @@ Lake formation enables:
 1. Federated data lake with cross account sharing,
 2. Delivering centralized domain-oriented data products across your organization with minimal to no data movements.
 
-## Scenarion
+## Scenario
 Account A: Have database and tables
 Account A: Wants to share this with AWS Account B and Account C.
 (This can happen as of now without Lake Formation)
@@ -45,7 +45,12 @@ If you want to grant access to Account A and Account B in a single grant, then o
 You can share at organization unit level as well, and not only at OU level but also at the entire organization level too.
 <Could this be key in Data Mesh?>
 
+Under the hood: Lake formatiion uses AWS Resource Access Manager service to share resources. 
+If the grantee account is in the same organization as the granter account, the shared resource is available immediately to grantee.
 
+If the account is not part of the organization , you can still be able to share externally as well.
+
+**Demo Time**
 ____
 Reference:
 https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=88s
