@@ -129,8 +129,26 @@ Goal: To make the shared data available to local users (e.g., Analysts).
 Lake Formation sets Super permission on all databases and tables in the Data Catalog to a group called IAMAllowedPrincipals by default. If this group permission exists on a database or a table, all principals in your account will have access to the resource through the IAM principal policies for AWS Glue. It provides backward compatibility when you start using Lake Formation permissions to secure the Data Catalog resources that were earlier protected by IAM policies for AWS Glue.
 > When you use Lake Formation to manage permissions for your Data Catalog resources, you need to first revoke the IAMAllowedPrincipals permission on the resources, or opt in the principals and the resources to hybrid access mode for Lake Formation permissions to work.
 Source: https://docs.aws.amazon.com/lake-formation/latest/dg/lf-permissions-reference.html
-
-
 ____
 Reference:
 https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=88s
+
+____________________Part 2_________________________________________
+
+# Worflow for the Athena and Lake Formation
+<img width="1106" height="565" alt="image" src="https://github.com/user-attachments/assets/62db2c6f-817b-4f83-8089-abae47e8b200" />
+
+<img width="1172" height="587" alt="image" src="https://github.com/user-attachments/assets/605e093d-d0e9-4c57-8e2f-19036467d373" />
+
+Permission set
+<img width="1103" height="589" alt="image" src="https://github.com/user-attachments/assets/5468dcea-2650-41bb-aee8-d8a7084b258e" />
+Admin = All
+Data Analytics = Want to analyse PII data have access to only PII data
+Data Scientist = Geo & demographic model, have access to only those columns. 
+
+
+
+
+___
+Reference:
+https://www.youtube.com/watch?v=zF2M4dmOISc
