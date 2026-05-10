@@ -74,6 +74,24 @@ Grant permissions -> External Grants -> Listing all the options to share -> Opti
 <img width="587" height="352" alt="image" src="https://github.com/user-attachments/assets/efdee60a-1fdc-4749-9e1a-390adcedf31e" />
 
 <img width="597" height="572" alt="image" src="https://github.com/user-attachments/assets/99bcc71e-912c-4f07-941b-e7c26cac7af6" />
+**This workflow has granted permission to the database.**
+
+## Grant permssion for the tables that needs to be shared
+<img width="815" height="603" alt="image" src="https://github.com/user-attachments/assets/06501dae-2034-462b-96f1-1fc80182c17d" />
+
+<img width="786" height="615" alt="image" src="https://github.com/user-attachments/assets/8363ad32-4624-46ad-9ba7-ddaf96e2b851" />
+
+**This workflow has granted consumer the permission to read the tables from the database selected in the previous workflow.**
+
+
+## Consumer
+Login: As AWS Administrator.
+Lake Formation > Database > Create Database > Resource Link
+(Create resource link to the database so that consumer can see the data.)
+<img width="614" height="539" alt="image" src="https://github.com/user-attachments/assets/2c05a27f-e609-499c-8e24-97b22fa49ea8" />
+
+<img width="662" height="506" alt="image" src="https://github.com/user-attachments/assets/45c09b3f-6e54-4827-8561-fe29010519c2" />
+
 
 
 ____
