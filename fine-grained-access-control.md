@@ -146,6 +146,7 @@ Admin = All
 Data Analytics = Want to analyse PII data have access to only PII data
 Data Scientist = Geo & demographic model, have access to only those columns. 
 
+This is a great way to showcase how to do column level filtering.
 ___
 Reference:
 https://www.youtube.com/watch?v=zF2M4dmOISc
