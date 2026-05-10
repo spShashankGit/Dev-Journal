@@ -56,6 +56,26 @@ If the account is not part of the organization , you can still be able to share 
 3. Invitation: You can invite an existing AWS account to be part of the OU by sending an invite. You need an acount number to send the invitation. As soon as this is done, it starts to show up under the OU.
 
 **To share the data across the organization we need to enable the Resource Access Manager setting and enable the checkbox which says Enable_Sharing_with_AWS_Organization**
+
+Producer account: will create data on S3 and catalogue it using Glue.
+This will be used a resource to share wiht the entire organization.
+
+Role: Lake Formation Administrator who is going to share this data between different accounts using organization.  -> AWS Lake Formation -> Database -> Certain tables registered under S3 location.
+-> (Registering the S3 buckets under "Data Lake location")
+-> Got to database and start granting permissions to this database.
+
+Grant permissions -> External Grants -> Listing all the options to share -> Options show Organizations, Sub-organizations and also individual accounts.
+(If one chooses organization or sub-organization then these permissions are propogated downwards.)
+
+<img width="601" height="586" alt="image" src="https://github.com/user-attachments/assets/27ae6417-6ebc-492a-bf68-82f9a0a243f1" />
+
+<img width="798" height="628" alt="image" src="https://github.com/user-attachments/assets/48b3266c-5988-49ce-9885-8336731f5171" />
+
+<img width="587" height="352" alt="image" src="https://github.com/user-attachments/assets/efdee60a-1fdc-4749-9e1a-390adcedf31e" />
+
+<img width="597" height="572" alt="image" src="https://github.com/user-attachments/assets/99bcc71e-912c-4f07-941b-e7c26cac7af6" />
+
+
 ____
 Reference:
 https://www.youtube.com/watch?v=S-Mdcmq6oPM&t=88s
