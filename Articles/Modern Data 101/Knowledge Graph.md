@@ -1,10 +1,10 @@
 # Knowledge Graph
 
+Disclaimer: This is just my notes, the original article is linked below. I am writing my notes here so that I can refer to them later. I have not figured out a way to highlight the text on a website permanently and search through them when needed, hence building up this library for myself on github.
 ____________________________________________________________________________________
 Reference Article: https://moderndata101.substack.com/p/the-semantic-medallion
 Export: Veronika Heimsbakk
 Publication: Modern Data 101
-Purpose of this file: Taking notes of important information that I find on internet
 _____________________________________________________________________________________
 
 This is not my diagram, I have taken it from the the article (the link is mentioned above)
