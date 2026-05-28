@@ -48,3 +48,14 @@ Feel free to explore the topics and use this as a reference for software enginee
 ### Metadata
 - [Metadata sharing/collection way](croissant-metadata.md)
 
+
+
+### Ideas to introduce new sections
+/architecture-case-studies
+/system-desing
+/ai-enterprise
+/diagrams
+/reference-implementations
+
+Guidelines: concrete, analytical, diagram-heavy, decision-oriented, technically grounded
+What not to do: Vague, motivational, generic, overproduced, AI generated
