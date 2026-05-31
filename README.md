@@ -19,6 +19,7 @@ Feel free to explore the topics and use this as a reference for software enginee
 
 ### Machine Learning & Data Science
 - [Croissant Metadata](./croissant-metadata.md) - Understanding the standardized metadata format for ML datasets, its components, advantages, and why it was created.
+- [ML Model Reproducibility](./ml-model-reproducibility.md) - Comprehensive guide to ensuring reproducible machine learning experiments and models
 
 ### Coding best practices
 - [DRY Principle in Coding](DRY-Principle.md) - Understanding the "Don't Repeat Yourself" principle with practical examples
