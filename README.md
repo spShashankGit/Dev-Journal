@@ -23,6 +23,7 @@ Feel free to explore the topics and use this as a reference for software enginee
 ### Coding best practices
 - [DRY Principle in Coding](DRY-Principle.md) - Understanding the "Don't Repeat Yourself" principle with practical examples
 - [Guard Conditions](guard-conditions.md) - Implementing defensive programming with guard conditions
+- [Cyclomatic Complexity](cyclomatic-complexity.md) - Comprehensive guide to measuring and managing code complexity using McCabe's cyclomatic complexity metric
 - [AI/ML Conferences Guide](AI-ML-Conferences.md) - Comprehensive guide to artificial intelligence and machine learning conferences worldwide
 - [Github submodules](./github-submodule.md)
 
