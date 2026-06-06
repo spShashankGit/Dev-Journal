@@ -4,6 +4,8 @@ from typing import Optional, Any
 from contextlib import AsyncExitStack
 from mcp import ClientSession, StdioServerParameters, types
 from mcp.client.stdio import stdio_client
+from pydantic import AnyUrl
+import json
 
 
 class MCPClient:
@@ -51,16 +53,21 @@ class MCPClient:
         return await self.session().call_tool(tool_name, tool_input)
 
     async def list_prompts(self) -> list[types.Prompt]:
-        # TODO: Return a list of prompts defined by the MCP server
-        return []
+        result = await self.session().list_prompts()
+        return result.prompts
 
     async def get_prompt(self, prompt_name, args: dict[str, str]):
-        # TODO: Get a particular prompt defined by the MCP server
-        return []
+        results = await self.session().get_prompt(prompt_name, args)
+        return results.messages
 
     async def read_resource(self, uri: str) -> Any:
-        # TODO: Read a resource, parse the contents and return it
-        return []
+        result = await self.session().read_resource(AnyUrl(uri))
+        resources =  result.contents[0]
+        if isinstance(resources, types.TextResourceContents):
+            if resources.mimeType == "application/json":
+                return json.loads(resources.text)
+            
+            return resources.text
 
     async def cleanup(self):
         await self._exit_stack.aclose()

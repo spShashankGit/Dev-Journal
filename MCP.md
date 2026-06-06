@@ -42,3 +42,34 @@ Example call:
 We are goind to see all these pieces as we will configure our own MCP Client and MCP server later on.
 
 
+![alt text](image.png)
+
+
+Resources ![alt text](image-1.png)
+
+
+How will the resources interplay with the MCP Client and MCP Server? 
+![How will the resources interplay with the MCP Client and MCP Server? ](image-2.png)
+
+Types of resource
+Direct/Static and Template
+![alt text](image-3.png)
+
+
+![Accessing resources](image-4.png)
+
+
+![Prompts](image-5.png)
+
+
+![Support for the / commands](image-6.png)
+
+
+![User will get a better response if we have a custom prompt tailerd for the usecase. Like a prompt for formatiing the document in markdown index](image-7.png)
+
+
+![Prompt decorator defined in the MCP server](image-8.png)
+
+
+
+![MCP Summary](image-9.png)
