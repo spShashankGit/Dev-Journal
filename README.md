@@ -17,6 +17,9 @@ Feel free to explore the topics and use this as a reference for software enginee
 ### Design Patterns
 - [Circuit Breaker Pattern](./circuit-breaker-pattern.md) - Learn about protecting services from cascading failures in distributed systems
 
+### Network Security & Architecture
+- [Demilitarized Zone (DMZ)](./dmz-demilitarized-zone.md) - Understanding DMZ concepts in computer science, network security, and modern cloud architectures
+
 ### Machine Learning & Data Science
 - [Croissant Metadata](./croissant-metadata.md) - Understanding the standardized metadata format for ML datasets, its components, advantages, and why it was created.
 
