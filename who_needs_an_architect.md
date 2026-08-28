@@ -56,4 +56,4 @@ running the risk of being an architectural bottleneck.
 [2] Evodb(http://martinfowler.com/articles/evodb.html)  - Allow us to change the schema of the database and migrate the data to the new schema. 
 
 ## Next topic to explore
-1. Aspect-Oriented Programming
+1. ~~Aspect-Oriented Programming~~ ✅ [Completed](aspect-oriented-programming.md)
